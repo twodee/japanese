@@ -1,0 +1,21 @@
+{
+  "verbs": [
+    {"hiragana": "いく", "definition": "to go"},
+    {"hiragana": "かえる", "definition": "to return", "type": "u"},
+    {"hiragana": "きく", "definition": "to listen"},
+    {"hiragana": "のむ", "definition": "to drink"},
+    {"hiragana": "はなす", "definition": "to speak"},
+    {"hiragana": "よむ", "definition": "to read"},
+    {"hiragana": "おきる", "definition": "to wake up"},
+    {"hiragana": "たべる", "definition": "to eat"},
+    {"hiragana": "ねる", "definition": "to sleep"},
+    {"hiragana": "みる", "definition": "to see"},
+    {"hiragana": "くる", "definition": "to come"},
+    {"hiragana": "する", "definition": "to do"},
+    {"hiragana": "べんきょうする", "definition": "to study"},
+    {"hiragana": "なおる", "definition": "to be healed"}
+  ],
+  "nouns" : [
+    {"katakana": "バス", "definition": "bus"}
+  ]
+}

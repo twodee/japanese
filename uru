@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require_relative 'japanese'
+
+json = File.read('vocabulary.json')
+vocabulary = JSON.parse(json)
+
+verbs = vocabulary['verbs'].map { |d| Verb.new(d) }
+verbs.shuffle!
+
+verbs.take(2).each do |verb|
+  print "#{verb.hiragana}? "
+  answer = gets.chomp
+  if (answer == 'u' && verb.is_u?) || (answer == 'ru' && verb.is_ru?)
+    puts "Right!"
+  else
+    puts "Wrong..."
+  end
+  puts
+end
