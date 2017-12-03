@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'json'
 require 'set'
 
 class Verb
@@ -21,5 +22,14 @@ class Verb
 
   def is_u?
     (@properties.has_key?('type') && @properties['type'] == 'u') || !is_ru?
+  end
+end
+
+module Japanese
+  @@json = File.read('vocabulary.json')
+  @@vocabulary = JSON.parse(@@json)
+
+  def self.verbs
+    @@vocabulary['verbs'].map { |d| Verb.new(d) }
   end
 end

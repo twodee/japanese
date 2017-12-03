@@ -1,14 +1,17 @@
 #!/usr/bin/env ruby
 
+require 'json'
 require_relative 'japanese'
 
 verbs = Japanese.verbs
 verbs.shuffle!
 
-verbs.take(2).each do |verb|
-  print "#{verb.hiragana}? "
+n = 10
+
+verbs.take(n).each do |verb|
+  print "#{verb.definition}? "
   answer = gets.chomp
-  if (answer == 'u' && verb.is_u?) || (answer == 'ru' && verb.is_ru?)
+  if answer == verb.hiragana
     puts "Right!"
   else
     puts "Wrong..."
