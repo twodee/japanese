@@ -23,6 +23,33 @@ class Verb
   def is_u?
     (@properties.has_key?('type') && @properties['type'] == 'u') || !is_ru?
   end
+
+  def te
+    # irregular verbs
+    if @hiragana.end_with? 'する'
+      'して'
+    elsif @hiragana.end_with? 'くる'
+      'きって'
+    elsif @hiragana == 'いく'
+      'いって'
+
+    # ru verbs
+    elsif is_ru?
+      @hiragana[0..-2] + 'て'
+
+    # u verbs
+    elsif %w{う つ る}.include?(@hiragana[-1])
+      @hiragana[0..-2] + 'って'
+    elsif %w{む ぶ ぬ}.include?(@hiragana[-1])
+      @hiragana[0..-2] + 'んで'
+    elsif @hiragana[-1] == 'す'
+      @hiragana[0..-2] + 'して'
+    elsif @hiragana[-1] == 'く'
+      @hiragana[0..-2] + 'いて'
+    elsif @hiragana[-1] == 'ぐ'
+      @hiragana[0..-2] + 'いで'
+    end
+  end
 end
 
 module Japanese

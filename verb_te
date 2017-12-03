@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require_relative 'japanese'
+
+verbs = Japanese.verbs
+verbs.shuffle!
+
+n = 10
+
+verbs.take(n).each do |verb|
+  print "#{verb.hiragana} (#{verb.definition})? "
+  answer = gets.chomp
+  if answer == verb.te
+    puts "Right!"
+  else
+    puts "Wrong. It's #{verb.te}."
+  end
+  puts
+end
