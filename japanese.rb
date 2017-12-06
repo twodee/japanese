@@ -76,11 +76,11 @@ module Japanese
     def te
       # irregular verbs
       if @hiragana.end_with? 'する'
-        'して'
+        @hiragana[0..-3] + 'して'
       elsif @hiragana.end_with? 'くる'
-        'きって'
+        @hiragana[0..-3] + 'きて'
       elsif @hiragana == 'いく'
-        'いって'
+        @hiragana[0..-3] + 'いって'
 
       # ru verbs
       elsif is_ru?
