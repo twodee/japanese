@@ -11,6 +11,10 @@ module Japanese
     @@vocabulary['verbs'].map { |d| Verb.new(d) }
   end
 
+  def self.days
+    @@vocabulary['days'].map { |d| Word.new(d) }
+  end
+
   def self.iPartner(letter)
     if Set.new(%w{あ い う え お}).member?(letter)
       'い'
@@ -43,16 +47,22 @@ module Japanese
     end 
   end
 
-  class Verb
+  class Word
     attr_reader :hiragana, :definition
 
+    def initialize d
+      @hiragana = d['hiragana']
+      @definition = d['definition']
+    end
+  end
+
+  class Verb < Word
     E_HIRAGANA = Set.new %w{え け せ て ね へ め れ げ ぜ べ ぺ}
     I_HIRAGANA = Set.new %w{い き し ち に ひ み り ぎ じ び ぴ}
 
     def initialize d
+      super(d)
       @properties = d
-      @hiragana = d['hiragana']
-      @definition = d['definition']
     end
 
     # Same as ichidan.
@@ -75,28 +85,28 @@ module Japanese
 
     def te
       # irregular verbs
-      if @hiragana.end_with? 'する'
-        @hiragana[0..-3] + 'して'
-      elsif @hiragana.end_with? 'くる'
-        @hiragana[0..-3] + 'きて'
-      elsif @hiragana == 'いく'
-        @hiragana[0..-3] + 'いって'
+      if hiragana.end_with? 'する'
+        hiragana[0..-3] + 'して'
+      elsif hiragana.end_with? 'くる'
+        hiragana[0..-3] + 'きて'
+      elsif hiragana == 'いく'
+        hiragana[0..-3] + 'いって'
 
       # ru verbs
       elsif is_ru?
-        @hiragana[0..-2] + 'て'
+        hiragana[0..-2] + 'て'
 
       # u verbs
-      elsif %w{う つ る}.include?(@hiragana[-1])
-        @hiragana[0..-2] + 'って'
-      elsif %w{む ぶ ぬ}.include?(@hiragana[-1])
-        @hiragana[0..-2] + 'んで'
-      elsif @hiragana[-1] == 'す'
-        @hiragana[0..-2] + 'して'
-      elsif @hiragana[-1] == 'く'
-        @hiragana[0..-2] + 'いて'
-      elsif @hiragana[-1] == 'ぐ'
-        @hiragana[0..-2] + 'いで'
+      elsif %w{う つ る}.include?(hiragana[-1])
+        hiragana[0..-2] + 'って'
+      elsif %w{む ぶ ぬ}.include?(hiragana[-1])
+        hiragana[0..-2] + 'んで'
+      elsif hiragana[-1] == 'す'
+        hiragana[0..-2] + 'して'
+      elsif hiragana[-1] == 'く'
+        hiragana[0..-2] + 'いて'
+      elsif hiragana[-1] == 'ぐ'
+        hiragana[0..-2] + 'いで'
       end
     end
 
@@ -104,9 +114,9 @@ module Japanese
       if @properties.has_key?('infinitive')
         @properties['infinitive']
       elsif is_ru?
-        @hiragana[0..-2]
+        hiragana[0..-2]
       else
-        @hiragana[0..-2] + Japanese.iPartner(@hiragana[-1])
+        hiragana[0..-2] + Japanese.iPartner(hiragana[-1])
       end
     end
 

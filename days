@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+Japanese.days.shuffle.each do |day|
+  print "#{day.definition}? "
+  answer = gets.chomp
+  if answer == day.hiragana
+    puts "Right!"
+  else
+    puts "Wrong..."
+  end
+  puts
+end

@@ -56,5 +56,14 @@
   ],
   "nouns" : [
     {"katakana": "バス", "definition": "bus"}
+  ],
+  "days" : [
+    {"hiragana": "にちようび", "definition": "Sunday"},
+    {"hiragana": "げつようび", "definition": "Monday"},
+    {"hiragana": "かようび", "definition": "Tuesday"},
+    {"hiragana": "すいようび", "definition": "Wednesday"},
+    {"hiragana": "もくようび", "definition": "Thursday"},
+    {"hiragana": "きんようび", "definition": "Friday"},
+    {"hiragana": "どようび", "definition": "Saturday"}
   ]
 }
