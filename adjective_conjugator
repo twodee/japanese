@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+adjectives = Japanese.adjectives
+adjectives.shuffle!
+
+n = 10
+generator = Random.new
+
+adjectives.take(n).each do |adjective|
+  is_present = [true, false].sample
+  is_positive = [true, false].sample
+  if is_present && is_positive
+    verb = 'is'
+  elsif is_present && !is_positive
+    verb = 'isn\'t'
+  elsif !is_present && is_positive
+    verb = 'was'
+  else
+    verb = 'wasn\'t'
+  end
+  print "It #{verb} #{adjective.definition}. -> "
+  guess = gets.chomp
+
+  if is_present
+    answer = adjective.present(is_positive)
+    suffix = 'です'
+  else
+    answer = adjective.past(is_positive)
+    suffix = (adjective.is_na? && is_positive) ? 'でした' : 'です'
+  end
+  answer += suffix
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong. It's #{answer}."
+  end
+  puts
+end

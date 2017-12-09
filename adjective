@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+adjectives = Japanese.adjectives
+adjective = adjectives.find { |adjective| adjective.hiragana == ARGV[0] }
+
+puts "is_i? #{adjective.is_i?}"
+puts "is_na? #{adjective.is_na?}"
+puts "present positive? #{adjective.present(true)}"
+puts "present negative? #{adjective.present(false)}"
+puts "past positive? #{adjective.past(true)}"
+puts "past negative? #{adjective.past(false)}"

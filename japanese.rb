@@ -11,6 +11,10 @@ module Japanese
     @@vocabulary['verbs'].map { |d| Verb.new(d) }
   end
 
+  def self.adjectives
+    @@vocabulary['adjectives'].map { |d| Adjective.new(d) }
+  end
+
   def self.days
     @@vocabulary['days'].map { |d| Word.new(d) }
   end
@@ -123,6 +127,53 @@ module Japanese
     def present is_positive
       suffix = is_positive ? 'ます' : 'ません'
       infinitive + suffix
+    end
+  end
+
+  class Adjective < Word
+    def initialize d
+      super(d)
+      @properties = d
+    end
+
+    def is_i?
+      hiragana.end_with?('い')
+    end
+
+    def is_na?
+      hiragana.end_with?('な')
+    end
+
+    def present is_positive
+      if is_i?
+        if is_positive
+          hiragana
+        else
+          hiragana[0..-2] + 'くない'
+        end
+      else
+        if is_positive
+          hiragana[0..-2]
+        else
+          hiragana[0..-2] + 'じゃない'
+        end
+      end
+    end
+
+    def past is_positive
+      if is_i?
+        if is_positive
+          hiragana[0..-2] + 'かった'
+        else
+          hiragana[0..-2] + 'くなかった'
+        end
+      else
+        if is_positive
+          hiragana[0..-2] + 'なかった'
+        else
+          hiragana[0..-2] + 'じゃなかった'
+        end
+      end
     end
   end
 end
