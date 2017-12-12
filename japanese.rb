@@ -19,6 +19,10 @@ module Japanese
     @@vocabulary['days'].map { |d| Word.new(d) }
   end
 
+  def self.expressions
+    @@vocabulary['expressions'].map { |d| Word.new(d) }
+  end
+
   def self.iPartner(letter)
     if Set.new(%w{あ い う え お}).member?(letter)
       'い'
