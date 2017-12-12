@@ -15,20 +15,12 @@ module Japanese
     @@vocabulary['adjectives'].map { |d| Adjective.new(d) }
   end
 
-  def self.days
-    @@vocabulary['days'].map { |d| Word.new(d) }
-  end
-
-  def self.expressions
-    @@vocabulary['expressions'].map { |d| Word.new(d) }
-  end
-
-  def self.months
-    @@vocabulary['months'].map { |d| Word.new(d) }
-  end
-
-  def self.dayNumbers
-    @@vocabulary['daynumbers'].map { |d| Word.new(d) }
+  def self.method_missing *args
+    if args.length == 1 && @@vocabulary.has_key?(args[0].to_s) 
+      @@vocabulary[args[0].to_s].map { |d| Word.new(d) }
+    else
+      super
+    end
   end
 
   def self.iPartner(letter)

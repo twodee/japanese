@@ -173,5 +173,61 @@
     {"hiragana": "にじゅうくにち", "definition": "29"},
     {"hiragana": "さんじゅうにち", "definition": "30"},
     {"hiragana": "さんじゅういちにち", "definition": "31"}
+  ],
+  "ones": [
+    {"hiragana": "ゼロ", "definition": "0"},
+    {"hiragana": "いち", "definition": "1"},
+    {"hiragana": "に", "definition": "2"},
+    {"hiragana": "さん", "definition": "3"},
+    {"hiragana": "よん", "definition": "4"},
+    {"hiragana": "ご", "definition": "5"},
+    {"hiragana": "ろく", "definition": "6"},
+    {"hiragana": "なな", "definition": "7"},
+    {"hiragana": "はち", "definition": "8"},
+    {"hiragana": "きゅう", "definition": "9"}
+  ],
+  "tens": [
+    {"hiragana": "じゅう", "definition": "10"},
+    {"hiragana": "にじゅう", "definition": "20"},
+    {"hiragana": "さんじゅう", "definition": "30"},
+    {"hiragana": "よんじゅう", "definition": "40"},
+    {"hiragana": "ごじゅう", "definition": "50"},
+    {"hiragana": "ろくじゅう", "definition": "60"},
+    {"hiragana": "ななじゅう", "definition": "70"},
+    {"hiragana": "はちじゅう", "definition": "80"},
+    {"hiragana": "きゅうじゅう", "definition": "90"}
+  ],
+  "hundreds": [
+    {"hiragana": "ひゃく", "definition": "100"},
+    {"hiragana": "にひゃく", "definition": "200"},
+    {"hiragana": "さんびゃく", "definition": "300"},
+    {"hiragana": "よんひゃく", "definition": "400"},
+    {"hiragana": "ごひゃく", "definition": "500"},
+    {"hiragana": "ろっぴゃく", "definition": "600"},
+    {"hiragana": "ななひゃく", "definition": "700"},
+    {"hiragana": "はっぴゃく", "definition": "800"},
+    {"hiragana": "きゅうひゃく", "definition": "900"}
+  ],
+  "thousands": [
+    {"hiragana": "せん", "definition": "1000"},
+    {"hiragana": "にせん", "definition": "2000"},
+    {"hiragana": "さんぜん", "definition": "3000"},
+    {"hiragana": "よんせん", "definition": "4000"},
+    {"hiragana": "ごせん", "definition": "5000"},
+    {"hiragana": "ろくせん", "definition": "6000"},
+    {"hiragana": "ななせん", "definition": "7000"},
+    {"hiragana": "はっせん", "definition": "8000"},
+    {"hiragana": "きゅうせん", "definition": "9000"}
+  ],
+  "tenthousands": [
+    {"hiragana": "いちまん", "definition": "10000"},
+    {"hiragana": "にまん", "definition": "20000"},
+    {"hiragana": "さんまん", "definition": "30000"},
+    {"hiragana": "よんまん", "definition": "40000"},
+    {"hiragana": "ごまん", "definition": "50000"},
+    {"hiragana": "ろくまん", "definition": "60000"},
+    {"hiragana": "ななまん", "definition": "70000"},
+    {"hiragana": "はちまん", "definition": "80000"},
+    {"hiragana": "きゅうまん", "definition": "90000"}
   ]
 }

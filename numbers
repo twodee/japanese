@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+ones = Japanese.ones
+tens = Japanese.tens
+hundreds = Japanese.hundreds
+thousands = Japanese.thousands
+tenthousands = Japanese.tenthousands
+g = Random.new
+
+3.times do
+  number = g.rand 100000
+
+  print "#{number}? "
+  guess = gets.chomp
+
+  digit10000 = number % 100000 / 10000
+  digit1000 = number % 10000 / 1000
+  digit100 = number % 1000 / 100
+  digit10 = number % 100 / 10
+  digit1 = number % 10
+
+  answer = ''
+
+  if digit10000 > 0
+    answer += tenthousands[digit10000 - 1].hiragana
+  end
+
+  if digit1000 > 0
+    answer += thousands[digit1000 - 1].hiragana
+  end
+
+  if digit100 > 0
+    answer += hundreds[digit100 - 1].hiragana
+  end
+
+  if digit10 > 0
+    answer += tens[digit10 - 1].hiragana
+  end
+
+  if digit1 > 0
+    answer += ones[digit1].hiragana
+  end
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong..."
+    puts "  Expected: #{answer}"
+    puts "    Actual: #{guess}"
+  end
+  puts
+end
