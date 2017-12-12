@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+days = Japanese.days
+months = Japanese.months
+dayNumbers = Japanese.dayNumbers
+g = Random.new
+
+3.times do
+  iDay = g.rand(days.size)
+  iMonth = g.rand(months.size)
+
+  day = days[iDay]
+  month = months[iMonth]
+
+  if %w{January March May July August October December}.include?(month)
+    iDayNumber = g.rand(31)
+  elsif %w{April June September November}.include?(month)
+    iDayNumber = g.rand(30)
+  else
+    iDayNumber = g.rand(29)
+  end
+  dayNumber = dayNumbers[iDayNumber]
+
+  print "#{day.definition}, #{month.definition} #{dayNumber.definition}? "
+
+  guess = gets.chomp
+  answer = "#{month.hiragana}#{dayNumber.hiragana}#{day.hiragana}"
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong..."
+    puts "  Expected: #{answer}"
+    puts "    Actual: #{guess}"
+  end
+  puts
+end

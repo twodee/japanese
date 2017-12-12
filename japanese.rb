@@ -23,6 +23,14 @@ module Japanese
     @@vocabulary['expressions'].map { |d| Word.new(d) }
   end
 
+  def self.months
+    @@vocabulary['months'].map { |d| Word.new(d) }
+  end
+
+  def self.dayNumbers
+    @@vocabulary['daynumbers'].map { |d| Word.new(d) }
+  end
+
   def self.iPartner(letter)
     if Set.new(%w{あ い う え お}).member?(letter)
       'い'
