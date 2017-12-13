@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+g = Random.new
+
+3.times do
+  hour = 1 + g.rand(12)
+  minute = g.rand 60
+  isAM = [true, false].sample
+
+  print "%d:%02d %s? " % [hour, minute, isAM ? 'AM' : 'PM']
+  guess = gets.chomp
+
+  answer = Japanese.time(hour, minute, isAM)
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong..."
+    puts "  Expected: #{answer}"
+    puts "    Actual: #{guess}"
+  end
+  puts
+end

@@ -229,5 +229,31 @@
     {"hiragana": "ななまん", "definition": "70000"},
     {"hiragana": "はちまん", "definition": "80000"},
     {"hiragana": "きゅうまん", "definition": "90000"}
+  ],
+  "hours": [
+    {"hiragana": "いちじ", "definition": "1"},
+    {"hiragana": "にじ", "definition": "2"},
+    {"hiragana": "さんじ", "definition": "3"},
+    {"hiragana": "よじ", "definition": "4"},
+    {"hiragana": "ごじ", "definition": "5"},
+    {"hiragana": "ろくじ", "definition": "6"},
+    {"hiragana": "しちじ", "definition": "7"},
+    {"hiragana": "はちじ", "definition": "8"},
+    {"hiragana": "くじ", "definition": "9"},
+    {"hiragana": "じゅうじ", "definition": "10"},
+    {"hiragana": "じゅういちじ", "definition": "11"},
+    {"hiragana": "じゅうにじ", "definition": "12"}
+  ],
+  "minutes": [
+    {"hiragana": "いっぷん", "definition": "1"},
+    {"hiragana": "にふん", "definition": "2"},
+    {"hiragana": "さんぷん", "definition": "3"},
+    {"hiragana": "よんぷん", "definition": "4"},
+    {"hiragana": "ごふん", "definition": "5"},
+    {"hiragana": "ろっぷん", "definition": "6"},
+    {"hiragana": "ななふん", "definition": "7"},
+    {"hiragana": "はっぷん", "definition": "8"},
+    {"hiragana": "きゅうふん", "definition": "9"},
+    {"hiragana": "じゅっぷん", "definition": "10"}
   ]
 }

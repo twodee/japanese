@@ -23,6 +23,19 @@ module Japanese
     end
   end
 
+  def self.time(h, m, isAM)
+    answer = isAM ? 'ごぜん' : 'ごご'
+    answer += hours[h - 1].hiragana
+    if m > 10 && m % 10 == 0
+      answer += ones[m / 10].hiragana + minutes[9].hiragana
+    elsif m > 10
+      answer += tens[m / 10 - 1].hiragana + minutes[(m - 1) % 10 + 1 - 1].hiragana
+    elsif m > 0
+      answer += minutes[m - 1].hiragana
+    end
+    answer
+  end
+
   def self.iPartner(letter)
     if Set.new(%w{あ い う え お}).member?(letter)
       'い'
