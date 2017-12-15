@@ -161,18 +161,26 @@ module Japanese
       hiragana.end_with?('な')
     end
 
+    def virtual
+      if @properties.has_key?('alternate')
+        @properties['alternate']
+      else
+        hiragana
+      end
+    end
+
     def present is_positive
       if is_i?
         if is_positive
           hiragana
         else
-          hiragana[0..-2] + 'くない'
+          virtual[0..-2] + 'くない'
         end
       else
         if is_positive
-          hiragana[0..-2]
+          virtual[0..-2]
         else
-          hiragana[0..-2] + 'じゃない'
+          virtual[0..-2] + 'じゃない'
         end
       end
     end
@@ -180,15 +188,15 @@ module Japanese
     def past is_positive
       if is_i?
         if is_positive
-          hiragana[0..-2] + 'かった'
+          virtual[0..-2] + 'かった'
         else
-          hiragana[0..-2] + 'くなかった'
+          virtual[0..-2] + 'くなかった'
         end
       else
         if is_positive
-          hiragana[0..-2] + 'なかった'
+          virtual[0..-2] + 'なかった'
         else
-          hiragana[0..-2] + 'じゃなかった'
+          virtual[0..-2] + 'じゃなかった'
         end
       end
     end

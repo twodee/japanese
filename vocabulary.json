@@ -59,7 +59,7 @@
   ],
   "adjectives" : [
     {"hiragana": "たかい", "definition": "expensive"},
-    {"hiragana": "いい", "definition": "good"},
+    {"hiragana": "いい", "definition": "good", "alternate": "よい"},
     {"hiragana": "はやい", "definition": "early"},
     {"hiragana": "あたらしい", "definition": "new"},
     {"hiragana": "あつい", "definition": "hot (weather)"},
