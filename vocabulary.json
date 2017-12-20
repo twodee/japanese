@@ -52,10 +52,27 @@
     {"hiragana": "わすれる", "definition": "to forget"},
     {"hiragana": "つれてくる", "definition": "to bring (a person)", "infinitive": "つれてき", "type": "irregular"},
     {"hiragana": "もってくる", "definition": "to bring (an object)", "infinitive": "もってき", "type": "irregular"},
+    {"hiragana": "かわく", "definition": "to become dry"},
+    {"hiragana": "すく", "definition": "to become empty"},
+    {"hiragana": "いきる", "definition": "to live"},
+    {"hiragana": "うつる", "definition": "to move"},
+    {"hiragana": "おもう", "definition": "to think"},
     {"hiragana": "なおる", "definition": "to be healed"}
   ],
   "nouns" : [
-    {"katakana": "バス", "definition": "bus"}
+    {"katakana": "バス", "definition": "bus"},
+    {"hiragana": "おきゃくさま", "definition": "customer"},
+    {"hiragana": "こんど", "definition": "next time"}
+  ],
+  "helpers" : [
+    {"hiragana": "また", "definition": "also"},
+    {"hiragana": "まだ", "definition": "not yet, still"},
+    {"hiragana": "もう", "definition": "already"},
+    {"hiragana": "こんど", "definition": "next time"}
+  ],
+  "people": [
+    {"hiragana": "むすめ", "definition": "daughter"},
+    {"hiragana": "だれか", "definition": "someone"}
   ],
   "adjectives" : [
     {"hiragana": "たかい", "definition": "expensive"},
@@ -125,6 +142,13 @@
     {"hiragana": "だいじょうぶ", "definition": "It's okay"},
     {"hiragana": "けっこうです", "definition": "It's fine"},
     {"hiragana": "ほんとうですか", "definition": "Really?"},
+    {"hiragana": "うまくいきました", "definition": "It went well"},
+    {"hiragana": "おかけになりませんか", "definition": "Won't you have a seat?"},
+    {"hiragana": "ざんねんですね", "definition": "That's too bad"},
+    {"hiragana": "おじゃまします", "definition": "I'm going to get in your way (I'm coming in)"},
+    {"hiragana": "おまちしていました", "definition": "I've been expecting you"},
+    {"hiragana": "どうもすみません", "definition": "You shouldn't have"},
+    {"hiragana": "つまらないものですが", "definition": "It's nothing much, but this is for you"},
     {"hiragana": "もういちど", "definition": "One more time"}
   ],
   "months": [

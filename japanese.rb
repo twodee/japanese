@@ -145,6 +145,11 @@ module Japanese
       suffix = is_positive ? 'ます' : 'ません'
       infinitive + suffix
     end
+
+    def past is_positive
+      suffix = is_positive ? 'ました' : 'ませんでした'
+      infinitive + suffix
+    end
   end
 
   class Adjective < Word
