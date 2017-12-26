@@ -57,18 +57,36 @@
     {"hiragana": "いきる", "definition": "to live"},
     {"hiragana": "うつる", "definition": "to move"},
     {"hiragana": "おもう", "definition": "to think"},
+    {"hiragana": "のりかえる", "definition": "to transfer"},
+    {"hiragana": "なる", "definition": "to become"},
+    {"hiragana": "できます", "definition": "to be able"},
+    {"hiragana": "きにゅうする", "definition": "to fill in"},
     {"hiragana": "なおる", "definition": "to be healed"}
   ],
   "nouns" : [
     {"katakana": "バス", "definition": "bus"},
+    {"katakana": "トラベラーズチェック", "definition": "travelers checks"},
+    {"hiragana": "かいさつくち", "definition": "ticket entrance"},
+    {"hiragana": "いりぐち", "definition": "entrance"},
+    {"hiragana": "でぐち", "definition": "exit"},
+    {"hiragana": "かいぎ", "definition": "meeting"},
+    {"hiragana": "かぎ", "definition": "key"},
     {"hiragana": "おきゃくさま", "definition": "customer"},
-    {"hiragana": "こんど", "definition": "next time"}
+    {"hiragana": "こうり", "definition": "ice"},
+    {"hiragana": "げんきん", "definition": "cash"},
+    {"hiragana": "さつ", "definition": "bill"},
+    {"hiragana": "こうか", "definition": "coin"},
+    {"hiragana": "おつり", "definition": "change"},
+    {"hiragana": "くすり", "definition": "medicine"}
   ],
   "helpers" : [
-    {"hiragana": "また", "definition": "also"},
+    {"hiragana": "また", "definition": "also"}
+  ],
+  "time" : [
+    {"hiragana": "こんど", "definition": "next time"},
     {"hiragana": "まだ", "definition": "not yet, still"},
     {"hiragana": "もう", "definition": "already"},
-    {"hiragana": "こんど", "definition": "next time"}
+    {"hiragana": "まず", "definition": "first of all"}
   ],
   "people": [
     {"hiragana": "むすめ", "definition": "daughter"},
@@ -149,6 +167,8 @@
     {"hiragana": "おまちしていました", "definition": "I've been expecting you"},
     {"hiragana": "どうもすみません", "definition": "You shouldn't have"},
     {"hiragana": "つまらないものですが", "definition": "It's nothing much, but this is for you"},
+    {"hiragana": "じゅんびがいません", "definition": "It's not ready"},
+    {"hiragana": "どうぞおだいじに", "definition": "Take care of yourself"},
     {"hiragana": "もういちど", "definition": "One more time"}
   ],
   "months": [

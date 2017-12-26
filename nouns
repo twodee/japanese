@@ -2,4 +2,4 @@
 
 require_relative 'japanese'
 
-Japanese.quiz(Japanese.days)
+Japanese.quiz(Japanese.nouns)

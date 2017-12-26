@@ -7,6 +7,19 @@ module Japanese
   @@json = File.read('vocabulary.json')
   @@vocabulary = JSON.parse(@@json)
 
+  def self.quiz(collection)
+    collection.shuffle.each do |item|
+      print "#{item.definition}? "
+      answer = gets.chomp
+      if item.matches(answer)
+        puts "Right!"
+      else
+        puts "Wrong..."
+      end
+      puts
+    end
+  end
+
   def self.verbs
     @@vocabulary['verbs'].map { |d| Verb.new(d) }
   end
@@ -72,8 +85,14 @@ module Japanese
     attr_reader :hiragana, :definition
 
     def initialize d
+      @properties = d
       @hiragana = d['hiragana']
       @definition = d['definition']
+    end
+
+    def matches(that)
+      (@properties.has_key?('hiragana') && @properties['hiragana'] == that) ||
+      (@properties.has_key?('katakana') && @properties['katakana'] == that)
     end
   end
 
