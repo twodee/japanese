@@ -89,6 +89,10 @@
     {"hiragana": "おみやげ", "definition": "souvenir"},
     {"hiragana": "じゅうしょ", "definition": "address"},
     {"hiragana": "じしょ", "definition": "dictionary"},
+    {"hiragana": "しゅみ", "definition": "hobby"},
+    {"hiragana": "しょうせつ", "definition": "novel"},
+    {"hiragana": "すいり", "definition": "mystery genre"},
+    {"hiragana": "おんがく", "definition": "music"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
   "helpers" : [
