@@ -61,7 +61,16 @@
     {"hiragana": "なる", "definition": "to become"},
     {"hiragana": "できます", "definition": "to be able"},
     {"hiragana": "きにゅうする", "definition": "to fill in"},
+    {"hiragana": "けこんする", "definition": "to marry"},
+    {"hiragana": "つく", "definition": "to arrive"},
+    {"hiragana": "いう", "definition": "to say"},
+    {"hiragana": "はじめる", "definition": "to start"},
+    {"hiragana": "うんどうする", "definition": "to exercise"},
     {"hiragana": "なおる", "definition": "to be healed"}
+  ],
+  "body" : [
+    {"hiragana": "め", "definition": "eye"},
+    {"hiragana": "はな", "definition": "nose"}
   ],
   "nouns" : [
     {"katakana": "バス", "definition": "bus"},
@@ -77,6 +86,9 @@
     {"hiragana": "さつ", "definition": "bill"},
     {"hiragana": "こうか", "definition": "coin"},
     {"hiragana": "おつり", "definition": "change"},
+    {"hiragana": "おみやげ", "definition": "souvenir"},
+    {"hiragana": "じゅうしょ", "definition": "address"},
+    {"hiragana": "じしょ", "definition": "dictionary"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
   "helpers" : [
@@ -90,6 +102,10 @@
   ],
   "people": [
     {"hiragana": "むすめ", "definition": "daughter"},
+    {"hiragana": "いもうと", "definition": "little sister"},
+    {"hiragana": "おとうと", "definition": "little brother"},
+    {"hiragana": "つま", "definition": "wife"},
+    {"hiragana": "しゅじん", "definition": "husband (master)"},
     {"hiragana": "だれか", "definition": "someone"}
   ],
   "adjectives" : [
@@ -169,7 +185,15 @@
     {"hiragana": "つまらないものですが", "definition": "It's nothing much, but this is for you"},
     {"hiragana": "じゅんびがいません", "definition": "It's not ready"},
     {"hiragana": "どうぞおだいじに", "definition": "Take care of yourself"},
-    {"hiragana": "もういちど", "definition": "One more time"}
+    {"hiragana": "もういちど", "definition": "One more time"},
+    {"hiragana": "にほんははじめてですか", "definition": "Is this your first time to Japan?"},
+    {"hiragana": "きこえませんでした", "definition": "I couldn't hear."},
+    {"hiragana": "おひさしぶりですね", "definition": "Long time no see"},
+    {"hiragana": "いろいろおせわになりました", "definition": "Thanks for everything"},
+    {"hiragana": "よろしくおつたいください", "definition": "Please send my regards"},
+    {"hiragana": "それまでにわ", "definition": "By that time"},
+    {"hiragana": "えらいですね", "definition": "I'm impressed"},
+    {"hiragana": "にほんにいらっしゃるですね", "definition": "You're going to Japan, right?"}
   ],
   "months": [
     {"hiragana": "いちがつ", "definition": "January"},
