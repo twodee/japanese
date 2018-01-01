@@ -95,6 +95,15 @@
     {"hiragana": "おんがく", "definition": "music"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
+  "food" : [
+    {"hiragana": "やさい", "definition": "next to"},
+    {"hiragana": "ぎゅにく", "definition": "beef"},
+    {"hiragana": "やさい", "definition": "vegetables"}
+  ],
+  "locations" : [
+    {"hiragana": "となり", "definition": "next to"},
+    {"hiragana": "そば", "definition": "beside"}
+  ],
   "helpers" : [
     {"hiragana": "また", "definition": "also"}
   ],
@@ -197,6 +206,7 @@
     {"hiragana": "よろしくおつたいください", "definition": "Please send my regards"},
     {"hiragana": "それまでにわ", "definition": "By that time"},
     {"hiragana": "えらいですね", "definition": "I'm impressed"},
+    {"hiragana": "うにいいね", "definition": "It's good, isn't it? (informal)"},
     {"hiragana": "にほんにいらっしゃるですね", "definition": "You're going to Japan, right?"}
   ],
   "months": [
