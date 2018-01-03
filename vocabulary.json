@@ -66,6 +66,9 @@
     {"hiragana": "いう", "definition": "to say"},
     {"hiragana": "はじめる", "definition": "to start"},
     {"hiragana": "うんどうする", "definition": "to exercise"},
+    {"hiragana": "おくりする", "definition": "to take or see a person to"},
+    {"hiragana": "つかれる", "definition": "to get tired"},
+    {"hiragana": "おくれる", "definition": "to be late"},
     {"hiragana": "なおる", "definition": "to be healed"}
   ],
   "body" : [
@@ -93,10 +96,11 @@
     {"hiragana": "しょうせつ", "definition": "novel"},
     {"hiragana": "すいり", "definition": "mystery genre"},
     {"hiragana": "おんがく", "definition": "music"},
+    {"hiragana": "びん", "definition": "flight"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
   "food" : [
-    {"hiragana": "やさい", "definition": "next to"},
+    {"hiragana": "ちょうしょく", "definition": "breakfast"},
     {"hiragana": "ぎゅにく", "definition": "beef"},
     {"hiragana": "やさい", "definition": "vegetables"}
   ],
@@ -105,7 +109,8 @@
     {"hiragana": "そば", "definition": "beside"}
   ],
   "helpers" : [
-    {"hiragana": "また", "definition": "also"}
+    {"hiragana": "また", "definition": "also"},
+    {"hiragana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
     {"hiragana": "こんど", "definition": "next time"},
@@ -207,7 +212,9 @@
     {"hiragana": "それまでにわ", "definition": "By that time"},
     {"hiragana": "えらいですね", "definition": "I'm impressed"},
     {"hiragana": "うにいいね", "definition": "It's good, isn't it? (informal)"},
-    {"hiragana": "にほんにいらっしゃるですね", "definition": "You're going to Japan, right?"}
+    {"hiragana": "にほんにいらっしゃるですね", "definition": "You're going to Japan, right?"},
+    {"hiragana": "ようこそ＿へ", "definition": "Welcome to _!"},
+    {"hiragana": "なんにする", "definition": "What shall we I/we/you have?"}
   ],
   "months": [
     {"hiragana": "いちがつ", "definition": "January"},
