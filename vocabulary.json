@@ -1,6 +1,7 @@
 {
   "verbs": [
     {"hiragana": "いく", "definition": "to go"},
+    {"hiragana": "ひっこす", "definition": "to move"},
     {"hiragana": "かえる", "definition": "to return", "type": "u"},
     {"hiragana": "きく", "definition": "to listen"},
     {"hiragana": "のむ", "definition": "to drink"},
@@ -81,6 +82,9 @@
   ],
   "nouns" : [
     {"katakana": "バス", "definition": "bus"},
+    {"hiragana": "しんしつ", "definition": "bedroom"},
+    {"hiragana": "やちん", "definition": "rent"},
+    {"katakana": "じょう", "definition": "core of tatami mat"},
     {"katakana": "トラベラーズチェック", "definition": "travelers checks"},
     {"hiragana": "かいさつくち", "definition": "ticket entrance"},
     {"hiragana": "いりぐち", "definition": "entrance"},
@@ -119,12 +123,14 @@
     {"hiragana": "ほんやく", "definition": "translation"},
     {"hiragana": "こうぎ", "definition": "lecture"},
     {"hiragana": "きゃくほん", "definition": "screenplay"},
+    {"hiragana": "りょう", "definition": "dormitory"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
   "jobs" : [
     {"hiragana": "えいがかんとく", "definition": "movie director"},
     {"hiragana": "せんせい", "definition": "teacher"},
     {"hiragana": "べんごし", "definition": "lawyer"},
+    {"hiragana": "かんごし", "definition": "nurse"},
     {"hiragana": "いっしゃ", "definition": "doctor"}
   ],
   "food" : [
@@ -160,6 +166,16 @@
     {"hiragana": "まず", "definition": "first of all"}
   ],
   "people": [
+    {"hiragana": "りょしん", "definition": "parents"},
+    {"hiragana": "あに", "definition": "(my) older brother"},
+    {"hiragana": "おにいさん", "definition": "(other's) older brother"},
+    {"hiragana": "あね", "definition": "(my) older sister"},
+    {"hiragana": "おねえさん", "definition": "(other's) older sister"},
+    {"hiragana": "ちち", "definition": "(my) father"},
+    {"hiragana": "おとうさん", "definition": "(other's) father"},
+    {"hiragana": "はは", "definition": "(my) mother"},
+    {"hiragana": "おかあさん", "definition": "(other's) mother"},
+    {"hiragana": "きゅうだい", "definition": "siblings"},
     {"hiragana": "むすめ", "definition": "daughter"},
     {"hiragana": "いもうと", "definition": "little sister"},
     {"hiragana": "おとうと", "definition": "little brother"},
@@ -170,6 +186,7 @@
   ],
   "adjectives" : [
     {"hiragana": "たかい", "definition": "expensive"},
+    {"hiragana": "うるさい", "definition": "noisy"},
     {"hiragana": "いい", "definition": "good", "alternate": "よい"},
     {"hiragana": "はやい", "definition": "early"},
     {"hiragana": "あたらしい", "definition": "new"},
@@ -212,6 +229,8 @@
   ],
   "expressions" : [
     {"hiragana": "おはよう", "definition": "Good morning (informal)"},
+    {"hiragana": "まあまあです", "definition": "It's so-so"},
+    {"hiragana": "それはこまりました", "definition": "That's troublesome"},
     {"hiragana": "おはようございます", "definition": "Good morning (formal)"},
     {"hiragana": "こんにちは", "definition": "Good day"},
     {"hiragana": "こんばんは", "definition": "Good evening"},
