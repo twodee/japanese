@@ -78,10 +78,14 @@
   ],
   "body" : [
     {"hiragana": "め", "definition": "eye"},
+    {"hiragana": "かみ", "definition": "hair"},
     {"hiragana": "はな", "definition": "nose"}
   ],
   "nouns" : [
     {"katakana": "バス", "definition": "bus"},
+    {"hiragana": "しんりがく", "definition": "psychology"},
+    {"hiragana": "びじゅつし", "definition": "art history"},
+    {"hiragana": "ぶんや", "definition": "field, discipline"},
     {"hiragana": "しんしつ", "definition": "bedroom"},
     {"hiragana": "やちん", "definition": "rent"},
     {"katakana": "じょう", "definition": "core of tatami mat"},
@@ -124,10 +128,12 @@
     {"hiragana": "こうぎ", "definition": "lecture"},
     {"hiragana": "きゃくほん", "definition": "screenplay"},
     {"hiragana": "りょう", "definition": "dormitory"},
+    {"hiragana": "めがね", "definition": "glasses"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
   "jobs" : [
     {"hiragana": "えいがかんとく", "definition": "movie director"},
+    {"hiragana": "しんりがくしゃ", "definition": "psychologist"},
     {"hiragana": "せんせい", "definition": "teacher"},
     {"hiragana": "べんごし", "definition": "lawyer"},
     {"hiragana": "かんごし", "definition": "nurse"},
