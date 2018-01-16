@@ -1,6 +1,7 @@
 {
   "verbs": [
     {"hiragana": "いく", "definition": "to go"},
+    {"hiragana": "かぶる", "definition": "to wear (on one's head)"},
     {"hiragana": "ひっこす", "definition": "to move"},
     {"hiragana": "かえる", "definition": "to return", "type": "u"},
     {"hiragana": "きく", "definition": "to listen"},
@@ -129,6 +130,7 @@
     {"hiragana": "きゃくほん", "definition": "screenplay"},
     {"hiragana": "りょう", "definition": "dormitory"},
     {"hiragana": "めがね", "definition": "glasses"},
+    {"hiragana": "ぼうし", "definition": "hat"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
   "jobs" : [
