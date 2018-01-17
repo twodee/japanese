@@ -1,6 +1,7 @@
 {
   "verbs": [
     {"hiragana": "いく", "definition": "to go"},
+    {"hiragana": "みつかる", "definition": "to find"},
     {"hiragana": "かぶる", "definition": "to wear (on one's head)"},
     {"hiragana": "ひっこす", "definition": "to move"},
     {"hiragana": "かえる", "definition": "to return", "type": "u"},
@@ -73,7 +74,6 @@
     {"hiragana": "おくれる", "definition": "to be late"},
     {"hiragana": "のぼる", "definition": "to climb"},
     {"hiragana": "たてる", "definition": "to build"},
-    {"hiragana": "みつける", "definition": "to find"},
     {"hiragana": "だいひょうする", "definition": "to represent"},
     {"hiragana": "なおる", "definition": "to be healed"}
   ],
@@ -84,6 +84,8 @@
   ],
   "nouns" : [
     {"katakana": "バス", "definition": "bus"},
+    {"hiragana": "しめきり", "definition": "deadline"},
+    {"hiragana": "どうぶつえん", "definition": "zoo"},
     {"hiragana": "しんりがく", "definition": "psychology"},
     {"hiragana": "びじゅつし", "definition": "art history"},
     {"hiragana": "ぶんや", "definition": "field, discipline"},
@@ -130,9 +132,17 @@
     {"hiragana": "きゃくほん", "definition": "screenplay"},
     {"hiragana": "りょう", "definition": "dormitory"},
     {"hiragana": "めがね", "definition": "glasses"},
+    {"hiragana": "くつ", "definition": "shoes"},
     {"hiragana": "ぼうし", "definition": "hat"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
+  "colors" : [
+    {"hiragana": "みどり", "definition": "green"},
+    {"hiragana": "あか", "definition": "red"},
+    {"hiragana": "しろ", "definition": "white"},
+    {"hiragana": "くろ", "definition": "black"},
+    {"hiragana": "あお", "definition": "blue"}
+  },
   "jobs" : [
     {"hiragana": "えいがかんとく", "definition": "movie director"},
     {"hiragana": "しんりがくしゃ", "definition": "psychologist"},
@@ -159,6 +169,8 @@
   ],
   "helpers" : [
     {"hiragana": "また", "definition": "also"},
+    {"hiragana": "によると", "definition": "according to"},
+    {"hiragana": "といえば", "definition": "speaking of"},
     {"hiragana": "として", "definition": "as"},
     {"hiragana": "いくつか", "definition": "some of, a few of"},
     {"hiragana": "について", "definition": "about, regarding"},
@@ -171,6 +183,7 @@
     {"hiragana": "もう", "definition": "already"},
     {"hiragana": "せいき", "definition": "century"},
     {"hiragana": "まいつき", "definition": "monthly"},
+    {"hiragana": "まいとし", "definition": "every year"},
     {"hiragana": "まず", "definition": "first of all"}
   ],
   "people": [
@@ -194,6 +207,7 @@
   ],
   "adjectives" : [
     {"hiragana": "たかい", "definition": "expensive"},
+    {"hiragana": "きつい", "definition": "tight"},
     {"hiragana": "うるさい", "definition": "noisy"},
     {"hiragana": "いい", "definition": "good", "alternate": "よい"},
     {"hiragana": "はやい", "definition": "early"},
@@ -286,6 +300,7 @@
     {"hiragana": "にほんにいらっしゃるですね", "definition": "You're going to Japan, right?"},
     {"hiragana": "ようこそ＿へ", "definition": "Welcome to _!"},
     {"hiragana": "どうやていくんですか", "definition": "How do I go?"},
+    {"hiragana": "れんらくしていただけませんか", "definition": "Will you contact me?"},
     {"hiragana": "なんにする", "definition": "What shall we I/we/you have?"}
   ],
   "months": [
