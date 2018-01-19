@@ -84,6 +84,15 @@
   ],
   "nouns" : [
     {"katakana": "バス", "definition": "bus"},
+    {"hiragana": "しぜん", "definition": "nature"},
+    {"hiragana": "さかな", "definition": "fish"},
+    {"hiragana": "みずうみ", "definition": "lake"},
+    {"hiragana": "まど", "definition": "window"},
+    {"hiragana": "けしき", "definition": "scenery"},
+    {"hiragana": "つり", "definition": "fishing"},
+    {"hiragana": "していせき", "definition": "reserved seat"},
+    {"hiragana": "じゆうせき", "definition": "non-reserved seat"},
+    {"hiragana": "りょかん", "definition": "Japanese-style hotel"},
     {"hiragana": "しめきり", "definition": "deadline"},
     {"hiragana": "どうぶつえん", "definition": "zoo"},
     {"hiragana": "しんりがく", "definition": "psychology"},
@@ -207,6 +216,7 @@
   ],
   "adjectives" : [
     {"hiragana": "たかい", "definition": "expensive"},
+    {"hiragana": "しんせんな", "definition": "fresh"},
     {"hiragana": "きつい", "definition": "tight"},
     {"hiragana": "うるさい", "definition": "noisy"},
     {"hiragana": "いい", "definition": "good", "alternate": "よい"},
