@@ -77,6 +77,7 @@
     {"hiragana": "のぼる", "definition": "to climb"},
     {"hiragana": "たてる", "definition": "to build"},
     {"hiragana": "だいひょうする", "definition": "to represent"},
+    {"hiragana": "ちがう", "definition": "to be wrong, to be different"},
     {"hiragana": "なおる", "definition": "to be healed"}
   ],
   "body" : [
@@ -159,6 +160,8 @@
     {"hiragana": "めがね", "definition": "glasses"},
     {"hiragana": "くつ", "definition": "shoes"},
     {"hiragana": "ぼうし", "definition": "hat"},
+    {"hiragana": "こうよう", "definition": "foliage"},
+    {"hiragana": "にんぎょう", "definition": "doll"},
     {"hiragana": "くすり", "definition": "medicine"}
   ],
   "colors" : [
@@ -173,6 +176,7 @@
     {"hiragana": "しんりがくしゃ", "definition": "psychologist"},
     {"hiragana": "せんせい", "definition": "teacher"},
     {"hiragana": "べんごし", "definition": "lawyer"},
+    {"hiragana": "じゅうい", "definition": "vet"},
     {"hiragana": "かんごし", "definition": "nurse"},
     {"hiragana": "いっしゃ", "definition": "doctor"}
   ],
@@ -197,6 +201,9 @@
     {"hiragana": "によると", "definition": "according to"},
     {"hiragana": "といえば", "definition": "speaking of"},
     {"hiragana": "として", "definition": "as"},
+    {"hiragana": "ふたりとも", "definition": "both"},
+    {"hiragana": "だいたい", "definition": "more or less, about"},
+    {"hiragana": "ところによって", "definition": "depending on the place"},
     {"hiragana": "とこに", "definition": "especially"},
     {"hiragana": "いくつか", "definition": "some of, a few of"},
     {"hiragana": "について", "definition": "about, regarding"},
@@ -211,6 +218,11 @@
     {"hiragana": "せいき", "definition": "century"},
     {"hiragana": "まいつき", "definition": "monthly"},
     {"hiragana": "まいとし", "definition": "every year"},
+    {"hiragana": "はる", "definition": "spring"},
+    {"hiragana": "なつ", "definition": "summer"},
+    {"hiragana": "あき", "definition": "fall"},
+    {"hiragana": "ふゆ", "definition": "winter"},
+    {"hiragana": "きせつ", "definition": "season"},
     {"hiragana": "まず", "definition": "first of all"}
   ],
   "people": [
@@ -230,6 +242,7 @@
     {"hiragana": "つま", "definition": "wife"},
     {"hiragana": "ひとたち", "definition": "people"},
     {"hiragana": "しゅじん", "definition": "husband (master)"},
+    {"hiragana": "まご", "definition": "grandchild"},
     {"hiragana": "だれか", "definition": "someone"}
   ],
   "adjectives" : [
@@ -283,6 +296,8 @@
   "expressions" : [
     {"hiragana": "おはよう", "definition": "Good morning (informal)"},
     {"hiragana": "たのしんでください", "definition": "Have fun"},
+    {"hiragana": "＿は＿のよに＿です", "definition": "_ is _ as _"},
+    {"hiragana": "あんしんしました", "definition": "I'm relieved"},
     {"hiragana": "くつおぬいでください", "definition": "Please take off your shoes"},
     {"hiragana": "＿といわれています", "definition": "It is said that _"},
     {"hiragana": "まあまあです", "definition": "It's so-so"},
