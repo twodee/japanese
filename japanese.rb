@@ -7,14 +7,14 @@ module Japanese
   @@json = File.read('vocabulary.json')
   @@vocabulary = JSON.parse(@@json)
 
-  def self.quiz(collection)
-    collection.shuffle.each do |item|
+  def self.quiz(collection, n=-1)
+    collection.shuffle.take(n == -1 ? collection.size : n).each do |item|
       print "#{item.definition}? "
-      answer = gets.chomp
-      if item.matches(answer)
+      guess = STDIN.gets.chomp
+      if item.matches(guess)
         puts "Right!"
       else
-        puts "Wrong..."
+        puts "Wrong...\n Expected: #{item.to_j}\n   Actual: #{guess}"
       end
       puts
     end
@@ -26,6 +26,10 @@ module Japanese
 
   def self.adjectives
     @@vocabulary['adjectives'].map { |d| Adjective.new(d) }
+  end
+
+  def self.[] category
+    @@vocabulary[category].map { |d| Word.new(d) }
   end
 
   def self.method_missing *args
@@ -93,6 +97,16 @@ module Japanese
     def matches(that)
       (@properties.has_key?('hiragana') && @properties['hiragana'] == that) ||
       (@properties.has_key?('katakana') && @properties['katakana'] == that)
+    end
+
+    def to_j
+      if @properties.has_key?('hiragana')
+        @properties['hiragana']
+      elsif @properties.has_key?('katakana')
+        @properties['katakana']
+      else
+        raise 'no rep'
+      end
     end
   end
 

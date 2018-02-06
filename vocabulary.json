@@ -1,7 +1,11 @@
 {
   "verbs": [
     {"hiragana": "いく", "definition": "to go"},
+    {"hiragana": "おどる", "definition": "to dance"},
+    {"hiragana": "うる", "definition": "to sell"},
+    {"hiragana": "こわがる", "definition": "to fear"},
     {"hiragana": "みつかる", "definition": "to find"},
+    {"hiragana": "たすかる", "definition": "to be saved"},
     {"hiragana": "あらう", "definition": "to wash"},
     {"hiragana": "かぶる", "definition": "to wear (on one's head)"},
     {"hiragana": "ひっこす", "definition": "to move"},
@@ -45,7 +49,7 @@
     {"hiragana": "はいる", "definition": "to enter", "type": "u"},
     {"hiragana": "もつ", "definition": "to carry"},
     {"hiragana": "やすむ", "definition": "to be absent"},
-    {"hiragana": "おける", "definition": "to open"},
+    {"hiragana": "あける", "definition": "to open"},
     {"hiragana": "おしえる", "definition": "to teach"},
     {"hiragana": "おりる", "definition": "to get off"},
     {"hiragana": "かりる", "definition": "to borrow"},
@@ -78,17 +82,47 @@
     {"hiragana": "たてる", "definition": "to build"},
     {"hiragana": "だいひょうする", "definition": "to represent"},
     {"hiragana": "ちがう", "definition": "to be wrong, to be different"},
+    {"hiragana": "おどろく", "definition": "to be surprised, amazed"},
+    {"hiragana": "なく", "definition": "to cry"},
+    {"hiragana": "のばす", "definition": "to extend"},
+    {"hiragana": "なくす", "definition": "to lose"},
+    {"hiragana": "おぼえる", "definition": "to remember"},
     {"hiragana": "なおる", "definition": "to be healed"}
+  ],
+  "placeholders" : [
+    {"hiragana": "だれも", "definition": "nobody"}
   ],
   "body" : [
     {"hiragana": "め", "definition": "eye"},
     {"hiragana": "かみ", "definition": "hair"},
     {"hiragana": "からだ", "definition": "body"},
+    {"hiragana": "あし", "definition": "legs"},
     {"hiragana": "はな", "definition": "nose"}
   ],
+  "beasts" : [
+    {"hiragana": "しか", "definition": "deer"},
+    {"hiragana": "さかな", "definition": "fish"},
+    {"hiragana": "こい", "definition": "carp"},
+    {"hiragana": "いぬ", "definition": "dog"},
+    {"hiragana": "せみ", "definition": "cicada"},
+    {"hiragana": "ねこ", "definition": "cat"}
+  ],
   "nouns" : [
+    {"hiragana": "そつぎょう", "definition": "graduation"},
+    {"hiragana": "でみせ", "definition": "stall"},
+    {"hiragana": "ぶん", "definition": "portion"},
+    {"hiragana": "ようかん", "definition": "sweets"},
     {"katakana": "バス", "definition": "bus"},
+    {"hiragana": "きょうみ", "definition": "interest"},
+    {"hiragana": "うん", "definition": "luck"},
+    {"hiragana": "おおきさ", "definition": "size"},
+    {"hiragana": "さか", "definition": "slope"},
+    {"hiragana": "しき", "definition": "four seasons"},
+    {"hiragana": "しゅと", "definition": "capital"},
+    {"hiragana": "はなび", "definition": "fireworks"},
+    {"hiragana": "けいたい", "definition": "cell phone"},
     {"hiragana": "しぜん", "definition": "nature"},
+    {"hiragana": "こくほう", "definition": "national treasures"},
     {"hiragana": "ふろ", "definition": "bath"},
     {"hiragana": "ゆかた", "definition": "robe (for a bath)"},
     {"hiragana": "だいよくじょう", "definition": "common bath"},
@@ -100,7 +134,6 @@
     {"hiragana": "しゅうかん", "definition": "custom"},
     {"hiragana": "ろてんぶろ", "definition": "open-air bath"},
     {"hiragana": "きもち", "definition": "feeling"},
-    {"hiragana": "さかな", "definition": "fish"},
     {"hiragana": "みずうみ", "definition": "lake"},
     {"hiragana": "まど", "definition": "window"},
     {"hiragana": "けしき", "definition": "scenery"},
@@ -170,7 +203,7 @@
     {"hiragana": "しろ", "definition": "white"},
     {"hiragana": "くろ", "definition": "black"},
     {"hiragana": "あお", "definition": "blue"}
-  },
+  ],
   "jobs" : [
     {"hiragana": "えいがかんとく", "definition": "movie director"},
     {"hiragana": "しんりがくしゃ", "definition": "psychologist"},
@@ -182,6 +215,8 @@
   ],
   "food" : [
     {"hiragana": "ちょうしょく", "definition": "breakfast"},
+    {"hiragana": "やきそば", "definition": "fried noodles"},
+    {"hiragana": "たこやき", "definition": "octopus dumplings"},
     {"hiragana": "ぎゅにく", "definition": "beef"},
     {"hiragana": "やさい", "definition": "vegetables"}
   ],
@@ -190,6 +225,7 @@
   ],
   "locations" : [
     {"hiragana": "となり", "definition": "next to"},
+    {"hiragana": "りょうどなり", "definition": "both sides"},
     {"hiragana": "かいがい", "definition": "overseas"},
     {"hiragana": "せかいいさん", "definition": "world heritage site"},
     {"hiragana": "そと", "definition": "outside"},
@@ -198,6 +234,7 @@
   ],
   "helpers" : [
     {"hiragana": "また", "definition": "also"},
+    {"hiragana": "それに", "definition": "besides"},
     {"hiragana": "によると", "definition": "according to"},
     {"hiragana": "といえば", "definition": "speaking of"},
     {"hiragana": "として", "definition": "as"},
@@ -207,10 +244,13 @@
     {"hiragana": "とこに", "definition": "especially"},
     {"hiragana": "いくつか", "definition": "some of, a few of"},
     {"hiragana": "について", "definition": "about, regarding"},
+    {"hiragana": "ぜひ", "definition": "by all means"},
     {"hiragana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
     {"hiragana": "こんど", "definition": "next time"},
+    {"hiragana": "あのころ", "definition": "in those days"},
+    {"hiragana": "あのとき", "definition": "at that time"},
     {"hiragana": "まだ", "definition": "not yet, still"},
     {"hiragana": "たいてい", "definition": "usually"},
     {"hiragana": "さいきん", "definition": "recently"},
@@ -223,6 +263,7 @@
     {"hiragana": "あき", "definition": "fall"},
     {"hiragana": "ふゆ", "definition": "winter"},
     {"hiragana": "きせつ", "definition": "season"},
+    {"hiragana": "このあいだ", "definition": "the other day"},
     {"hiragana": "まず", "definition": "first of all"}
   ],
   "people": [
@@ -242,11 +283,17 @@
     {"hiragana": "つま", "definition": "wife"},
     {"hiragana": "ひとたち", "definition": "people"},
     {"hiragana": "しゅじん", "definition": "husband (master)"},
-    {"hiragana": "まご", "definition": "grandchild"},
-    {"hiragana": "だれか", "definition": "someone"}
+    {"hiragana": "まご", "definition": "(my) grandchild"},
+    {"hiragana": "おまごさん", "definition": "(other's) grandchild"},
+    {"hiragana": "だれか", "definition": "someone"},
+    {"hiragana": "ぼく", "definition": "I (used by men, casually)"},
+    {"hiragana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
     {"hiragana": "たかい", "definition": "expensive"},
+    {"hiragana": "ゆうがな", "definition": "graceful"},
+    {"hiragana": "あぶない", "definition": "dangerous"},
+    {"hiragana": "うれしい", "definition": "happy, glad"},
     {"hiragana": "うつくしい", "definition": "beautiful"},
     {"hiragana": "めずらしい", "definition": "unusual, rare"},
     {"hiragana": "すばらしい", "definition": "wonderful, great"},
@@ -295,6 +342,10 @@
   ],
   "expressions" : [
     {"hiragana": "おはよう", "definition": "Good morning (informal)"},
+    {"hiragana": "おいくつですか", "definition": "How old are you?"},
+    {"hiragana": "なかがいいです", "definition": "They get along well"},
+    {"hiragana": "きをつけてください", "definition": "Please be careful"},
+    {"hiragana": "あしもとにきをつけてください", "definition": "Please watch your step"},
     {"hiragana": "たのしんでください", "definition": "Have fun"},
     {"hiragana": "＿は＿のよに＿です", "definition": "_ is _ as _"},
     {"hiragana": "あんしんしました", "definition": "I'm relieved"},

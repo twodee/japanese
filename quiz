@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+require 'optparse'
+
+options = {n: -1}
+OptionParser.new do |opts|
+  opts.banner = "Usage: quiz [-n #] category"
+  opts.on('-n', '--n NUMBER', OptionParser::DecimalInteger, 'Number of questions') do |v|
+    options[:n] = v
+  end
+end.parse!
+
+collection = Japanese[ARGV[0]]
+Japanese.quiz(collection, options[:n])
