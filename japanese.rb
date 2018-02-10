@@ -90,8 +90,15 @@ module Japanese
 
     def initialize d
       @properties = d
+      if @properties.has_key?('born')
+        @properties['born'] = DateTime.parse(@properties['born'])
+      end
       @hiragana = d['hiragana']
       @definition = d['definition']
+    end
+
+    def isBornAfter date
+      @properties.has_key?('born') && @properties['born'] >= date
     end
 
     def matches(that)

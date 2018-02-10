@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+verbs = Japanese.verbs
+verb = verbs.find { |verb| verb.hiragana == ARGV[0] }
+
+puts "is_u? #{verb.is_u?}"
+puts "is_ru? #{verb.is_ru?}"
+puts "infinitive: #{verb.infinitive}"
+puts "te: #{verb.te}"
+puts "positive present: #{verb.present(true)}"
+puts "negative present: #{verb.present(false)}"
+puts "positive past: #{verb.past(true)}"
+puts "negative past: #{verb.past(false)}"

@@ -2,14 +2,30 @@
 
 require_relative 'japanese'
 require 'optparse'
+require 'date'
 
-options = {n: -1}
+options = {n: -1, after: nil, before: nil}
 OptionParser.new do |opts|
-  opts.banner = "Usage: quiz [-n #] category"
+  opts.banner = "Usage: quiz [-n #] [-b before] [-a after] category..."
   opts.on('-n', '--n NUMBER', OptionParser::DecimalInteger, 'Number of questions') do |v|
     options[:n] = v
   end
+  opts.on('-a', '--after AFTER', String, 'After timestamp') do |v|
+    options[:after] = DateTime.parse(v)
+  end
+  opts.on('-b', '--before BEFORE', String, 'Before timestamp') do |v|
+    options[:before] = DateTime.parse(v)
+  end
 end.parse!
 
-collection = Japanese[ARGV[0]]
+collection = ARGV.map { |category| Japanese[category] }.flatten
+
+if !options[:after].nil?
+  collection.select! { |word| word.isBornAfter(options[:after]) }
+end
+
+if !options[:before].nil?
+  collection.select! { |word| word.isBornBefore(options[:before]) }
+end
+
 Japanese.quiz(collection, options[:n])
