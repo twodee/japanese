@@ -121,6 +121,9 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "せつ", "definition": "theory", "born": "2018-02-12 07:02:12"},
+    {"hiragana": "だんじょきょうがく", "definition": "coeducation", "born": "2018-02-12 06:58:15"},
+    {"hiragana": "みんぞく", "definition": "tribe", "born": "2018-02-12 06:49:25"},
     {"hiragana": "しゅっちょう", "definition": "business trip", "born": "2018-02-11 06:04:46"},
     {"hiragana": "ちしき", "definition": "knowledge", "born": "2018-02-11 05:52:15"},
     {"hiragana": "せいふ", "definition": "government", "born": "2018-02-11 05:51:32"},
@@ -282,6 +285,7 @@
     {"hiragana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
+    {"hiragana": "そのとじ", "definition": "around that time", "born": "2018-02-12 06:52:41"},
     {"hiragana": "こんど", "definition": "next time"},
     {"hiragana": "そのあいだに", "definition": "during that time", "born": "2018-02-10 16:51:01"},
     {"hiragana": "いつから", "definition": "since when"},
@@ -305,6 +309,8 @@
     {"hiragana": "まず", "definition": "first of all"}
   ],
   "people": [
+    {"hiragana": "だんし", "definition": "men, schoolboys", "born": "2018-02-12 06:56:38"},
+    {"hiragana": "しょうじょ", "definition": "girls", "born": "2018-02-12 06:49:07"},
     {"hiragana": "りょしん", "definition": "parents"},
     {"hiragana": "がくしゃ", "definition": "scholar"},
     {"hiragana": "きょうだい", "definition": "siblings"},
