@@ -1,6 +1,11 @@
 {
   "verbs": [
+    {"hiragana": "つくる", "definition": "to make", "born": "2018-02-14 09:36:59"},
+    {"hiragana": "ならす", "definition": "to ring, sound, honk", "born": "2018-02-14 09:39:38"},
+    {"hiragana": "そうじする", "definition": "to clean", "born": "2018-02-13 18:53:18"},
+    {"hiragana": "せんたくする", "definition": "to do laundry", "born": "2018-02-13 18:52:55"},
     {"hiragana": "いく", "definition": "to go"},
+    {"hiragana": "もっていく", "definition": "to take (an object)", "born": "2018-02-13 18:52:22"},
     {"hiragana": "まねく", "definition": "to invite", "born": "2018-02-11 05:31:28"},
     {"hiragana": "あたえる", "definition": "to give", "born": "2018-02-10 16:54:27"},
     {"hiragana": "うたう", "definition": "to sing"},
@@ -77,14 +82,15 @@
     {"hiragana": "いきる", "definition": "to live (to survive)"},
     {"hiragana": "すむ", "definition": "to live (to reside)"},
     {"hiragana": "うつる", "definition": "to move"},
-    {"hiragana": "おもう", "definition": "to think"},
+    {"hiragana": "おもう", "definition": "to think", "born": "2018-02-13 18:52:00"},
     {"hiragana": "のりかえる", "definition": "to transfer"},
     {"hiragana": "なる", "definition": "to become"},
     {"hiragana": "できる", "definition": "to be able"},
     {"hiragana": "おおう", "definition": "to cover"},
     {"hiragana": "きにゅうする", "definition": "to fill in"},
     {"hiragana": "つく", "definition": "to arrive"},
-    {"hiragana": "いう", "definition": "to say"},
+    {"hiragana": "いう", "definition": "to say", "born": "2018-02-13 18:51:11"},
+    {"hiragana": "いる", "definition": "to need", "born": "2018-02-13 18:51:46"},
     {"hiragana": "はじめる", "definition": "to start"},
     {"hiragana": "うんどうする", "definition": "to exercise"},
     {"hiragana": "おくりする", "definition": "to take or see a person to"},
@@ -121,6 +127,22 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "ししゅう", "definition": "embroidery", "born": "2018-02-14 09:47:44"},
+    {"hiragana": "おどり", "definition": "dance", "born": "2018-02-14 09:46:53"},
+    {"hiragana": "ぎほう", "definition": "technique", "born": "2018-02-14 09:46:34"},
+    {"hiragana": "きょうしつ", "definition": "classroom", "born": "2018-02-14 09:44:39"},
+    {"hiragana": "ちょうこく", "definition": "carving, sculpture", "born": "2018-02-14 09:43:57"},
+    {"katakana": "バーベキュー", "definition": "barbecue", "born": "2018-02-14 09:42:34"},
+    {"katakana": "パーティー", "definition": "party", "born": "2018-02-14 09:42:16"},
+    {"katakana": "ギター", "definition": "guitar", "born": "2018-02-14 09:41:24"},
+    {"hiragana": "がっき", "definition": "musical instrument", "born": "2018-02-14 09:40:25"},
+    {"hiragana": "おと", "definition": "sound", "born": "2018-02-14 09:40:03"},
+    {"katakana": "バーベキュー", "definition": "barbecue", "born": "2018-02-13 18:51:01"},
+    {"katakana": "パーティー", "definition": "party", "born": "2018-02-13 18:50:29"},
+    {"katakana": "カラオケ", "definition": "karaoke", "born": "2018-02-13 18:47:18"},
+    {"hiragana": "たいけん", "definition": "experience", "born": "2018-02-13 05:32:29"},
+    {"hiragana": "がくしゅう", "definition": "learning", "born": "2018-02-13 05:32:12"},
+    {"hiragana": "はくぶつかん", "definition": "museum", "born": "2018-02-13 05:26:13"},
     {"hiragana": "せつ", "definition": "theory", "born": "2018-02-12 07:02:12"},
     {"hiragana": "だんじょきょうがく", "definition": "coeducation", "born": "2018-02-12 06:58:15"},
     {"hiragana": "みんぞく", "definition": "tribe", "born": "2018-02-12 06:49:25"},
@@ -266,6 +288,8 @@
     {"hiragana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"hiragana": "たとえば", "definition": "for instance", "born": "2018-02-14 09:36:13"},
+    {"hiragana": "みんなで", "definition": "all together", "born": "2018-02-13 18:54:12"},
     {"hiragana": "また", "definition": "also"},
     {"hiragana": "ええとう", "definition": "let me see, umm", "born": "Sat Feb 10 16:43:02 2018"},
     {"hiragana": "もちろん", "definition": "of course"},
@@ -342,6 +366,9 @@
     {"hiragana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"hiragana": "きほんてきな", "definition": "basic", "born": "2018-02-14 09:45:48"},
+    {"hiragana": "ひろい", "definition": "spacious", "born": "2018-02-13 05:03:58"},
+    {"hiragana": "からい", "definition": "spicy", "born": "2018-02-13 05:02:08"},
     {"hiragana": "たかい", "definition": "expensive"},
     {"hiragana": "はかりしれない", "definition": "unmeasurable", "born": "2018-02-10 16:52:22"},
     {"hiragana": "あたまがいい", "definition": "smart, clever"},
@@ -399,6 +426,7 @@
     {"hiragana": "どようび", "definition": "Saturday"}
   ],
   "expressions" : [
+    {"hiragana": "うあ", "definition": "Wow", "born": "2018-02-14 09:41:00"},
     {"hiragana": "おはよう", "definition": "Good morning (informal)"},
     {"hiragana": "おいくつですか", "definition": "How old are you?"},
     {"hiragana": "なかがいいです", "definition": "They get along well"},
@@ -439,7 +467,7 @@
     {"hiragana": "ほんとうですか", "definition": "Really?"},
     {"hiragana": "うまくいきました", "definition": "It went well"},
     {"hiragana": "おかけになりませんか", "definition": "Won't you have a seat?"},
-    {"hiragana": "ざんねんですね", "definition": "That's too bad"},
+    {"hiragana": "ざんねんですね", "definition": "That's too bad", "born": "2018-02-13 18:53:34"},
     {"hiragana": "おじゃまします", "definition": "I'm going to get in your way (I'm coming in)"},
     {"hiragana": "おまちしていました", "definition": "I've been expecting you"},
     {"hiragana": "どうもすみません", "definition": "You shouldn't have"},

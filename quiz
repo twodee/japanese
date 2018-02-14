@@ -6,7 +6,7 @@ require 'date'
 
 options = {n: -1, after: nil, before: nil}
 OptionParser.new do |opts|
-  opts.banner = "Usage: quiz [-n #] [-b before] [-a after] category..."
+  opts.banner = "Usage: quiz [-n #] [-b before] [-a after] [category...]"
   opts.on('-n', '--n NUMBER', OptionParser::DecimalInteger, 'Number of questions') do |v|
     options[:n] = v
   end
@@ -18,7 +18,11 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-collection = ARGV.map { |category| Japanese[category] }.flatten
+if ARGV.empty?
+  collection = Japanese.allCategories
+else
+  collection = ARGV.map { |category| Japanese[category] }.flatten
+end
 
 if !options[:after].nil?
   collection.select! { |word| word.isBornAfter(options[:after]) }

@@ -7,6 +7,10 @@ module Japanese
   @@json = File.read('vocabulary.json')
   @@vocabulary = JSON.parse(@@json)
 
+  def self.allCategories
+    @@vocabulary.values.flatten.map { |w| Word.new(w) }
+  end
+
   def self.quiz(collection, n=-1)
     collection.shuffle.take(n == -1 ? collection.size : n).each do |item|
       print "#{item.definition}? "
