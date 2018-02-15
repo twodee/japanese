@@ -1,5 +1,6 @@
 {
   "verbs": [
+    {"hiragana": "すてる", "definition": "to discard", "born": "2018-02-15 04:41:11"},
     {"hiragana": "きる", "definition": "to cut", "born": "2018-02-14 18:27:19"},
     {"hiragana": "りょうりする", "definition": "to cook", "like": "する", "born": "2018-02-14 18:26:47"},
     {"hiragana": "つくる", "definition": "to make", "born": "2018-02-14 09:36:59"},
@@ -129,6 +130,11 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "もえないごみ", "definition": "incombustible trash", "born": "2018-02-15 04:59:14"},
+    {"hiragana": "もえるごみ", "definition": "combustible trash", "born": "2018-02-15 04:58:53"},
+    {"hiragana": "しゅるい", "definition": "type, kind", "born": "2018-02-15 04:45:52"},
+    {"hiragana": "ごみのばこ", "definition": "trashbin", "born": "2018-02-15 04:38:40"},
+    {"hiragana": "ごみ", "definition": "trashcan", "born": "2018-02-15 04:35:21"},
     {"hiragana": "ししゅう", "definition": "embroidery", "born": "2018-02-14 09:47:44"},
     {"hiragana": "おどり", "definition": "dance", "born": "2018-02-14 09:46:53"},
     {"hiragana": "ぎほう", "definition": "technique", "born": "2018-02-14 09:46:34"},
