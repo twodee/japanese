@@ -2,10 +2,19 @@
 
 require 'json'
 require 'set'
+require 'date'
 
 module Japanese
   @@json = File.read('vocabulary.json')
   @@vocabulary = JSON.parse(@@json)
+
+  @@vocabulary.each do |category, words|
+    words.each do |word|
+      if word.has_key?('born')
+        word['born'] = DateTime.parse(word['born'])
+      end
+    end
+  end
 
   def self.allCategories
     @@vocabulary.values.flatten.map { |w| Word.new(w) }
@@ -57,6 +66,38 @@ module Japanese
     answer
   end
 
+  def self.aPartner(letter)
+    if Set.new(%w{あ い う え お}).member?(letter)
+      'あ'
+    elsif Set.new(%w{か き く け こ}).member?(letter)
+      'か'
+    elsif Set.new(%w{さ し す せ そ}).member?(letter)
+      'さ'
+    elsif Set.new(%w{た ち つ て と}).member?(letter)
+      'た'
+    elsif Set.new(%w{な に ぬ ね の}).member?(letter)
+      'な'
+    elsif Set.new(%w{は ひ ふ へ ほ}).member?(letter)
+      'は'
+    elsif Set.new(%w{ま み む め も}).member?(letter)
+      'ま'
+    elsif Set.new(%w{ら り る れ ろ}).member?(letter)
+      'ら'
+    elsif Set.new(%w{が ぎ ぐ げ ご}).member?(letter)
+      'が'
+    elsif Set.new(%w{ざ じ ず ぜ ぞ}).member?(letter)
+      'ざ'
+    elsif Set.new(%w{だ ぢ づ で ど}).member?(letter)
+      'だ'
+    elsif Set.new(%w{ば び ぶ べ ぼ}).member?(letter)
+      'ば'
+    elsif Set.new(%w{ぱ ぴ ぷ ぺ ぽ}).member?(letter)
+      'ぱ'
+    else
+      raise "I don\'t know the a-counterpart to #{letter}..."
+    end 
+  end
+
   def self.iPartner(letter)
     if Set.new(%w{あ い う え お}).member?(letter)
       'い'
@@ -94,9 +135,6 @@ module Japanese
 
     def initialize d
       @properties = d
-      if @properties.has_key?('born')
-        @properties['born'] = DateTime.parse(@properties['born'])
-      end
       @hiragana = d['hiragana']
       @definition = d['definition']
     end
@@ -145,6 +183,25 @@ module Japanese
         @properties['type'] == 'u'
       else
         !is_ru?
+      end
+    end
+
+    def short is_positive
+      if is_positive
+        return hiragana
+      else
+        if @properties.has_key?('shortnegative')
+          @properties['shortnegative']
+        elsif @properties.has_key?('like')
+          model = Japanese.verbs.find { |verb| verb.hiragana == @properties['like'] }
+          hiragana.gsub(/#{model.hiragana}$/, model.short(is_positive))
+        elsif is_ru?
+          hiragana[0..-2] + 'ない'
+        elsif hiragana[-1] == 'う'
+          hiragana[0..-2] + 'わない'
+        else
+          hiragana[0..-2] + Japanese.aPartner(hiragana[-1]) + 'ない'
+        end
       end
     end
 
