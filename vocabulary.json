@@ -130,11 +130,14 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "ホームステイ", "definition": "homestay", "born": "2018-02-15 17:23:44"},
+    {"hiragana": "てんきよほう", "definition": "weather report", "born": "2018-02-15 17:22:32"},
+    {"hiragana": "あめ", "definition": "rain", "born": "2018-02-15 17:21:32"},
     {"hiragana": "もえないごみ", "definition": "incombustible trash", "born": "2018-02-15 04:59:14"},
     {"hiragana": "もえるごみ", "definition": "combustible trash", "born": "2018-02-15 04:58:53"},
     {"hiragana": "しゅるい", "definition": "type, kind", "born": "2018-02-15 04:45:52"},
-    {"hiragana": "ごみのばこ", "definition": "trashbin", "born": "2018-02-15 04:38:40"},
-    {"hiragana": "ごみ", "definition": "trashcan", "born": "2018-02-15 04:35:21"},
+    {"hiragana": "ごみばこ", "definition": "trashbin", "born": "2018-02-15 04:38:40"},
+    {"hiragana": "ごみ", "definition": "trash", "born": "2018-02-15 04:35:21"},
     {"hiragana": "ししゅう", "definition": "embroidery", "born": "2018-02-14 09:47:44"},
     {"hiragana": "おどり", "definition": "dance", "born": "2018-02-14 09:46:53"},
     {"hiragana": "ぎほう", "definition": "technique", "born": "2018-02-14 09:46:34"},
@@ -267,6 +270,7 @@
     {"hiragana": "あお", "definition": "blue"}
   ],
   "jobs" : [
+    {"hiragana": "だいがくせい", "definition": "college student", "born": "2018-02-15 17:22:55"},
     {"hiragana": "えいがかんとく", "definition": "movie director"},
     {"hiragana": "はかせ", "definition": "PhD"},
     {"hiragana": "しんりがくしゃ", "definition": "psychologist"},
@@ -318,6 +322,9 @@
     {"hiragana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
+    {"hiragana": "らいげつ", "definition": "next month", "born": "2018-02-15 17:21:13"},
+    {"hiragana": "こんげつ", "definition": "this month", "born": "2018-02-15 17:21:00"},
+    {"hiragana": "あさって", "definition": "day after tomorrow", "born": "2018-02-15 17:20:28"},
     {"hiragana": "そのとじ", "definition": "around that time", "born": "2018-02-12 06:52:41"},
     {"hiragana": "こんど", "definition": "next time"},
     {"hiragana": "そのあいだに", "definition": "during that time", "born": "2018-02-10 16:51:01"},
@@ -437,6 +444,8 @@
     {"hiragana": "どようび", "definition": "Saturday"}
   ],
   "expressions" : [
+    {"hiragana": "ううん", "definition": "no", "born": "2018-02-15 17:24:37"},
+    {"hiragana": "うん", "definition": "yes", "born": "2018-02-15 17:24:20"},
     {"hiragana": "かんぱい", "definition": "Cheers", "born": "2018-02-14 18:28:44"},
     {"hiragana": "うあ", "definition": "Wow", "born": "2018-02-14 09:41:00"},
     {"hiragana": "おはよう", "definition": "Good morning (informal)"},

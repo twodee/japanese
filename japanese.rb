@@ -143,6 +143,10 @@ module Japanese
       @properties.has_key?('born') && @properties['born'] >= date
     end
 
+    def isBornBefore date
+      @properties.has_key?('born') && @properties['born'] <= date
+    end
+
     def matches(that)
       (@properties.has_key?('hiragana') && @properties['hiragana'] == that) ||
       (@properties.has_key?('katakana') && @properties['katakana'] == that)
