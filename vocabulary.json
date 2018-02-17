@@ -1,7 +1,7 @@
 {
   "verbs": [
     {"hiragana": "すてる", "definition": "to discard", "born": "2018-02-15 04:41:11"},
-    {"hiragana": "きる", "definition": "to cut", "born": "2018-02-14 18:27:19"},
+    {"hiragana": "きる", "definition": "to cut", "type" : "u", "born": "2018-02-14 18:27:19"},
     {"hiragana": "りょうりする", "definition": "to cook", "like": "する", "born": "2018-02-14 18:26:47"},
     {"hiragana": "つくる", "definition": "to make", "born": "2018-02-14 09:36:59"},
     {"hiragana": "ならす", "definition": "to ring, sound, honk", "born": "2018-02-14 09:39:38"},
@@ -12,7 +12,7 @@
     {"hiragana": "まねく", "definition": "to invite", "born": "2018-02-11 05:31:28"},
     {"hiragana": "あたえる", "definition": "to give", "born": "2018-02-10 16:54:27"},
     {"hiragana": "うたう", "definition": "to sing"},
-    {"hiragana": "しる", "definition": "to know"},
+    {"hiragana": "しる", "definition": "to know", "type": "u"},
     {"hiragana": "まちがう", "definition": "to make a mistake"},
     {"hiragana": "おどる", "definition": "to dance"},
     {"hiragana": "うる", "definition": "to sell"},
@@ -22,7 +22,7 @@
     {"hiragana": "あらう", "definition": "to wash", "born": "2018-02-14 18:26:59"},
     {"hiragana": "かぶる", "definition": "to wear (on one's head)"},
     {"hiragana": "はく", "definition": "to wear (below one's waist)"},
-    {"hiragana": "きる", "definition": "to wear (above one's waist)"},
+    {"hiragana": "きる", "definition": "to wear (above one's waist)", "type": "ru"},
     {"hiragana": "かける", "definition": "to wear (glasses)"},
     {"hiragana": "つとめる", "definition": "to work for"},
     {"hiragana": "けっこんする", "definition": "to marry", "like": "する"},
@@ -49,7 +49,7 @@
     {"hiragana": "とる", "definition": "to take"},
     {"hiragana": "まつ", "definition": "to wait"},
     {"hiragana": "わかる", "definition": "to understand"},
-    {"hiragana": "いる", "definition": "to exist (person)"},
+    {"hiragana": "いる", "definition": "to exist (person)", "type": "ru"},
     {"hiragana": "およぐ", "definition": "to swim"},
     {"hiragana": "きく", "definition": "to ask"},
     {"hiragana": "のる", "definition": "to ride"},
@@ -93,7 +93,7 @@
     {"hiragana": "きにゅうする", "definition": "to fill in", "like": "する"},
     {"hiragana": "つく", "definition": "to arrive"},
     {"hiragana": "いう", "definition": "to say", "born": "2018-02-13 18:51:11"},
-    {"hiragana": "いる", "definition": "to need", "born": "2018-02-13 18:51:46"},
+    {"hiragana": "いる", "definition": "to need", "type": "u", "born": "2018-02-13 18:51:46"},
     {"hiragana": "はじめる", "definition": "to start"},
     {"hiragana": "うんどうする", "definition": "to exercise", "like": "する"},
     {"hiragana": "おくりする", "definition": "to take or see a person to", "like": "する"},
@@ -130,6 +130,7 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "ざっし", "definition": "magazine", "born": "2018-02-16 04:22:27"},
     {"hiragana": "ホームステイ", "definition": "homestay", "born": "2018-02-15 17:23:44"},
     {"hiragana": "てんきよほう", "definition": "weather report", "born": "2018-02-15 17:22:32"},
     {"hiragana": "あめ", "definition": "rain", "born": "2018-02-15 17:21:32"},

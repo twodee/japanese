@@ -4,6 +4,20 @@ require 'json'
 require 'set'
 require 'date'
 
+class String
+  def colorize(code)
+    "\e[#{code}m#{self}\e[0m"
+  end
+
+  def red
+    colorize(31)
+  end
+
+  def green
+    colorize(32)
+  end
+end
+
 module Japanese
   @@json = File.read('vocabulary.json')
   @@vocabulary = JSON.parse(@@json)

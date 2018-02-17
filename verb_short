@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+verbs = Japanese.verbs
+verbs.shuffle!
+
+n = 10
+generator = Random.new
+
+verbs.take(n).each do |verb|
+  is_positive = [true, false].sample
+  prompt = "#{verb.hiragana} (#{verb.definition})"
+  if is_positive
+    print "#{prompt} POSITIVE ".green
+  else
+    print "#{prompt} NEGATIVE ".red
+  end
+  guess = gets.chomp
+
+  answer = verb.short(is_positive)
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong. It's #{answer}."
+  end
+  puts
+end
