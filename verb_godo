@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+verbs = Japanese.verbs
+verbs.shuffle!
+
+n = 10
+generator = Random.new
+
+movers = [
+  verbs.find { |verb| verb.hiragana == 'いく' },
+  verbs.find { |verb| verb.hiragana == 'くる' },
+  verbs.find { |verb| verb.hiragana == 'かえる' }
+]
+
+verbs.take(n).each do |verb|
+  mover = movers.sample
+  print "#{mover.definition} #{verb.definition} (#{verb.hiragana}) -> "
+  guess = gets.chomp
+
+  answer = verb.stem + 'に' + mover.long
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong. It's #{answer}."
+  end
+  puts
+end

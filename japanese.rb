@@ -204,6 +204,10 @@ module Japanese
       end
     end
 
+    def stem
+      long[0..-3]
+    end
+
     def short is_positive
       if is_positive
         return hiragana
@@ -253,6 +257,9 @@ module Japanese
     def infinitive
       if @properties.has_key?('infinitive')
         @properties['infinitive']
+      elsif @properties.has_key?('like')
+        model = Japanese.verbs.find { |verb| verb.hiragana == @properties['like'] }
+        hiragana.gsub(/#{model.hiragana}$/, model.infinitive)
       elsif is_ru?
         hiragana[0..-2]
       else
@@ -260,14 +267,14 @@ module Japanese
       end
     end
 
-    def present is_positive
-      suffix = is_positive ? 'ます' : 'ません'
-      infinitive + suffix
-    end
-
-    def past is_positive
-      suffix = is_positive ? 'ました' : 'ませんでした'
-      infinitive + suffix
+    def long(is_positive=true, is_present=true)
+      if is_present
+        suffix = is_positive ? 'ます' : 'ません'
+        infinitive + suffix
+      else
+        suffix = is_positive ? 'ました' : 'ませんでした'
+        infinitive + suffix
+      end
     end
   end
 
