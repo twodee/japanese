@@ -1,5 +1,6 @@
 {
   "verbs": [
+    {"hiragana": "もらう", "definition": "to receive", "born": "2018-02-17 20:52:53"},
     {"hiragana": "すてる", "definition": "to discard", "born": "2018-02-15 04:41:11"},
     {"hiragana": "きる", "definition": "to cut", "type" : "u", "born": "2018-02-14 18:27:19"},
     {"hiragana": "りょうりする", "definition": "to cook", "like": "する", "born": "2018-02-14 18:26:47"},
@@ -76,6 +77,8 @@
     {"hiragana": "しめる", "definition": "to close"},
     {"hiragana": "シャワーをあびる", "definition": "to shower"},
     {"hiragana": "つける", "definition": "to turn on"},
+    {"hiragana": "うんてんする", "definition": "to drive", "like": "する", "born": "2018-02-17 20:21:47"},
+    {"hiragana": "でんわする", "definition": "to call", "like": "する", "born": "2018-02-17 20:20:34"},
     {"hiragana": "でんわをかける", "definition": "to call"},
     {"hiragana": "わすれる", "definition": "to forget"},
     {"hiragana": "つれてくる", "definition": "to bring (a person)", "infinitive": "つれてき", "type": "irregular"},
@@ -130,6 +133,9 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "ねんがじょう", "definition": "New Year's postcard", "born": "2018-02-17 20:55:14"},
+    {"hiragana": "くうき", "definition": "air", "born": "2018-02-17 20:24:55"},
+    {"katakana": "カメラ", "definition": "camera", "born": "2018-02-17 20:23:11"},
     {"hiragana": "ざっし", "definition": "magazine", "born": "2018-02-16 04:22:27"},
     {"hiragana": "ホームステイ", "definition": "homestay", "born": "2018-02-15 17:23:44"},
     {"hiragana": "てんきよほう", "definition": "weather report", "born": "2018-02-15 17:22:32"},
@@ -271,6 +277,7 @@
     {"hiragana": "あお", "definition": "blue"}
   ],
   "jobs" : [
+    {"hiragana": "かいしゃいん", "definition": "office worker", "born": "2018-02-17 20:23:55"},
     {"hiragana": "だいがくせい", "definition": "college student", "born": "2018-02-15 17:22:55"},
     {"hiragana": "えいがかんとく", "definition": "movie director"},
     {"hiragana": "はかせ", "definition": "PhD"},
@@ -323,6 +330,9 @@
     {"hiragana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
+    {"hiragana": "がんたん", "definition": "New Year's morning", "born": "2018-02-17 20:49:12"},
+    {"hiragana": "まいしゅう", "definition": "every week", "born": "2018-02-17 20:24:26"},
+    {"hiragana": "いつも", "definition": "always", "born": "2018-02-17 20:18:08"},
     {"hiragana": "らいげつ", "definition": "next month", "born": "2018-02-15 17:21:13"},
     {"hiragana": "こんげつ", "definition": "this month", "born": "2018-02-15 17:21:00"},
     {"hiragana": "あさって", "definition": "day after tomorrow", "born": "2018-02-15 17:20:28"},
@@ -342,9 +352,9 @@
     {"hiragana": "まいつき", "definition": "monthly"},
     {"hiragana": "まいとし", "definition": "every year"},
     {"hiragana": "はる", "definition": "spring"},
-    {"hiragana": "なつ", "definition": "summer"},
+    {"hiragana": "なつ", "definition": "summer", "born": "2018-02-17 20:24:35"},
     {"hiragana": "あき", "definition": "fall"},
-    {"hiragana": "ふゆ", "definition": "winter"},
+    {"hiragana": "ふゆ", "definition": "winter", "born": "2018-02-17 20:24:34"},
     {"hiragana": "きせつ", "definition": "season"},
     {"hiragana": "このあいだ", "definition": "the other day"},
     {"hiragana": "まず", "definition": "first of all"}
@@ -383,6 +393,7 @@
     {"hiragana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"hiragana": "ゆめいな", "definition": "famous", "born": "2018-02-17 20:22:48"},
     {"hiragana": "へたな", "definition": "clumsy", "born": "2018-02-14 18:25:46"},
     {"hiragana": "じょうずな", "definition": "skillful", "born": "2018-02-14 18:25:05"},
     {"hiragana": "きほんてきな", "definition": "basic", "born": "2018-02-14 09:45:48"},
@@ -445,6 +456,8 @@
     {"hiragana": "どようび", "definition": "Saturday"}
   ],
   "expressions" : [
+    {"hiragana": "どれどれ", "definition": "Let's see", "born": "2018-02-17 20:54:35"},
+    {"hiragana": "ほら", "definition": "Look", "born": "2018-02-17 20:53:58"},
     {"hiragana": "ううん", "definition": "no", "born": "2018-02-15 17:24:37"},
     {"hiragana": "うん", "definition": "yes", "born": "2018-02-15 17:24:20"},
     {"hiragana": "かんぱい", "definition": "Cheers", "born": "2018-02-14 18:28:44"},
