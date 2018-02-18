@@ -1,5 +1,8 @@
 {
   "verbs": [
+    {"hiragana": "はいたつれる", "definition": "to deliver", "born": "2018-02-18 05:29:35"},
+    {"hiragana": "だす", "definition": "to mail", "born": "2018-02-18 05:22:54"},
+    {"hiragana": "うけとる", "definition": "to receive", "born": "2018-02-18 05:10:19"},
     {"hiragana": "もらう", "definition": "to receive", "born": "2018-02-17 20:52:53"},
     {"hiragana": "すてる", "definition": "to discard", "born": "2018-02-15 04:41:11"},
     {"hiragana": "きる", "definition": "to cut", "type" : "u", "born": "2018-02-14 18:27:19"},
@@ -393,6 +396,7 @@
     {"hiragana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"hiragana": "おかしい", "definition": "strange", "born": "2018-02-18 05:11:07"},
     {"hiragana": "ゆめいな", "definition": "famous", "born": "2018-02-17 20:22:48"},
     {"hiragana": "へたな", "definition": "clumsy", "born": "2018-02-14 18:25:46"},
     {"hiragana": "じょうずな", "definition": "skillful", "born": "2018-02-14 18:25:05"},
@@ -456,6 +460,7 @@
     {"hiragana": "どようび", "definition": "Saturday"}
   ],
   "expressions" : [
+    {"hiragana": "とんでもない", "definition": "Absolutely not", "born": "2018-02-18 05:12:37"},
     {"hiragana": "どれどれ", "definition": "Let's see", "born": "2018-02-17 20:54:35"},
     {"hiragana": "ほら", "definition": "Look", "born": "2018-02-17 20:53:58"},
     {"hiragana": "ううん", "definition": "no", "born": "2018-02-15 17:24:37"},
