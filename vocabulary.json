@@ -1,5 +1,6 @@
 {
   "verbs": [
+    {"hiragana": "はらう", "definition": "to pay", "born": "2018-02-20 04:53:53"},
     {"hiragana": "はいたつれる", "definition": "to deliver", "born": "2018-02-18 05:29:35"},
     {"hiragana": "だす", "definition": "to mail", "born": "2018-02-18 05:22:54"},
     {"hiragana": "うけとる", "definition": "to receive", "born": "2018-02-18 05:10:19"},
@@ -136,6 +137,10 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "しょうがつ", "definition": "New Year's", "born": "2018-02-20 05:29:27"},
+    {"hiragana": "ごちそう", "definition": "feast", "born": "2018-02-20 05:28:48"},
+    {"hiragana": "せびろ", "definition": "suit", "born": "2018-02-20 04:56:18"},
+    {"hiragana": "おわぎ", "definition": "jacket", "born": "2018-02-20 04:55:58"},
     {"hiragana": "ねんがじょう", "definition": "New Year's postcard", "born": "2018-02-17 20:55:14"},
     {"hiragana": "くうき", "definition": "air", "born": "2018-02-17 20:24:55"},
     {"katakana": "カメラ", "definition": "camera", "born": "2018-02-17 20:23:11"},
@@ -280,6 +285,7 @@
     {"hiragana": "あお", "definition": "blue"}
   ],
   "jobs" : [
+    {"hiragana": "ゆうびんはいたつのひと", "definition": "mailman", "born": "2018-02-20 05:35:16"},
     {"hiragana": "かいしゃいん", "definition": "office worker", "born": "2018-02-17 20:23:55"},
     {"hiragana": "だいがくせい", "definition": "college student", "born": "2018-02-15 17:22:55"},
     {"hiragana": "えいがかんとく", "definition": "movie director"},
@@ -292,6 +298,7 @@
     {"hiragana": "いっしゃ", "definition": "doctor"}
   ],
   "food" : [
+    {"hiragana": "さと", "definition": "sugar", "born": "2018-02-20 04:56:56"},
     {"katakana": "トマト", "definition": "tomato", "born": "2018-02-14 18:24:27"},
     {"hiragana": "ちょうしょく", "definition": "breakfast"},
     {"hiragana": "やきそば", "definition": "fried noodles"},
