@@ -10,11 +10,21 @@ matches.each do |verb|
   puts "is_ru? #{verb.is_ru?}"
   puts "infinitive: #{verb.infinitive}"
   puts "te: #{verb.te}"
+  puts
   puts "positive present: #{verb.long(true, true)}"
   puts "negative present: #{verb.long(false, true)}"
+  puts
   puts "positive past: #{verb.long(true, false)}"
   puts "negative past: #{verb.long(false, false)}"
+  puts
   puts "positive short: #{verb.short(true)}"
   puts "negative short: #{verb.short(false)}"
   puts
+  puts "potential: #{verb.potential.hiragana}"
+  puts "potential: #{verb.potential.long(true, true)}"
+  puts "potential: #{verb.potential.long(true, false)}"
+  puts "potential: #{verb.potential.long(false, true)}"
+  puts "potential: #{verb.potential.long(false, false)}"
+  puts
+  puts '--------------------------------------'
 end

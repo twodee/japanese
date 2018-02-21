@@ -144,6 +144,39 @@ module Japanese
     end 
   end
 
+  def self.ePartner(letter)
+    if Set.new(%w{あ い う え お}).member?(letter)
+      'え'
+    elsif Set.new(%w{か き く け こ}).member?(letter)
+      'け'
+    elsif Set.new(%w{さ し す せ そ}).member?(letter)
+      'せ'
+    elsif Set.new(%w{た ち つ て と}).member?(letter)
+      'て'
+    elsif Set.new(%w{な に ぬ ね の}).member?(letter)
+      'ね'
+    elsif Set.new(%w{は ひ ふ へ ほ}).member?(letter)
+      'へ'
+    elsif Set.new(%w{ま み む め も}).member?(letter)
+      'め'
+    elsif Set.new(%w{ら り る れ ろ}).member?(letter)
+      'れ'
+    elsif Set.new(%w{が ぎ ぐ げ ご}).member?(letter)
+      'げ'
+    elsif Set.new(%w{ざ じ ず ぜ ぞ}).member?(letter)
+      'ぜ'
+    elsif Set.new(%w{だ ぢ づ で ど}).member?(letter)
+      'で'
+    elsif Set.new(%w{ば び ぶ べ ぼ}).member?(letter)
+      'べ'
+    elsif Set.new(%w{ぱ ぴ ぷ ぺ ぽ}).member?(letter)
+      'ぺ'
+    else
+      raise "I don\'t know the e-counterpart to #{letter}..."
+    end 
+  end
+
+
   class Word
     attr_reader :hiragana, :definition
 
@@ -206,6 +239,20 @@ module Japanese
 
     def stem
       long[0..-3]
+    end
+
+    def potential
+      p = {definition: "to be able #{definition}"}
+
+      if @properties.has_key?('potential')
+        p['hiragana'] = @properties['potential']
+      elsif is_ru?
+        p['hiragana'] = hiragana[0..-2] + 'られる'
+      else
+        p['hiragana'] = hiragana[0..-2] + Japanese.ePartner(hiragana[-1]) + 'る'
+      end
+
+      Verb.new(p)
     end
 
     def short is_positive

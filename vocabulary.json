@@ -1,11 +1,13 @@
 {
   "verbs": [
+    {"hiragana": "まわる", "definition": "to go around", "born": "2018-02-21 06:25:14"},
+    {"hiragana": "じろじろみる", "definition": "to stare", "born": "2018-02-20 22:09:53"},
     {"hiragana": "はらう", "definition": "to pay", "born": "2018-02-20 04:53:53"},
     {"hiragana": "はいたつれる", "definition": "to deliver", "born": "2018-02-18 05:29:35"},
     {"hiragana": "だす", "definition": "to mail", "born": "2018-02-18 05:22:54"},
     {"hiragana": "うけとる", "definition": "to receive", "born": "2018-02-18 05:10:19"},
     {"hiragana": "もらう", "definition": "to receive", "born": "2018-02-17 20:52:53"},
-    {"hiragana": "すてる", "definition": "to discard", "born": "2018-02-15 04:41:11"},
+    {"hiragana": "すてる", "definition": "to discard", "born": "2018-02-20 22:10:34"},
     {"hiragana": "きる", "definition": "to cut", "type" : "u", "born": "2018-02-14 18:27:19"},
     {"hiragana": "りょうりする", "definition": "to cook", "like": "する", "born": "2018-02-14 18:26:47"},
     {"hiragana": "つくる", "definition": "to make", "born": "2018-02-14 09:36:59"},
@@ -43,8 +45,8 @@
     {"hiragana": "たべる", "definition": "to eat"},
     {"hiragana": "ねる", "definition": "to sleep"},
     {"hiragana": "みる", "definition": "to see"},
-    {"hiragana": "くる", "definition": "to come", "infinitive": "き", "type": "irregular", "shortnegative": "こない"},
-    {"hiragana": "する", "definition": "to do", "infinitive": "し", "type": "irregular", "shortnegative": "しない"},
+    {"hiragana": "くる", "definition": "to come", "potential": "こられる", "infinitive": "き", "type": "irregular", "shortnegative": "こない"},
+    {"hiragana": "する", "definition": "to do", "potential": "できる", "infinitive": "し", "type": "irregular", "shortnegative": "しない"},
     {"hiragana": "べんきょうする", "definition": "to study", "like": "する"},
     {"hiragana": "ならう", "definition": "to learn"},
     {"hiragana": "あう", "definition": "to meet"},
@@ -95,7 +97,6 @@
     {"hiragana": "おもう", "definition": "to think", "born": "2018-02-13 18:52:00"},
     {"hiragana": "のりかえる", "definition": "to transfer"},
     {"hiragana": "なる", "definition": "to become"},
-    {"hiragana": "できる", "definition": "to be able"},
     {"hiragana": "おおう", "definition": "to cover"},
     {"hiragana": "きにゅうする", "definition": "to fill in", "like": "する"},
     {"hiragana": "つく", "definition": "to arrive"},
@@ -137,6 +138,9 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "きんきょう", "definition": "current status", "born": "2018-02-21 06:22:59"},
+    {"hiragana": "なにか", "definition": "something", "born": "2018-02-20 22:08:48"},
+    {"hiragana": "ところ", "definition": "place", "born": "2018-02-20 22:08:17"},
     {"hiragana": "しょうがつ", "definition": "New Year's", "born": "2018-02-20 05:29:27"},
     {"hiragana": "ごちそう", "definition": "feast", "born": "2018-02-20 05:28:48"},
     {"hiragana": "せびろ", "definition": "suit", "born": "2018-02-20 04:56:18"},
@@ -254,7 +258,7 @@
     {"hiragana": "びん", "definition": "flight"},
     {"hiragana": "いけ", "definition": "pond"},
     {"hiragana": "はし", "definition": "bridge"},
-    {"hiragana": "はし", "definition": "chopsticks"},
+    {"hiragana": "はし", "definition": "chopsticks", "born": "2018-02-20 22:09:14"},
     {"hiragana": "ちゃしつ", "definition": "tea room"},
     {"hiragana": "ちゃ", "definition": "tea"},
     {"hiragana": "むがち", "definition": "barley tea"},
@@ -285,6 +289,7 @@
     {"hiragana": "あお", "definition": "blue"}
   ],
   "jobs" : [
+    {"hiragana": "しごと", "definition": "job", "born": "2018-02-20 22:07:22"},
     {"hiragana": "ゆうびんはいたつのひと", "definition": "mailman", "born": "2018-02-20 05:35:16"},
     {"hiragana": "かいしゃいん", "definition": "office worker", "born": "2018-02-17 20:23:55"},
     {"hiragana": "だいがくせい", "definition": "college student", "born": "2018-02-15 17:22:55"},
@@ -298,6 +303,7 @@
     {"hiragana": "いっしゃ", "definition": "doctor"}
   ],
   "food" : [
+    {"hiragana": "かいてんすし", "definition": "conveyor belt sushi", "born": "2018-02-21 06:24:09"},
     {"hiragana": "さと", "definition": "sugar", "born": "2018-02-20 04:56:56"},
     {"katakana": "トマト", "definition": "tomato", "born": "2018-02-14 18:24:27"},
     {"hiragana": "ちょうしょく", "definition": "breakfast"},
@@ -319,6 +325,7 @@
     {"hiragana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"hiragana": "ふだん", "definition": "ordinarily", "born": "2018-02-21 06:22:21"},
     {"hiragana": "たとえば", "definition": "for instance", "born": "2018-02-14 09:36:13"},
     {"hiragana": "みんなで", "definition": "all together", "born": "2018-02-13 18:54:12"},
     {"hiragana": "また", "definition": "also"},
@@ -340,6 +347,9 @@
     {"hiragana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
+    {"hiragana": "そしているいちに", "definition": "in the meantime", "born": "2018-02-21 06:21:45"},
+    {"hiragana": "こくばん", "definition": "blackboard", "born": "2018-02-20 22:06:44"},
+    {"hiragana": "けさ", "definition": "this morning", "born": "2018-02-20 22:06:10"},
     {"hiragana": "がんたん", "definition": "New Year's morning", "born": "2018-02-17 20:49:12"},
     {"hiragana": "まいしゅう", "definition": "every week", "born": "2018-02-17 20:24:26"},
     {"hiragana": "いつも", "definition": "always", "born": "2018-02-17 20:18:08"},
