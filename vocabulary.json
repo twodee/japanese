@@ -1,5 +1,7 @@
 {
   "verbs": [
+    {"hiragana": "かこむ", "definition": "to surround", "born": "2018-03-01 04:49:57"},
+    {"hiragana": "おわる", "definition": "to finish", "born": "2018-03-01 04:39:28"},
     {"hiragana": "くらべる", "definition": "to compare", "born": "2018-02-25 10:56:08"},
     {"hiragana": "かぞえる", "definition": "to count", "born": "2018-02-25 10:54:17"},
     {"hiragana": "ちゅうもんする", "definition": "to order", "like": "する", "born": "2018-02-25 10:47:55"},
@@ -10,7 +12,7 @@
     {"hiragana": "はいたつれる", "definition": "to deliver", "born": "2018-02-18 05:29:35"},
     {"hiragana": "だす", "definition": "to mail", "born": "2018-02-18 05:22:54"},
     {"hiragana": "うけとる", "definition": "to receive", "born": "2018-02-18 05:10:19"},
-    {"hiragana": "もらう", "definition": "to receive", "born": "2018-02-17 20:52:53"},
+    {"hiragana": "もらう", "definition": "to receive", "born": "2018-02-28 21:21:28"},
     {"hiragana": "すてる", "definition": "to discard", "born": "2018-02-20 22:10:34"},
     {"hiragana": "きる", "definition": "to cut", "type" : "u", "born": "2018-02-14 18:27:19"},
     {"hiragana": "りょうりする", "definition": "to cook", "like": "する", "born": "2018-02-14 18:26:47"},
@@ -107,7 +109,7 @@
     {"hiragana": "いう", "definition": "to say", "born": "2018-02-13 18:51:11"},
     {"hiragana": "いる", "definition": "to need", "type": "u", "born": "2018-02-13 18:51:46"},
     {"hiragana": "はじめる", "definition": "to start"},
-    {"hiragana": "うんどうする", "definition": "to exercise", "like": "する"},
+    {"hiragana": "うんどうする", "definition": "to exercise", "like": "する", "born": "2018-02-28 21:21:50"},
     {"hiragana": "おくりする", "definition": "to take or see a person to", "like": "する"},
     {"hiragana": "つかれる", "definition": "to get tired"},
     {"hiragana": "おくれる", "definition": "to be late"},
@@ -134,6 +136,8 @@
     {"hiragana": "はな", "definition": "nose"}
   ],
   "beasts" : [
+    {"hiragana": "どうぶつ", "definition": "animal", "born": "2018-03-01 05:04:22"},
+    {"hiragana": "ヒグマ", "definition": "brown bear", "born": "2018-03-01 04:59:54"},
     {"hiragana": "いか", "definition": "squid", "born": "2018-02-28 12:42:16"},
     {"hiragana": "しか", "definition": "deer"},
     {"hiragana": "さかな", "definition": "fish"},
@@ -143,6 +147,10 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "せいそくち", "definition": "habitat", "born": "2018-03-01 05:03:06"},
+    {"hiragana": "かんきょう", "definition": "environment", "born": "2018-03-01 04:51:51"},
+    {"hiragana": "コンサート", "definition": "concert", "born": "2018-02-28 21:19:18"},
+    {"hiragana": "かぶき", "definition": "Kabuki", "born": "2018-02-28 21:18:49"},
     {"hiragana": "もようしもの", "definition": "event, entertainment", "born": "2018-02-28 12:45:22"},
     {"hiragana": "みなと", "definition": "port", "born": "2018-02-28 12:42:55"},
     {"hiragana": "あかり", "definition": "lights", "born": "2018-02-28 12:40:30"},
@@ -225,6 +233,8 @@
     {"hiragana": "けいたい", "definition": "cell phone"},
     {"hiragana": "しぜん", "definition": "nature"},
     {"hiragana": "こくほう", "definition": "national treasures"},
+    {"hiragana": "こくりつこうえん", "definition": "national park", "born": "2018-03-01 04:41:41"},
+    {"hiragana": "こうえん", "definition": "park", "born": "2018-03-01 04:41:21"},
     {"hiragana": "ふろ", "definition": "bath"},
     {"hiragana": "ゆかた", "definition": "robe (for a bath)"},
     {"hiragana": "だいよくじょう", "definition": "common bath"},
@@ -348,6 +358,7 @@
     {"hiragana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"hiragana": "もっとも", "definition": "most", "born": "2018-03-01 04:42:52"},
     {"hiragana": "すごく", "definition": "extremely, very", "born": "2018-02-25 10:54:49"},
     {"hiragana": "なんでも", "definition": "anything", "born": "2018-02-25 10:51:08"},
     {"hiragana": "ほとんど", "definition": "mostly", "born": "2018-02-25 10:50:47"},
@@ -370,7 +381,7 @@
     {"hiragana": "とこに", "definition": "especially"},
     {"hiragana": "いくつか", "definition": "some of, a few of"},
     {"hiragana": "について", "definition": "about, regarding"},
-    {"hiragana": "ぜひ", "definition": "by all means"},
+    {"hiragana": "ぜひ", "definition": "by all means", "born": "2018-02-28 21:23:22"},
     {"hiragana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
@@ -384,7 +395,7 @@
     {"hiragana": "こんげつ", "definition": "this month", "born": "2018-02-15 17:21:00"},
     {"hiragana": "あさって", "definition": "day after tomorrow", "born": "2018-02-15 17:20:28"},
     {"hiragana": "そのとじ", "definition": "around that time", "born": "2018-02-12 06:52:41"},
-    {"hiragana": "こんど", "definition": "next time"},
+    {"hiragana": "こんど", "definition": "next time, near future", "born": "2018-02-28 21:19:54"},
     {"hiragana": "そのあいだに", "definition": "during that time", "born": "2018-02-10 16:51:01"},
     {"hiragana": "いつから", "definition": "since when"},
     {"hiragana": "いつごろ", "definition": "about when"},
@@ -440,6 +451,10 @@
     {"hiragana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"hiragana": "どくとくな", "definition": "unique, distinctive", "born": "2018-03-01 04:52:25"},
+    {"hiragana": "いじわるな", "definition": "mean-spirited", "born": "2018-02-28 21:22:39"},
+    {"hiragana": "わかい", "definition": "young", "born": "2018-02-28 21:20:54"},
+    {"hiragana": "さびしい", "definition": "lonely", "born": "2018-02-28 21:20:34"},
     {"hiragana": "だいじな", "definition": "important", "born": "2018-02-28 12:45:50"},
     {"hiragana": "おかしい", "definition": "strange", "born": "2018-02-18 05:11:07"},
     {"hiragana": "ゆめいな", "definition": "famous", "born": "2018-02-17 20:22:48"},
