@@ -11,6 +11,8 @@ generator = Random.new
 adjectives.take(n).each do |adjective|
   is_present = [true, false].sample
   is_positive = [true, false].sample
+  is_long = [true, false].sample
+
   if is_present && is_positive
     verb = 'is'
   elsif is_present && !is_positive
@@ -20,22 +22,17 @@ adjectives.take(n).each do |adjective|
   else
     verb = 'wasn\'t'
   end
-  print "It #{verb} #{adjective.definition}. -> "
+  print "#{is_long ? 'Long' : 'Short'}: It #{verb} #{adjective.definition}. -> "
+
   guess = gets.chomp
 
-  if is_present
-    answer = adjective.present(is_positive)
-    suffix = 'です'
-  else
-    answer = adjective.past(is_positive)
-    suffix = (adjective.is_na? && is_positive) ? 'でした' : 'です'
-  end
-  answer += suffix
+  answer = adjective.is(is_present, is_positive, is_long)
 
   if guess == answer
     puts "Right!"
   else
-    puts "Wrong. It's #{answer}."
+    puts "Wrong. Expected: #{answer}"
+    puts "                 #{guess}"
   end
   puts
 end

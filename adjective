@@ -7,7 +7,15 @@ adjective = adjectives.find { |adjective| adjective.hiragana == ARGV[0] }
 
 puts "is_i? #{adjective.is_i?}"
 puts "is_na? #{adjective.is_na?}"
-puts "present positive? #{adjective.present(true)}"
-puts "present negative? #{adjective.present(false)}"
-puts "past positive? #{adjective.past(true)}"
-puts "past negative? #{adjective.past(false)}"
+puts
+puts "PRESENT"
+puts adjective.is(true, true, false)
+puts adjective.is(true, true, true)
+puts adjective.is(true, false, false)
+puts adjective.is(true, false, true)
+puts
+puts "PAST"
+puts adjective.is(false, true, false)
+puts adjective.is(false, true, true)
+puts adjective.is(false, false, false)
+puts adjective.is(false, false, true)

@@ -255,7 +255,7 @@ module Japanese
       Verb.new(p)
     end
 
-    def short is_positive
+    def short(is_positive=true, is_present=true)
       if is_positive
         return hiragana
       else
@@ -347,34 +347,54 @@ module Japanese
       end
     end
 
-    def present is_positive
-      if is_i?
-        if is_positive
-          hiragana
+    def is(is_present=true, is_positive=true, is_long=true)
+      suffix = ''
+      if is_long
+        if is_na? && !is_present && is_positive
+          suffix = 'でした'
         else
-          virtual[0..-2] + 'くない'
+          suffix = 'です'
         end
       else
-        if is_positive
-          virtual[0..-2]
-        else
-          virtual[0..-2] + 'じゃない'
+        if is_na? && is_positive
+          if is_present
+            suffix = 'だ'
+          else
+            suffix = 'だった'
+          end
         end
       end
+      long(is_present, is_positive) + suffix
     end
 
-    def past is_positive
-      if is_i?
-        if is_positive
-          virtual[0..-2] + 'かった'
+    def long(is_present=true, is_positive=true)
+      if is_present
+        if is_i?
+          if is_positive
+            hiragana
+          else
+            virtual[0..-2] + 'くない'
+          end
         else
-          virtual[0..-2] + 'くなかった'
+          if is_positive
+            virtual[0..-2]
+          else
+            virtual[0..-2] + 'じゃない'
+          end
         end
       else
-        if is_positive
-          virtual[0..-2] + 'なかった'
+        if is_i?
+          if is_positive
+            virtual[0..-2] + 'かった'
+          else
+            virtual[0..-2] + 'くなかった'
+          end
         else
-          virtual[0..-2] + 'じゃなかった'
+          if is_positive
+            virtual[0..-2]
+          else
+            virtual[0..-2] + 'じゃなかった'
+          end
         end
       end
     end

@@ -1,5 +1,6 @@
 {
   "verbs": [
+    {"hiragana": "りょうする", "definition": "to utilize", "like": "する", "born": "2018-03-02 07:24:47"},
     {"hiragana": "かこむ", "definition": "to surround", "born": "2018-03-01 04:49:57"},
     {"hiragana": "おわる", "definition": "to finish", "born": "2018-03-01 04:39:28"},
     {"hiragana": "くらべる", "definition": "to compare", "born": "2018-02-25 10:56:08"},
@@ -147,6 +148,13 @@
     {"hiragana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"hiragana": "ひつよう", "definition": "need", "born": "2018-03-02 07:27:09"},
+    {"hiragana": "ピジャマ", "definition": "pajamas", "born": "2018-03-02 07:26:49"},
+    {"hiragana": "はブラシ", "definition": "toothbrush", "born": "2018-03-02 07:26:26"},
+    {"hiragana": "ビジネス", "definition": "business", "born": "2018-03-02 07:25:23"},
+    {"hiragana": "スキー", "definition": "ski", "born": "2018-03-01 12:46:09"},
+    {"hiragana": "テニス", "definition": "tennis", "born": "2018-03-01 12:45:41"},
+    {"hiragana": "ここに", "definition": "good child", "born": "2018-03-01 12:44:48"},
     {"hiragana": "せいそくち", "definition": "habitat", "born": "2018-03-01 05:03:06"},
     {"hiragana": "かんきょう", "definition": "environment", "born": "2018-03-01 04:51:51"},
     {"hiragana": "コンサート", "definition": "concert", "born": "2018-02-28 21:19:18"},
@@ -307,18 +315,19 @@
     {"hiragana": "ぼうし", "definition": "hat"},
     {"hiragana": "こうよう", "definition": "foliage"},
     {"hiragana": "にんぎょう", "definition": "doll"},
-    {"hiragana": "くすり", "definition": "medicine"}
+    {"hiragana": "くすり", "definition": "medicine", "born": "2018-03-01 12:47:32"}
   ],
   "colors" : [
     {"hiragana": "まっくろい", "definition": "pitch black", "born": "2018-02-28 12:39:47"},
-    {"hiragana": "いろ", "definition": "color", "born": "2018-02-25 10:49:53"},
+    {"hiragana": "いろ", "definition": "color", "born": "2018-03-01 12:45:05"},
     {"hiragana": "みどり", "definition": "green"},
-    {"hiragana": "あか", "definition": "red"},
-    {"hiragana": "しろ", "definition": "white"},
-    {"hiragana": "くろ", "definition": "black"},
-    {"hiragana": "あお", "definition": "blue"}
+    {"hiragana": "あか", "definition": "red", "born": "2018-03-01 12:47:52"},
+    {"hiragana": "しろ", "definition": "white", "born": "2018-03-01 12:48:03"},
+    {"hiragana": "くろ", "definition": "black", "born": "2018-03-01 12:48:00"},
+    {"hiragana": "あお", "definition": "blue", "born": "2018-03-01 12:47:51"}
   ],
   "jobs" : [
+    {"hiragana": "サラリマン", "definition": "salaried man", "born": "2018-03-02 07:24:09"},
     {"hiragana": "しごと", "definition": "job", "born": "2018-02-20 22:07:22"},
     {"hiragana": "ゆうびんはいたつのひと", "definition": "mailman", "born": "2018-02-20 05:35:16"},
     {"hiragana": "かいしゃいん", "definition": "office worker", "born": "2018-02-17 20:23:55"},
@@ -403,7 +412,8 @@
     {"hiragana": "あのとき", "definition": "at that time"},
     {"hiragana": "まだ", "definition": "not yet, still", "born": "2018-02-14 18:29:11"},
     {"hiragana": "たいてい", "definition": "usually"},
-    {"hiragana": "きょうねん", "definition": "last year"},
+    {"hiragana": "きょねん", "definition": "last year", "born": "2018-03-01 12:46:30"},
+    {"hiragana": "せんげつ", "definition": "last month", "born": "2018-03-01 12:46:58"},
     {"hiragana": "さいきん", "definition": "recently"},
     {"hiragana": "もう", "definition": "already"},
     {"hiragana": "せいき", "definition": "century"},
@@ -451,6 +461,9 @@
     {"hiragana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"hiragana": "せまい", "definition": "cramped, narrow", "born": "2018-03-02 07:26:01"},
+    {"hiragana": "べんりな", "definition": "convenient", "born": "2018-03-02 07:25:43"},
+    {"hiragana": "てごろな", "definition": "reasonable, moderate", "born": "2018-03-02 07:22:45"},
     {"hiragana": "どくとくな", "definition": "unique, distinctive", "born": "2018-03-01 04:52:25"},
     {"hiragana": "いじわるな", "definition": "mean-spirited", "born": "2018-02-28 21:22:39"},
     {"hiragana": "わかい", "definition": "young", "born": "2018-02-28 21:20:54"},
