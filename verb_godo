@@ -9,14 +9,14 @@ n = 10
 generator = Random.new
 
 movers = [
-  verbs.find { |verb| verb.hiragana == 'いく' },
-  verbs.find { |verb| verb.hiragana == 'くる' },
-  verbs.find { |verb| verb.hiragana == 'かえる' }
+  verbs.find { |verb| verb.phonetic == 'いく' },
+  verbs.find { |verb| verb.phonetic == 'くる' },
+  verbs.find { |verb| verb.phonetic == 'かえる' }
 ]
 
 verbs.take(n).each do |verb|
   mover = movers.sample
-  print "#{mover.definition} #{verb.definition} (#{verb.hiragana}) -> "
+  print "#{mover.definition} #{verb.definition} (#{verb.phonetic}) -> "
   guess = gets.chomp
 
   answer = verb.stem + 'に' + mover.long

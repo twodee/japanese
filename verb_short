@@ -10,7 +10,7 @@ generator = Random.new
 
 verbs.take(n).each do |verb|
   is_positive = [true, false].sample
-  prompt = "#{verb.hiragana} (#{verb.definition})"
+  prompt = "#{verb.phonetic} (#{verb.definition})"
   if is_positive
     print "#{prompt} POSITIVE ".green
   else

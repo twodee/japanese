@@ -26,7 +26,7 @@ g = Random.new
   print "#{day.definition}, #{month.definition} #{dayNumber.definition}? "
 
   guess = gets.chomp
-  answer = "#{month.hiragana}#{dayNumber.hiragana}#{day.hiragana}"
+  answer = "#{month.phonetic}#{dayNumber.phonetic}#{day.phonetic}"
 
   if guess == answer
     puts "Right!"

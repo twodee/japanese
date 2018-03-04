@@ -3,7 +3,7 @@
 require_relative 'japanese'
 
 verbs = Japanese.verbs
-matches = verbs.select { |verb| verb.hiragana == ARGV[0] }
+matches = verbs.select { |verb| verb.phonetic == ARGV[0] }
 
 matches.each do |verb|
   puts "is_u? #{verb.is_u?}"
@@ -20,7 +20,7 @@ matches.each do |verb|
   puts "positive short: #{verb.short(true)}"
   puts "negative short: #{verb.short(false)}"
   puts
-  puts "potential: #{verb.potential.hiragana}"
+  puts "potential: #{verb.potential.phonetic}"
   puts "potential: #{verb.potential.long(true, true)}"
   puts "potential: #{verb.potential.long(true, false)}"
   puts "potential: #{verb.potential.long(false, true)}"

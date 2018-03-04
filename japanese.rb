@@ -41,7 +41,7 @@ module Japanese
       if item.matches(guess)
         puts "Right!"
       else
-        puts "Wrong...\n Expected: #{item.to_j}\n   Actual: #{guess}"
+        puts "Wrong...\n Expected: #{item.phonetic}\n   Actual: #{guess}"
       end
       puts
     end
@@ -69,13 +69,13 @@ module Japanese
 
   def self.time(h, m, isAM)
     answer = isAM ? 'ごぜん' : 'ごご'
-    answer += hours[h - 1].hiragana
+    answer += hours[h - 1].phonetic
     if m > 10 && m % 10 == 0
-      answer += ones[m / 10].hiragana + minutes[9].hiragana
+      answer += ones[m / 10].phonetic + minutes[9].phonetic
     elsif m > 10
-      answer += tens[m / 10 - 1].hiragana + minutes[(m - 1) % 10 + 1 - 1].hiragana
+      answer += tens[m / 10 - 1].phonetic + minutes[(m - 1) % 10 + 1 - 1].phonetic
     elsif m > 0
-      answer += minutes[m - 1].hiragana
+      answer += minutes[m - 1].phonetic
     end
     answer
   end
@@ -178,11 +178,11 @@ module Japanese
 
 
   class Word
-    attr_reader :hiragana, :definition
+    attr_reader :phonetic, :definition
 
     def initialize d
       @properties = d
-      @hiragana = d['hiragana']
+      @phonetic = d['phonetic']
       @definition = d['definition']
     end
 
@@ -195,18 +195,7 @@ module Japanese
     end
 
     def matches(that)
-      (@properties.has_key?('hiragana') && @properties['hiragana'] == that) ||
-      (@properties.has_key?('katakana') && @properties['katakana'] == that)
-    end
-
-    def to_j
-      if @properties.has_key?('hiragana')
-        @properties['hiragana']
-      elsif @properties.has_key?('katakana')
-        @properties['katakana']
-      else
-        raise 'no rep'
-      end
+      @properties.has_key?('phonetic') && @properties['phonetic'] == that
     end
   end
 
@@ -224,7 +213,7 @@ module Japanese
       if @properties.has_key?('type')
         @properties['type'] == 'ru'
       else
-        hiragana[-1] == 'る' && (E_HIRAGANA.member?(hiragana[-2]) || I_HIRAGANA.member?(hiragana[-2]))
+        phonetic[-1] == 'る' && (E_HIRAGANA.member?(phonetic[-2]) || I_HIRAGANA.member?(phonetic[-2]))
       end
     end
 
@@ -245,11 +234,11 @@ module Japanese
       p = {definition: "to be able #{definition}"}
 
       if @properties.has_key?('potential')
-        p['hiragana'] = @properties['potential']
+        p['phonetic'] = @properties['potential']
       elsif is_ru?
-        p['hiragana'] = hiragana[0..-2] + 'られる'
+        p['phonetic'] = phonetic[0..-2] + 'られる'
       else
-        p['hiragana'] = hiragana[0..-2] + Japanese.ePartner(hiragana[-1]) + 'る'
+        p['phonetic'] = phonetic[0..-2] + Japanese.ePartner(phonetic[-1]) + 'る'
       end
 
       Verb.new(p)
@@ -257,47 +246,47 @@ module Japanese
 
     def short(is_positive=true, is_present=true)
       if is_positive
-        return hiragana
+        return phonetic
       else
         if @properties.has_key?('shortnegative')
           @properties['shortnegative']
         elsif @properties.has_key?('like')
-          model = Japanese.verbs.find { |verb| verb.hiragana == @properties['like'] }
-          hiragana.gsub(/#{model.hiragana}$/, model.short(is_positive))
+          model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
+          phonetic.gsub(/#{model.phonetic}$/, model.short(is_positive))
         elsif is_ru?
-          hiragana[0..-2] + 'ない'
-        elsif hiragana[-1] == 'う'
-          hiragana[0..-2] + 'わない'
+          phonetic[0..-2] + 'ない'
+        elsif phonetic[-1] == 'う'
+          phonetic[0..-2] + 'わない'
         else
-          hiragana[0..-2] + Japanese.aPartner(hiragana[-1]) + 'ない'
+          phonetic[0..-2] + Japanese.aPartner(phonetic[-1]) + 'ない'
         end
       end
     end
 
     def te
       # irregular verbs
-      if hiragana.end_with? 'する'
-        hiragana[0..-3] + 'して'
-      elsif hiragana.end_with? 'くる'
-        hiragana[0..-3] + 'きて'
-      elsif hiragana == 'いく'
-        hiragana[0..-3] + 'いって'
+      if phonetic.end_with? 'する'
+        phonetic[0..-3] + 'して'
+      elsif phonetic.end_with? 'くる'
+        phonetic[0..-3] + 'きて'
+      elsif phonetic == 'いく'
+        phonetic[0..-3] + 'いって'
 
       # ru verbs
       elsif is_ru?
-        hiragana[0..-2] + 'て'
+        phonetic[0..-2] + 'て'
 
       # u verbs
-      elsif %w{う つ る}.include?(hiragana[-1])
-        hiragana[0..-2] + 'って'
-      elsif %w{む ぶ ぬ}.include?(hiragana[-1])
-        hiragana[0..-2] + 'んで'
-      elsif hiragana[-1] == 'す'
-        hiragana[0..-2] + 'して'
-      elsif hiragana[-1] == 'く'
-        hiragana[0..-2] + 'いて'
-      elsif hiragana[-1] == 'ぐ'
-        hiragana[0..-2] + 'いで'
+      elsif %w{う つ る}.include?(phonetic[-1])
+        phonetic[0..-2] + 'って'
+      elsif %w{む ぶ ぬ}.include?(phonetic[-1])
+        phonetic[0..-2] + 'んで'
+      elsif phonetic[-1] == 'す'
+        phonetic[0..-2] + 'して'
+      elsif phonetic[-1] == 'く'
+        phonetic[0..-2] + 'いて'
+      elsif phonetic[-1] == 'ぐ'
+        phonetic[0..-2] + 'いで'
       end
     end
 
@@ -305,12 +294,12 @@ module Japanese
       if @properties.has_key?('infinitive')
         @properties['infinitive']
       elsif @properties.has_key?('like')
-        model = Japanese.verbs.find { |verb| verb.hiragana == @properties['like'] }
-        hiragana.gsub(/#{model.hiragana}$/, model.infinitive)
+        model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
+        phonetic.gsub(/#{model.phonetic}$/, model.infinitive)
       elsif is_ru?
-        hiragana[0..-2]
+        phonetic[0..-2]
       else
-        hiragana[0..-2] + Japanese.iPartner(hiragana[-1])
+        phonetic[0..-2] + Japanese.iPartner(phonetic[-1])
       end
     end
 
@@ -332,18 +321,18 @@ module Japanese
     end
 
     def is_i?
-      hiragana.end_with?('い')
+      phonetic.end_with?('い')
     end
 
     def is_na?
-      hiragana.end_with?('な')
+      phonetic.end_with?('な')
     end
 
     def virtual
       if @properties.has_key?('alternate')
         @properties['alternate']
       else
-        hiragana
+        phonetic
       end
     end
 
@@ -371,7 +360,7 @@ module Japanese
       if is_present
         if is_i?
           if is_positive
-            hiragana
+            phonetic
           else
             virtual[0..-2] + 'くない'
           end
