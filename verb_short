@@ -9,16 +9,17 @@ n = 10
 generator = Random.new
 
 verbs.take(n).each do |verb|
+  is_present = [true, false].sample
   is_positive = [true, false].sample
   prompt = "#{verb.phonetic} (#{verb.definition})"
   if is_positive
-    print "#{prompt} POSITIVE ".green
+    print "#{prompt} #{is_present ? 'PRESENT' : 'PAST'} POSITIVE ".green
   else
-    print "#{prompt} NEGATIVE ".red
+    print "#{prompt} #{is_present ? 'PRESENT' : 'PAST'} NEGATIVE ".red
   end
   guess = gets.chomp
 
-  answer = verb.short(is_positive)
+  answer = verb.short(is_positive, is_present)
 
   if guess == answer
     puts "Right!"

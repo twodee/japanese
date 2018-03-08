@@ -245,32 +245,40 @@ module Japanese
     end
 
     def short(is_positive=true, is_present=true)
-      if is_positive
-        return phonetic
-      else
-        if @properties.has_key?('shortnegative')
-          @properties['shortnegative']
-        elsif @properties.has_key?('like')
-          model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
-          phonetic.gsub(/#{model.phonetic}$/, model.short(is_positive))
-        elsif is_ru?
-          phonetic[0..-2] + 'ない'
-        elsif phonetic[-1] == 'う'
-          phonetic[0..-2] + 'わない'
+      if is_present
+        if is_positive
+          return phonetic
         else
-          phonetic[0..-2] + Japanese.aPartner(phonetic[-1]) + 'ない'
+          if @properties.has_key?('shortnegative')
+            @properties['shortnegative']
+          elsif @properties.has_key?('like')
+            model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
+            phonetic.sub(/#{model.phonetic}$/, model.short(is_positive))
+          elsif is_ru?
+            phonetic[0..-2] + 'ない'
+          elsif phonetic[-1] == 'う'
+            phonetic[0..-2] + 'わない'
+          else
+            phonetic[0..-2] + Japanese.aPartner(phonetic[-1]) + 'ない'
+          end
+        end
+      else
+        if is_positive
+          te.sub(/て$/, 'た').sub(/で$/, 'だ')
+        else
+          short(false, true)[0..-2] + 'かった'
         end
       end
     end
 
     def te
-      # irregular verbs
-      if phonetic.end_with? 'する'
-        phonetic[0..-3] + 'して'
-      elsif phonetic.end_with? 'くる'
-        phonetic[0..-3] + 'きて'
-      elsif phonetic == 'いく'
-        phonetic[0..-3] + 'いって'
+      if @properties.has_key?('te')
+        @properties['te']
+
+      # Verbs that behave like another.
+      elsif @properties.has_key?('like')
+        model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
+        phonetic.sub(/#{model.phonetic}$/, model.te)
 
       # ru verbs
       elsif is_ru?
@@ -295,7 +303,7 @@ module Japanese
         @properties['infinitive']
       elsif @properties.has_key?('like')
         model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
-        phonetic.gsub(/#{model.phonetic}$/, model.infinitive)
+        phonetic.sub(/#{model.phonetic}$/, model.infinitive)
       elsif is_ru?
         phonetic[0..-2]
       else

@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+verbs = Japanese.verbs
+verbs.shuffle!
+
+n = 10
+generator = Random.new
+
+verbs.take(n).each do |verb|
+  print "#{verb.phonetic} (#{verb.definition}) -> "
+
+  guess = STDIN.gets.chomp
+  answer = "もう#{verb.long(true, false)}か"
+
+  if guess != answer
+    puts "Wrong."
+    puts "  Expected: #{answer}"
+    puts "    Actual: #{guess}"
+  end
+
+  is_positive = [true, false].sample
+  if is_positive
+    print "はい、".green
+    answer = "もう#{verb.long(true, false)}"
+  else
+    print "いいえ、".red
+    answer = "まだ#{verb.te}いません"
+  end
+
+  guess = STDIN.gets.chomp
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong."
+    puts "  Expected: #{answer}"
+    puts "    Actual: #{guess}"
+  end
+
+  puts
+end

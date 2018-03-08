@@ -6,19 +6,28 @@ verbs = Japanese.verbs
 matches = verbs.select { |verb| verb.phonetic == ARGV[0] }
 
 matches.each do |verb|
+  puts verb.phonetic
+  puts
   puts "is_u? #{verb.is_u?}"
   puts "is_ru? #{verb.is_ru?}"
   puts "infinitive: #{verb.infinitive}"
   puts "te: #{verb.te}"
   puts
+  puts "LONG -----------------------------------------------------------------"
+  puts 
   puts "positive present: #{verb.long(true, true)}"
   puts "negative present: #{verb.long(false, true)}"
   puts
   puts "positive past: #{verb.long(true, false)}"
   puts "negative past: #{verb.long(false, false)}"
   puts
-  puts "positive short: #{verb.short(true)}"
-  puts "negative short: #{verb.short(false)}"
+  puts "SHORT ----------------------------------------------------------------"
+  puts
+  puts "positive present: #{verb.short(true, true)}"
+  puts "negative present: #{verb.short(false, true)}"
+  puts
+  puts "positive past: #{verb.short(true, false)}"
+  puts "negative past: #{verb.short(false, false)}"
   puts
   puts "potential: #{verb.potential.phonetic}"
   puts "potential: #{verb.potential.long(true, true)}"
