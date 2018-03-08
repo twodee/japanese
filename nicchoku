@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+require 'optparse'
+require 'date'
+
+today = Date.today
+
+month = Japanese.months[today.month - 1].phonetic
+dayNumber = Japanese.daynumbers[today.day - 1].phonetic
+dayName = Japanese.days[today.wday].phonetic
+
+print '> '
+guess = STDIN.gets.chomp
+
+answer = "#{month}#{dayNumber}#{dayName}"
+
+if guess == answer
+  puts "Right!"
+else
+  puts "Wrong."
+  puts "  Expected: #{answer}"
+  puts "    Actual: #{guess}"
+end
