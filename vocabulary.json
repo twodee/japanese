@@ -152,6 +152,7 @@
     {"phonetic": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"phonetic": "はれ", "definition": "clear weather", "born": "2018-03-10 05:19:53"},
     {"phonetic": "びょうき", "definition": "illness", "born": "2018-03-06 19:29:58"},
     {"phonetic": "しけん", "definition": "exam", "born": "2018-03-06 19:29:42"},
     {"phonetic": "ピアノ", "definition": "piano", "born": "2018-03-06 19:29:27"},
@@ -490,6 +491,9 @@
     {"phonetic": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"phonetic": "つよい", "definition": "strong", "born": "2018-03-10 05:23:16"},
+    {"phonetic": "くらい", "definition": "dark", "born": "2018-03-10 05:20:58"},
+    {"phonetic": "あかるい", "definition": "bright", "born": "2018-03-10 05:13:02"},
     {"phonetic": "よわい", "definition": "weak", "born": "2018-03-06 04:45:22"},
     {"phonetic": "せまい", "definition": "cramped, narrow", "born": "2018-03-02 07:26:01"},
     {"phonetic": "べんりな", "definition": "convenient", "born": "2018-03-02 07:25:43"},

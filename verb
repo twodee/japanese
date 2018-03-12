@@ -6,7 +6,7 @@ verbs = Japanese.verbs
 matches = verbs.select { |verb| verb.phonetic == ARGV[0] }
 
 matches.each do |verb|
-  puts verb.phonetic
+  puts "#{verb.phonetic} (#{verb.definition})"
   puts
   puts "is_u? #{verb.is_u?}"
   puts "is_ru? #{verb.is_ru?}"
