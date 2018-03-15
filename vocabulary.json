@@ -1,5 +1,6 @@
 {
   "verbs": [
+    {"phonetic": "きめる", "definition": "to decide", "born": "2018-03-14 20:28:30"},
     {"phonetic": "ひたす", "definition": "to soak", "born": "2018-03-05 04:42:16"},
     {"phonetic": "ひく", "definition": "to play", "born": "2018-03-04 11:21:18"},
     {"phonetic": "りょうする", "definition": "to utilize", "like": "する", "born": "2018-03-02 07:24:47"},
@@ -97,8 +98,8 @@
     {"phonetic": "でんわする", "definition": "to call", "like": "する", "born": "2018-02-17 20:20:34"},
     {"phonetic": "でんわをかける", "definition": "to call"},
     {"phonetic": "わすれる", "definition": "to forget"},
-    {"phonetic": "つれてくる", "definition": "to bring (a person)", "infinitive": "つれてき", "type": "irregular"},
-    {"phonetic": "もってくる", "definition": "to bring (an object)", "infinitive": "もってき", "type": "irregular"},
+    {"phonetic": "つれてくる", "definition": "to bring (a person)", "like": "くる"},
+    {"phonetic": "もってくる", "definition": "to bring (an object)", "like": "くる"},
     {"phonetic": "かわく", "definition": "to become dry"},
     {"phonetic": "すく", "definition": "to become empty"},
     {"phonetic": "いきる", "definition": "to live (to survive)"},
@@ -106,7 +107,7 @@
     {"phonetic": "うつる", "definition": "to move"},
     {"phonetic": "おもう", "definition": "to think", "born": "2018-02-13 18:52:00"},
     {"phonetic": "のりかえる", "definition": "to transfer"},
-    {"phonetic": "なる", "definition": "to become"},
+    {"phonetic": "なる", "definition": "to become", "born": "2018-03-14 20:28:04"},
     {"phonetic": "おおう", "definition": "to cover"},
     {"phonetic": "きにゅうする", "definition": "to fill in", "like": "する"},
     {"phonetic": "つく", "definition": "to arrive"},
@@ -152,6 +153,8 @@
     {"phonetic": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"phonetic": "しんかんせん", "definition": "bullet train", "born": "2018-03-14 20:27:40"},
+    {"phonetic": "おかねもち", "definition": "rich person", "born": "2018-03-14 20:27:19"},
     {"phonetic": "はれ", "definition": "clear weather", "born": "2018-03-10 05:19:53"},
     {"phonetic": "びょうき", "definition": "illness", "born": "2018-03-06 19:29:58"},
     {"phonetic": "しけん", "definition": "exam", "born": "2018-03-06 19:29:42"},
@@ -361,6 +364,7 @@
     {"phonetic": "いっしゃ", "definition": "doctor"}
   ],
   "food" : [
+    {"phonetic": "りんご", "definition": "apple", "born": "2018-03-14 20:27:54"},
     {"phonetic": "ピザ", "definition": "pizza", "born": "2018-03-06 19:30:19"},
     {"phonetic": "ごはん", "definition": "cooked rice", "born": "2018-03-05 06:32:52"},
     {"phonetic": "おこめ", "definition": "uncooked rice", "born": "2018-03-05 06:31:48"},
@@ -394,6 +398,8 @@
     {"phonetic": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"phonetic": "どちら", "definition": "which", "born": "2018-03-14 20:31:21"},
+    {"phonetic": "どうち", "definition": "which", "born": "2018-03-14 20:31:39"},
     {"phonetic": "すくなくとも", "definition": "at least", "born": "2018-03-05 04:37:13"},
     {"phonetic": "みんな", "definition": "all", "born": "2018-03-04 11:20:22"},
     {"phonetic": "とつぜん", "definition": "suddenly", "born": "2018-03-03 05:22:18"},
@@ -491,6 +497,10 @@
     {"phonetic": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"phonetic": "ねむい", "definition": "sleepy", "born": "2018-03-14 20:30:57"},
+    {"phonetic": "あたたかい", "definition": "warm", "born": "2018-03-14 20:29:13"},
+    {"phonetic": "つめたい", "definition": "cold (objects, people)", "born": "2018-03-14 20:30:34"},
+    {"phonetic": "すずし", "definition": "cool (weather)", "born": "2018-03-14 20:30:00"},
     {"phonetic": "つよい", "definition": "strong", "born": "2018-03-10 05:23:16"},
     {"phonetic": "くらい", "definition": "dark", "born": "2018-03-10 05:20:58"},
     {"phonetic": "あかるい", "definition": "bright", "born": "2018-03-10 05:13:02"},
