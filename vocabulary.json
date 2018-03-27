@@ -1,5 +1,6 @@
 {
   "verbs": [
+    {"phonetic": "とまる", "definition": "to stay (at a hotel)", "born": "2018-03-26 21:38:10"},
     {"phonetic": "きめる", "definition": "to decide", "born": "2018-03-14 20:28:30"},
     {"phonetic": "ひたす", "definition": "to soak", "born": "2018-03-05 04:42:16"},
     {"phonetic": "ひく", "definition": "to play", "born": "2018-03-04 11:21:18"},
@@ -23,6 +24,8 @@
     {"phonetic": "りょうりする", "definition": "to cook", "like": "する", "born": "2018-02-14 18:26:47"},
     {"phonetic": "つくる", "definition": "to make", "born": "2018-02-14 09:36:59"},
     {"phonetic": "ならす", "definition": "to ring, sound, honk", "born": "2018-02-14 09:39:38"},
+    {"phonetic": "りょこうする", "definition": "to travel", "like": "する", "born": "2018-03-26 21:38:50"},
+    {"phonetic": "れんしゅうする", "definition": "to practice", "born": "2018-03-26 21:40:48"},
     {"phonetic": "そうじする", "definition": "to clean", "like": "する", "born": "2018-02-13 18:53:18"},
     {"phonetic": "せんたくする", "definition": "to do laundry", "like": "する", "born": "2018-02-13 18:52:55"},
     {"phonetic": "いく", "definition": "to go", "te": "いって"},
@@ -153,6 +156,8 @@
     {"phonetic": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"phonetic": "らいがっき", "definition": "next semester", "born": "2018-03-26 21:28:02"},
+    {"phonetic": "びよういん", "definition": "beauty parlor", "born": "2018-03-26 21:27:08"},
     {"phonetic": "しんかんせん", "definition": "bullet train", "born": "2018-03-14 20:27:40"},
     {"phonetic": "おかねもち", "definition": "rich person", "born": "2018-03-14 20:27:19"},
     {"phonetic": "はれ", "definition": "clear weather", "born": "2018-03-10 05:19:53"},
@@ -394,7 +399,7 @@
     {"phonetic": "かいがい", "definition": "overseas"},
     {"phonetic": "せかいいさん", "definition": "world heritage site"},
     {"phonetic": "そと", "definition": "outside"},
-    {"phonetic": "せかい", "definition": "world"},
+    {"phonetic": "せかい", "definition": "world", "born": "2018-03-26 21:26:00"},
     {"phonetic": "そば", "definition": "beside"}
   ],
   "helpers" : [
@@ -455,11 +460,11 @@
     {"phonetic": "せいき", "definition": "century"},
     {"phonetic": "まいつき", "definition": "monthly"},
     {"phonetic": "まいとし", "definition": "every year"},
-    {"phonetic": "はる", "definition": "spring"},
+    {"phonetic": "はる", "definition": "spring", "born": "2018-03-26 21:25:14"},
     {"phonetic": "なつ", "definition": "summer", "born": "2018-02-17 20:24:35"},
-    {"phonetic": "あき", "definition": "fall"},
+    {"phonetic": "あき", "definition": "fall", "born": "2018-03-26 21:25:09"},
     {"phonetic": "ふゆ", "definition": "winter", "born": "2018-02-17 20:24:34"},
-    {"phonetic": "きせつ", "definition": "season"},
+    {"phonetic": "きせつ", "definition": "season", "born": "2018-03-26 21:25:36"},
     {"phonetic": "このあいだ", "definition": "the other day"},
     {"phonetic": "まず", "definition": "first of all"}
   ],
