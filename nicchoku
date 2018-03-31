@@ -6,9 +6,9 @@ require 'date'
 
 today = Date.today
 
-month = Japanese.months[today.month - 1].phonetic
-dayNumber = Japanese.daynumbers[today.day - 1].phonetic
-dayName = Japanese.days[today.wday].phonetic
+month = Japanese.months[today.month - 1].kana
+dayNumber = Japanese.daynumbers[today.day - 1].kana
+dayName = Japanese.days[today.wday].kana
 
 print '> '
 guess = STDIN.gets.chomp

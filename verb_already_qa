@@ -9,7 +9,7 @@ n = 10
 generator = Random.new
 
 verbs.take(n).each do |verb|
-  print "#{verb.phonetic} (#{verb.definition}) -> "
+  print "#{verb.kana} (#{verb.definition}) -> "
 
   guess = STDIN.gets.chomp
   answer = "もう#{verb.long(true, false)}か"

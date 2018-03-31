@@ -24,23 +24,23 @@ g = Random.new
   answer = ''
 
   if digit10000 > 0
-    answer += tenthousands[digit10000 - 1].phonetic
+    answer += tenthousands[digit10000 - 1].kana
   end
 
   if digit1000 > 0
-    answer += thousands[digit1000 - 1].phonetic
+    answer += thousands[digit1000 - 1].kana
   end
 
   if digit100 > 0
-    answer += hundreds[digit100 - 1].phonetic
+    answer += hundreds[digit100 - 1].kana
   end
 
   if digit10 > 0
-    answer += tens[digit10 - 1].phonetic
+    answer += tens[digit10 - 1].kana
   end
 
   if digit1 > 0
-    answer += ones[digit1].phonetic
+    answer += ones[digit1].kana
   end
 
   if guess == answer

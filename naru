@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+nouns = Japanese.nouns
+nouns.shuffle!
+adjectives = Japanese.adjectives
+adjectives.shuffle!
+
+n = 10
+generator = Random.new
+
+n.times do
+  is_noun = [true, false].sample
+  if is_noun
+    word = nouns.pop
+    answer = "#{word.kana}になります"
+  else
+    word = adjectives.pop
+    if word.is_na?
+      answer = "#{word.kana[0..-2]}になります"
+    else
+      answer = "#{word.kana[0..-2]}くなります"
+    end
+  end
+  print "It becomes #{word.definition} (#{word.kana}) -> "
+  guess = gets.chomp
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong. It's #{answer}."
+  end
+  puts
+end

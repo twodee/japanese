@@ -8,7 +8,7 @@ verbs.shuffle!
 n = 10
 
 verbs.take(n).each do |verb|
-  print "#{verb.phonetic} (#{verb.definition})? "
+  print "#{verb.kana} (#{verb.definition})? "
   answer = gets.chomp
   if answer == verb.te
     puts "Right!"

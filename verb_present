@@ -10,7 +10,7 @@ generator = Random.new
 
 verbs.take(n).each do |verb|
   is_positive = [true, false].sample
-  print "#{verb.phonetic} (#{verb.definition}) #{is_positive ? 'positive' : 'negative'}? "
+  print "#{verb.kana} (#{verb.definition}) #{is_positive ? 'positive' : 'negative'}? "
   guess = gets.chomp
   answer = verb.present(is_positive)
   if guess == answer

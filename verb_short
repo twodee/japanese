@@ -30,7 +30,7 @@ verbs.take(options[:n]).each do |verb|
 
   times.each do |is_present|
     positives.each do |is_positive|
-      prompt = "#{verb.phonetic} (#{verb.definition})"
+      prompt = "#{verb.kana} (#{verb.definition})"
       if is_positive
         print "#{prompt} #{is_present ? 'PRESENT' : 'PAST'} POSITIVE ".green
       else

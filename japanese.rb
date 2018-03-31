@@ -41,7 +41,7 @@ module Japanese
       if item.matches(guess)
         puts "Right!"
       else
-        puts "Wrong...\n Expected: #{item.phonetic}\n   Actual: #{guess}"
+        puts "Wrong...\n Expected: #{item.kana}\n   Actual: #{guess}"
       end
       puts
     end
@@ -69,13 +69,13 @@ module Japanese
 
   def self.time(h, m, isAM)
     answer = isAM ? 'ごぜん' : 'ごご'
-    answer += hours[h - 1].phonetic
+    answer += hours[h - 1].kana
     if m > 10 && m % 10 == 0
-      answer += ones[m / 10].phonetic + minutes[9].phonetic
+      answer += ones[m / 10].kana + minutes[9].kana
     elsif m > 10
-      answer += tens[m / 10 - 1].phonetic + minutes[(m - 1) % 10 + 1 - 1].phonetic
+      answer += tens[m / 10 - 1].kana + minutes[(m - 1) % 10 + 1 - 1].kana
     elsif m > 0
-      answer += minutes[m - 1].phonetic
+      answer += minutes[m - 1].kana
     end
     answer
   end
@@ -178,11 +178,11 @@ module Japanese
 
 
   class Word
-    attr_reader :phonetic, :definition
+    attr_reader :kana, :definition
 
     def initialize d
       @properties = d
-      @phonetic = d['phonetic']
+      @kana = d['kana']
       @definition = d['definition']
     end
 
@@ -195,7 +195,7 @@ module Japanese
     end
 
     def matches(that)
-      @properties.has_key?('phonetic') && @properties['phonetic'] == that
+      @properties.has_key?('kana') && @properties['kana'] == that
     end
   end
 
@@ -213,7 +213,7 @@ module Japanese
       if @properties.has_key?('type')
         @properties['type'] == 'ru'
       else
-        phonetic[-1] == 'る' && (E_HIRAGANA.member?(phonetic[-2]) || I_HIRAGANA.member?(phonetic[-2]))
+        kana[-1] == 'る' && (E_HIRAGANA.member?(kana[-2]) || I_HIRAGANA.member?(kana[-2]))
       end
     end
 
@@ -234,11 +234,11 @@ module Japanese
       p = {definition: "to be able #{definition}"}
 
       if @properties.has_key?('potential')
-        p['phonetic'] = @properties['potential']
+        p['kana'] = @properties['potential']
       elsif is_ru?
-        p['phonetic'] = phonetic[0..-2] + 'られる'
+        p['kana'] = kana[0..-2] + 'られる'
       else
-        p['phonetic'] = phonetic[0..-2] + Japanese.ePartner(phonetic[-1]) + 'る'
+        p['kana'] = kana[0..-2] + Japanese.ePartner(kana[-1]) + 'る'
       end
 
       Verb.new(p)
@@ -247,19 +247,19 @@ module Japanese
     def short(is_positive=true, is_present=true)
       if is_present
         if is_positive
-          return phonetic
+          return kana
         else
           if @properties.has_key?('shortnegative')
             @properties['shortnegative']
           elsif @properties.has_key?('like')
-            model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
-            phonetic.sub(/#{model.phonetic}$/, model.short(is_positive))
+            model = Japanese.verbs.find { |verb| verb.kana == @properties['like'] }
+            kana.sub(/#{model.kana}$/, model.short(is_positive))
           elsif is_ru?
-            phonetic[0..-2] + 'ない'
-          elsif phonetic[-1] == 'う'
-            phonetic[0..-2] + 'わない'
+            kana[0..-2] + 'ない'
+          elsif kana[-1] == 'う'
+            kana[0..-2] + 'わない'
           else
-            phonetic[0..-2] + Japanese.aPartner(phonetic[-1]) + 'ない'
+            kana[0..-2] + Japanese.aPartner(kana[-1]) + 'ない'
           end
         end
       else
@@ -277,24 +277,24 @@ module Japanese
 
       # Verbs that behave like another.
       elsif @properties.has_key?('like')
-        model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
-        phonetic.sub(/#{model.phonetic}$/, model.te)
+        model = Japanese.verbs.find { |verb| verb.kana == @properties['like'] }
+        kana.sub(/#{model.kana}$/, model.te)
 
       # ru verbs
       elsif is_ru?
-        phonetic[0..-2] + 'て'
+        kana[0..-2] + 'て'
 
       # u verbs
-      elsif %w{う つ る}.include?(phonetic[-1])
-        phonetic[0..-2] + 'って'
-      elsif %w{む ぶ ぬ}.include?(phonetic[-1])
-        phonetic[0..-2] + 'んで'
-      elsif phonetic[-1] == 'す'
-        phonetic[0..-2] + 'して'
-      elsif phonetic[-1] == 'く'
-        phonetic[0..-2] + 'いて'
-      elsif phonetic[-1] == 'ぐ'
-        phonetic[0..-2] + 'いで'
+      elsif %w{う つ る}.include?(kana[-1])
+        kana[0..-2] + 'って'
+      elsif %w{む ぶ ぬ}.include?(kana[-1])
+        kana[0..-2] + 'んで'
+      elsif kana[-1] == 'す'
+        kana[0..-2] + 'して'
+      elsif kana[-1] == 'く'
+        kana[0..-2] + 'いて'
+      elsif kana[-1] == 'ぐ'
+        kana[0..-2] + 'いで'
       end
     end
 
@@ -302,12 +302,12 @@ module Japanese
       if @properties.has_key?('infinitive')
         @properties['infinitive']
       elsif @properties.has_key?('like')
-        model = Japanese.verbs.find { |verb| verb.phonetic == @properties['like'] }
-        phonetic.sub(/#{model.phonetic}$/, model.infinitive)
+        model = Japanese.verbs.find { |verb| verb.kana == @properties['like'] }
+        kana.sub(/#{model.kana}$/, model.infinitive)
       elsif is_ru?
-        phonetic[0..-2]
+        kana[0..-2]
       else
-        phonetic[0..-2] + Japanese.iPartner(phonetic[-1])
+        kana[0..-2] + Japanese.iPartner(kana[-1])
       end
     end
 
@@ -329,18 +329,18 @@ module Japanese
     end
 
     def is_i?
-      phonetic.end_with?('い')
+      kana.end_with?('い')
     end
 
     def is_na?
-      phonetic.end_with?('な')
+      kana.end_with?('な')
     end
 
     def virtual
       if @properties.has_key?('alternate')
         @properties['alternate']
       else
-        phonetic
+        kana
       end
     end
 
@@ -368,7 +368,7 @@ module Japanese
       if is_present
         if is_i?
           if is_positive
-            phonetic
+            kana
           else
             virtual[0..-2] + 'くない'
           end

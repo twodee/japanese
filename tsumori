@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+verbs = Japanese.verbs
+verbs.shuffle!
+
+n = 10
+
+verbs.take(n).each do |verb|
+  is_positive = [true, false].sample
+  
+  if is_positive
+    print "to intend #{verb.definition} (#{verb.kana}) -> ".green
+  else
+    print "to intend not #{verb.definition} (#{verb.kana}) -> ".red
+  end
+  guess = gets.chomp
+
+  answer = "#{verb.short(is_positive)}つもりです"
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong."
+    puts "  Expected: #{answer}"
+    puts "    Actual: #{guess}"
+  end
+  puts
+end

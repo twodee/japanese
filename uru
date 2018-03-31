@@ -6,7 +6,7 @@ verbs = Japanese.verbs
 verbs.shuffle!
 
 verbs.take(2).each do |verb|
-  print "#{verb.phonetic}? "
+  print "#{verb.kana}? "
   answer = gets.chomp
   if (answer == 'u' && verb.is_u?) || (answer == 'ru' && verb.is_ru?)
     puts "Right!"
