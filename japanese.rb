@@ -230,6 +230,22 @@ module Japanese
       long[0..-3]
     end
 
+    def want is_present, is_positive
+      if is_present && is_positive
+        prefix = 'want'
+      elsif is_present && !is_positive
+        prefix = 'don\'t want'
+      elsif !is_present && is_positive
+        prefix = 'wanted'
+      else
+        prefix = 'didn\'t want'
+      end
+      Adjective.new({
+        'kana' => stem + 'たい',
+        'definition' => "#{prefix} #{definition}"
+      })
+    end
+
     def potential
       p = {definition: "to be able #{definition}"}
 

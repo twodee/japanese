@@ -1,5 +1,7 @@
 {
   "verbs": [
+    {"kana": "はたらく", "definition": "to work", "born": "2018-04-08 10:16:46"},
+    {"kana": "かかる", "definition": "to take time", "born": "2018-04-02 19:47:40"},
     {"kana": "とまる", "definition": "to stay (at a hotel)", "born": "2018-03-26 21:38:10"},
     {"kana": "きめる", "definition": "to decide", "born": "2018-03-14 20:28:30"},
     {"kana": "ひたす", "definition": "to soak", "born": "2018-03-05 04:42:16"},
@@ -24,6 +26,7 @@
     {"kana": "りょうりする", "definition": "to cook", "like": "する", "born": "2018-02-14 18:26:47"},
     {"kana": "つくる", "definition": "to make", "born": "2018-02-14 09:36:59"},
     {"kana": "ならす", "definition": "to ring, sound, honk", "born": "2018-02-14 09:39:38"},
+    {"kana": "りょうがくする", "definition": "to study abroad", "like": "する", "born": "2018-04-08 10:17:53"},
     {"kana": "りょこうする", "definition": "to travel", "like": "する", "born": "2018-03-26 21:38:50"},
     {"kana": "れんしゅうする", "definition": "to practice", "born": "2018-03-26 21:40:48"},
     {"kana": "そうじする", "definition": "to clean", "like": "する", "born": "2018-02-13 18:53:18"},
@@ -121,7 +124,7 @@
     {"kana": "おくりする", "definition": "to take or see a person to", "like": "する"},
     {"kana": "つかれる", "definition": "to get tired"},
     {"kana": "おくれる", "definition": "to be late"},
-    {"kana": "のぼる", "definition": "to climb"},
+    {"kana": "のぼる", "definition": "to climb", "born": "2018-04-08 10:16:02"},
     {"kana": "たてる", "definition": "to build"},
     {"kana": "だいひょうする", "definition": "to represent", "like": "する"},
     {"kana": "ちがう", "definition": "to be wrong, to be different"},
@@ -136,6 +139,7 @@
     {"kana": "だれも", "definition": "nobody"}
   ],
   "body" : [
+    {"kana": "かお", "definition": "face", "born": "2018-04-02 19:43:29"},
     {"kana": "みみ", "definition": "ear", "born": "2018-03-08 04:14:44"},
     {"kana": "め", "definition": "eye"},
     {"kana": "くち", "definition": "mouth"},
@@ -156,6 +160,11 @@
     {"kana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"kana": "おんせん", "definition": "hot spring", "born": "2018-04-08 10:14:47"},
+    {"kana": "てぶくろ", "definition": "gloves", "born": "2018-04-02 19:45:02"},
+    {"kana": "せいかつ", "definition": "life", "born": "2018-04-02 19:44:37"},
+    {"kana": "シャツ", "definition": "shirt", "born": "2018-04-02 19:44:20"},
+    {"kana": "パンツ", "definition": "pants", "born": "2018-04-02 19:46:11"},
     {"kana": "えき", "definition": "station", "born": "2018-03-28 20:21:56"},
     {"kana": "らいがっき", "definition": "next semester", "born": "2018-03-26 21:28:02"},
     {"kana": "びよういん", "definition": "beauty parlor", "born": "2018-03-26 21:27:08"},
@@ -185,6 +194,7 @@
     {"kana": "ビジネス", "definition": "business", "born": "2018-03-02 07:25:23"},
     {"kana": "スキー", "definition": "ski", "born": "2018-03-01 12:46:09"},
     {"kana": "テニス", "definition": "tennis", "born": "2018-03-01 12:45:41"},
+    {"kana": "やきゅう", "definition": "baseball", "born": "2018-04-02 19:53:26"},
     {"kana": "いいこ", "definition": "good child", "born": "2018-03-01 12:44:48"},
     {"kana": "せいそくち", "definition": "habitat", "born": "2018-03-01 05:03:06"},
     {"kana": "かんきょう", "definition": "environment", "born": "2018-03-01 04:51:51"},
@@ -285,10 +295,11 @@
     {"kana": "しゅうかん", "definition": "custom"},
     {"kana": "ろてんぶろ", "definition": "open-air bath"},
     {"kana": "きもち", "definition": "feeling"},
-    {"kana": "みずうみ", "definition": "lake"},
+    {"kana": "みずうみ", "definition": "lake", "born": "2018-04-08 10:15:48"},
     {"kana": "まど", "definition": "window"},
     {"kana": "けしき", "definition": "scenery"},
     {"kana": "つり", "definition": "fishing"},
+    {"kana": "よやく", "definition": "reservation", "born": "2018-04-02 19:47:08"},
     {"kana": "していせき", "definition": "reserved seat"},
     {"kana": "じゆうせき", "definition": "non-reserved seat"},
     {"kana": "りょかん", "definition": "Japanese-style hotel"},
@@ -322,7 +333,7 @@
     {"kana": "しょうせつ", "definition": "novel"},
     {"kana": "すいり", "definition": "mystery genre"},
     {"kana": "おんがく", "definition": "music"},
-    {"kana": "びん", "definition": "flight"},
+    {"kana": "びん", "definition": "flight", "born": "2018-04-02 19:46:16"},
     {"kana": "いけ", "definition": "pond"},
     {"kana": "はし", "definition": "bridge"},
     {"kana": "はし", "definition": "chopsticks", "born": "2018-02-20 22:09:14"},
@@ -358,6 +369,7 @@
     {"kana": "あお", "definition": "blue", "born": "2018-03-01 12:47:51"}
   ],
   "jobs" : [
+    {"kana": "しゃちょう", "definition": "company president", "born": "2018-04-08 10:15:30"},
     {"kana": "サラリマン", "definition": "salaried man", "born": "2018-03-02 07:24:09"},
     {"kana": "しごと", "definition": "job", "born": "2018-02-20 22:07:22"},
     {"kana": "ゆうびんはいたつのひと", "definition": "mailman", "born": "2018-02-20 05:35:16"},
@@ -408,6 +420,7 @@
     {"kana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"kana": "だけ", "definition": "only", "born": "2018-04-08 10:19:35"},
     {"kana": "あるいて", "definition": "on foot", "born": "2018-03-28 20:29:55"},
     {"kana": "どうやって", "definition": "by what means", "born": "2018-03-28 20:31:13"},
     {"kana": "いちばん", "definition": "best", "born": "2018-03-28 20:30:29"},
@@ -443,6 +456,8 @@
     {"kana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
+    {"kana": "あと", "definition": "after", "born": "2018-04-08 10:18:51"},
+    {"kana": "このごろ", "definition": "these days", "born": "2018-04-02 19:48:09"},
     {"kana": "そしているいちに", "definition": "in the meantime", "born": "2018-02-21 06:21:45"},
     {"kana": "こくばん", "definition": "blackboard", "born": "2018-02-20 22:06:44"},
     {"kana": "けさ", "definition": "this morning", "born": "2018-02-20 22:06:10"},
@@ -462,6 +477,7 @@
     {"kana": "まだ", "definition": "not yet, still", "born": "2018-02-14 18:29:11"},
     {"kana": "たいてい", "definition": "usually"},
     {"kana": "きょねん", "definition": "last year", "born": "2018-03-01 12:46:30"},
+    {"kana": "ことし", "definition": "this year", "born": "2018-04-02 19:43:52"},
     {"kana": "せんげつ", "definition": "last month", "born": "2018-03-01 12:46:58"},
     {"kana": "さいきん", "definition": "recently"},
     {"kana": "もう", "definition": "already", "born": "2018-03-06 19:30:28"},
@@ -610,7 +626,7 @@
     {"kana": "あんしんしました", "definition": "I'm relieved"},
     {"kana": "くつおぬいでください", "definition": "Please take off your shoes"},
     {"kana": "＿といわれています", "definition": "It is said that _"},
-    {"kana": "まあまあです", "definition": "It's so-so"},
+    {"kana": "まあまあです", "definition": "It's so-so", "born": "2018-04-08 10:21:15"},
     {"kana": "それはこまりました", "definition": "That's troublesome"},
     {"kana": "おはようございます", "definition": "Good morning (formal)"},
     {"kana": "こんにちは", "definition": "Good day"},
@@ -650,7 +666,7 @@
     {"kana": "もういちど", "definition": "One more time"},
     {"kana": "にほんははじめてですか", "definition": "Is this your first time to Japan?"},
     {"kana": "きこえませんでした", "definition": "I couldn't hear."},
-    {"kana": "おひさしぶりですね", "definition": "Long time no see"},
+    {"kana": "おひさしぶりですね", "definition": "Long time no see", "born": "2018-04-08 10:20:36"},
     {"kana": "いろいろおせわになりました", "definition": "Thanks for everything"},
     {"kana": "よろしくおつたいください", "definition": "Please send my regards"},
     {"kana": "それまでにわ", "definition": "By that time"},

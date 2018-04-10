@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+n = 10
+verbs = Japanese.verbs.shuffle.take(n)
+generator = Random.new
+
+verbs.each do |verb|
+  is_present = [true, false].sample
+  is_positive = [true, false].sample
+
+  want = verb.want(is_present, is_positive)
+  print "I #{want.definition} (#{verb.kana}) -> "
+
+  guess = gets.chomp
+  answer = want.is(is_present, is_positive, true)
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong. Expected: #{answer}"
+    puts "                 #{guess}"
+  end
+  puts
+end
