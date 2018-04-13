@@ -1,5 +1,12 @@
 {
   "verbs": [
+    {"kana": "ちこくする", "definition": "to be late", "born": "2018-04-12 19:37:34"},
+    {"kana": "ダイエットする", "definition": "to diet", "like": "する", "born": "2018-04-12 19:35:36"},
+    {"kana": "けんかする", "definition": "to quarrel, fight", "like": "する", "born": "2018-04-12 19:34:36"},
+    {"kana": "うそをつく", "definition": "to tell a lie", "born": "2018-04-12 19:33:41"},
+    {"kana": "サボる", "definition": "to cut (classes)", "born": "2018-04-11 18:20:06"},
+    {"kana": "やめる", "definition": "to quit", "born": "2018-04-10 20:31:41"},
+    {"kana": "かう", "definition": "to own", "born": "2018-04-10 20:31:04"},
     {"kana": "はたらく", "definition": "to work", "born": "2018-04-08 10:16:46"},
     {"kana": "かかる", "definition": "to take time", "born": "2018-04-02 19:47:40"},
     {"kana": "とまる", "definition": "to stay (at a hotel)", "born": "2018-03-26 21:38:10"},
@@ -7,6 +14,7 @@
     {"kana": "ひたす", "definition": "to soak", "born": "2018-03-05 04:42:16"},
     {"kana": "ひく", "definition": "to play", "born": "2018-03-04 11:21:18"},
     {"kana": "りょうする", "definition": "to utilize", "like": "する", "born": "2018-03-02 07:24:47"},
+    {"kana": "しゅうかいする", "definition": "to introduce", "like": "する", "born": "2018-04-11 18:21:12"},
     {"kana": "かこむ", "definition": "to surround", "born": "2018-03-01 04:49:57"},
     {"kana": "おわる", "definition": "to finish", "born": "2018-03-06 19:32:43"},
     {"kana": "はじまる", "definition": "to begin", "born": "2018-03-06 19:33:56"},
@@ -65,12 +73,12 @@
     {"kana": "くる", "definition": "to come", "te": "きて", "potential": "こられる", "infinitive": "き", "type": "irregular", "shortnegative": "こない"},
     {"kana": "する", "definition": "to do", "te": "して", "potential": "できる", "infinitive": "し", "type": "irregular", "shortnegative": "しない"},
     {"kana": "べんきょうする", "definition": "to study", "like": "する"},
-    {"kana": "ならう", "definition": "to learn"},
+    {"kana": "ならう", "definition": "to learn", "born": "2018-04-10 20:31:19"},
     {"kana": "あう", "definition": "to meet"},
     {"kana": "ある", "definition": "to exist (object)", "shortnegative": "ない"},
     {"kana": "かう", "definition": "to buy"},
     {"kana": "かく", "definition": "to write"},
-    {"kana": "とる", "definition": "to take"},
+    {"kana": "とる", "definition": "to take", "born": "2018-04-12 19:39:36"},
     {"kana": "まつ", "definition": "to wait"},
     {"kana": "わかる", "definition": "to understand"},
     {"kana": "いる", "definition": "to exist (person)", "type": "ru"},
@@ -160,6 +168,12 @@
     {"kana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"kana": "やま", "definition": "mountain", "born": "2018-04-11 18:19:14"},
+    {"kana": "かわ", "definition": "river", "born": "2018-04-12 19:31:34"},
+    {"kana": "ドライブ", "definition": "drive", "born": "2018-04-10 20:29:46"},
+    {"kana": "キャンプ", "definition": "camp", "born": "2018-04-10 20:29:12"},
+    {"kana": "がいこく", "definition": "foreign country", "born": "2018-04-10 20:28:31"},
+    {"kana": "おまちゃ", "definition": "toy", "born": "2018-04-10 20:28:02"},
     {"kana": "おんせん", "definition": "hot spring", "born": "2018-04-08 10:14:47"},
     {"kana": "てぶくろ", "definition": "gloves", "born": "2018-04-02 19:45:02"},
     {"kana": "せいかつ", "definition": "life", "born": "2018-04-02 19:44:37"},
@@ -216,7 +230,7 @@
     {"kana": "きんきょう", "definition": "current status", "born": "2018-02-21 06:22:59"},
     {"kana": "なにか", "definition": "something", "born": "2018-02-20 22:08:48"},
     {"kana": "ところ", "definition": "place", "born": "2018-02-20 22:08:17"},
-    {"kana": "しょうがつ", "definition": "New Year's", "born": "2018-02-20 05:29:27"},
+    {"kana": "おしょうがつ", "definition": "New Year's", "born": "2018-04-11 18:16:40"},
     {"kana": "ごちそう", "definition": "feast", "born": "2018-02-20 05:28:48"},
     {"kana": "せびろ", "definition": "suit", "born": "2018-02-20 04:56:18"},
     {"kana": "おわぎ", "definition": "jacket", "born": "2018-02-20 04:55:58"},
@@ -298,7 +312,7 @@
     {"kana": "みずうみ", "definition": "lake", "born": "2018-04-08 10:15:48"},
     {"kana": "まど", "definition": "window"},
     {"kana": "けしき", "definition": "scenery"},
-    {"kana": "つり", "definition": "fishing"},
+    {"kana": "つり", "definition": "fishing", "born": "2018-04-12 19:31:43"},
     {"kana": "よやく", "definition": "reservation", "born": "2018-04-02 19:47:08"},
     {"kana": "していせき", "definition": "reserved seat"},
     {"kana": "じゆうせき", "definition": "non-reserved seat"},
@@ -308,6 +322,7 @@
     {"kana": "しんりがく", "definition": "psychology"},
     {"kana": "びじゅつし", "definition": "art history"},
     {"kana": "びじゅつ", "definition": "art"},
+    {"kana": "びじゅつかん", "definition": "art museum", "born": "2018-04-10 20:30:37"},
     {"kana": "き", "definition": "wood"},
     {"kana": "ぶんや", "definition": "field, discipline"},
     {"kana": "しんしつ", "definition": "bedroom"},
@@ -344,7 +359,7 @@
     {"kana": "れきし", "definition": "history"},
     {"kana": "にんき", "definition": "popularity"},
     {"kana": "もん", "definition": "gate"},
-    {"kana": "まつり", "definition": "festival"},
+    {"kana": "おまつり", "definition": "festival", "born": "2018-04-10 20:27:27"},
     {"kana": "しょうてんがい", "definition": "shopping street"},
     {"kana": "さっか", "definition": "writer"},
     {"kana": "だい", "definition": "title"},
@@ -385,6 +400,7 @@
     {"kana": "いっしゃ", "definition": "doctor"}
   ],
   "food" : [
+    {"kana": "おかし", "definition": "sweets", "born": "2018-04-10 20:27:15"},
     {"kana": "ぎゅうにゅう", "definition": "milk", "born": "2018-03-28 20:23:27"},
     {"kana": "りんご", "definition": "apple", "born": "2018-03-14 20:27:54"},
     {"kana": "ピザ", "definition": "pizza", "born": "2018-03-06 19:30:19"},
@@ -403,12 +419,17 @@
     {"kana": "やさい", "definition": "vegetables"}
   ],
   "counters" : [
+    {"kana": "てん", "definition": "points", "born": "2018-04-12 19:33:17"},
     {"kana": "さつ", "definition": "books"}
   ],
   "smallcounts" : [
     {"kana": "ひとつ", "definition": "one", "born": "2018-03-06 19:31:36"},
     {"kana": "ふたつ", "definition": "two", "born": "2018-03-06 19:31:52"},
     {"kana": "みっつ", "definition": "three", "born": "2018-03-06 19:32:05"}
+  ],
+  "places" : [
+    {"kana": "オーストラリア", "definition": "Australia", "born": "2018-04-11 18:16:08"},
+    {"kana": "アメリカ", "definition": "America", "born": "2018-04-11 18:15:27"}
   ],
   "locations" : [
     {"kana": "となり", "definition": "next to"},
@@ -420,6 +441,8 @@
     {"kana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"kana": "そして", "definition": "and then", "born": "2018-04-11 18:22:52"},
+    {"kana": "しゅっしん", "definition": "coming from", "born": "2018-04-11 18:22:13"},
     {"kana": "だけ", "definition": "only", "born": "2018-04-08 10:19:35"},
     {"kana": "あるいて", "definition": "on foot", "born": "2018-03-28 20:29:55"},
     {"kana": "どうやって", "definition": "by what means", "born": "2018-03-28 20:31:13"},
@@ -493,6 +516,11 @@
     {"kana": "まず", "definition": "first of all"}
   ],
   "people": [
+    {"kana": "ルームメート", "definition": "roommate", "born": "2018-04-12 19:32:59"},
+    {"kana": "ホストファミリー", "definition": "host family", "born": "2018-04-12 19:32:20"},
+    {"kana": "こちら", "definition": "this person", "born": "2018-04-11 18:18:47"},
+    {"kana": "おんなのこ", "definition": "girl", "born": "2018-04-11 18:18:01"},
+    {"kana": "おとこのこ", "definition": "boy", "born": "2018-04-11 18:17:39"},
     {"kana": "だんし", "definition": "men, schoolboys", "born": "2018-02-12 06:56:38"},
     {"kana": "しょうじょ", "definition": "girls", "born": "2018-02-12 06:49:07"},
     {"kana": "りょしん", "definition": "parents"},

@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+n = 10
+verbs = Japanese.verbs.shuffle.take(n * 2)
+generator = Random.new
+
+verbs.each_slice(2) do |a, b|
+  print "#{a.definition} (#{a.kana}) and #{b.definition} (#{b.kana}) -> "
+
+  guess = gets.chomp
+  answer = "#{a.tari}#{b.tari}します"
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong. Expected: #{answer}"
+    puts "                 #{guess}"
+  end
+  puts
+end

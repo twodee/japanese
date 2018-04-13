@@ -12,6 +12,8 @@ matches.each do |verb|
   puts "is_ru? #{verb.is_ru?}"
   puts "infinitive: #{verb.infinitive}"
   puts "te: #{verb.te}"
+  puts "stem: #{verb.stem}"
+  puts "want: #{verb.want(true, true).kana}"
   puts
   puts "LONG -----------------------------------------------------------------"
   puts 

@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+verbs = Japanese.verbs.shuffle.take(10)
+
+verbs.each do |verb|
+  is_positive = [true, false].sample
+  
+  if is_positive
+    print "#{verb.definition} (#{verb.kana}) -> ".green
+  else
+    print "#{verb.definition} (#{verb.kana}) -> ".red
+  end
+  guess = gets.chomp
+
+  answer = "#{verb.short(true, false)}ことがありま#{is_positive ? 'す' : 'せん'}"
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong."
+    puts "  Expected: #{answer}"
+    puts "    Actual: #{guess}"
+  end
+  puts
+end

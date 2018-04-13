@@ -230,6 +230,10 @@ module Japanese
       long[0..-3]
     end
 
+    def tari
+      "#{short(true, false)}り"
+    end
+
     def want is_present, is_positive
       if is_present && is_positive
         prefix = 'want'
