@@ -1,5 +1,6 @@
 {
   "verbs": [
+    {"kana": "おなかがすく", "definition": "to become hungry", "born": "2018-04-15 16:02:12"},
     {"kana": "ちこくする", "definition": "to be late", "born": "2018-04-12 19:37:34"},
     {"kana": "ダイエットする", "definition": "to diet", "like": "する", "born": "2018-04-12 19:35:36"},
     {"kana": "けんかする", "definition": "to quarrel, fight", "like": "する", "born": "2018-04-12 19:34:36"},
@@ -130,7 +131,7 @@
     {"kana": "はじめる", "definition": "to start"},
     {"kana": "うんどうする", "definition": "to exercise", "like": "する", "born": "2018-02-28 21:21:50"},
     {"kana": "おくりする", "definition": "to take or see a person to", "like": "する"},
-    {"kana": "つかれる", "definition": "to get tired"},
+    {"kana": "つかれる", "definition": "to get tired", "born": "2018-04-15 16:02:37"},
     {"kana": "おくれる", "definition": "to be late"},
     {"kana": "のぼる", "definition": "to climb", "born": "2018-04-08 10:16:02"},
     {"kana": "たてる", "definition": "to build"},
@@ -168,6 +169,11 @@
     {"kana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"kana": "ゆめ", "definition": "dream", "born": "2018-04-15 16:01:48"},
+    {"kana": "じんじゃ", "definition": "shrine", "born": "2018-04-15 16:01:21"},
+    {"kana": "しょうらい", "definition": "future", "born": "2018-04-15 16:01:02"},
+    {"kana": "じゅぎょう", "definition": "class", "born": "2018-04-15 16:00:19"},
+    {"kana": "かしゅ", "definition": "singer", "born": "2018-04-15 15:59:42"},
     {"kana": "やま", "definition": "mountain", "born": "2018-04-11 18:19:14"},
     {"kana": "かわ", "definition": "river", "born": "2018-04-12 19:31:34"},
     {"kana": "ドライブ", "definition": "drive", "born": "2018-04-10 20:29:46"},
@@ -180,6 +186,7 @@
     {"kana": "シャツ", "definition": "shirt", "born": "2018-04-02 19:44:20"},
     {"kana": "パンツ", "definition": "pants", "born": "2018-04-02 19:46:11"},
     {"kana": "えき", "definition": "station", "born": "2018-03-28 20:21:56"},
+    {"kana": "こんがっき", "definition": "this semester", "born": "2018-04-15 16:00:01"},
     {"kana": "らいがっき", "definition": "next semester", "born": "2018-03-26 21:28:02"},
     {"kana": "びよういん", "definition": "beauty parlor", "born": "2018-03-26 21:27:08"},
     {"kana": "しんかんせん", "definition": "bullet train", "born": "2018-03-14 20:27:40"},
@@ -400,6 +407,7 @@
     {"kana": "いっしゃ", "definition": "doctor"}
   ],
   "food" : [
+    {"kana": "ビル", "definition": "beer", "born": "2018-04-15 16:01:36"},
     {"kana": "おかし", "definition": "sweets", "born": "2018-04-10 20:27:15"},
     {"kana": "ぎゅうにゅう", "definition": "milk", "born": "2018-03-28 20:23:27"},
     {"kana": "りんご", "definition": "apple", "born": "2018-03-14 20:27:54"},
@@ -441,6 +449,7 @@
     {"kana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"kana": "もっと", "definition": "more", "born": "2018-04-15 16:02:54"},
     {"kana": "そして", "definition": "and then", "born": "2018-04-11 18:22:52"},
     {"kana": "しゅっしん", "definition": "coming from", "born": "2018-04-11 18:22:13"},
     {"kana": "だけ", "definition": "only", "born": "2018-04-08 10:19:35"},
