@@ -1,7 +1,7 @@
 {
   "verbs": [
     {"kana": "おなかがすく", "definition": "to become hungry", "born": "2018-04-15 16:02:12"},
-    {"kana": "ちこくする", "definition": "to be late", "born": "2018-04-12 19:37:34"},
+    {"kana": "ちこくする", "definition": "to be late", "like": "する", "born": "2018-04-12 19:37:34"},
     {"kana": "ダイエットする", "definition": "to diet", "like": "する", "born": "2018-04-12 19:35:36"},
     {"kana": "けんかする", "definition": "to quarrel, fight", "like": "する", "born": "2018-04-12 19:34:36"},
     {"kana": "うそをつく", "definition": "to tell a lie", "born": "2018-04-12 19:33:41"},
@@ -37,7 +37,7 @@
     {"kana": "ならす", "definition": "to ring, sound, honk", "born": "2018-02-14 09:39:38"},
     {"kana": "りょうがくする", "definition": "to study abroad", "like": "する", "born": "2018-04-08 10:17:53"},
     {"kana": "りょこうする", "definition": "to travel", "like": "する", "born": "2018-03-26 21:38:50"},
-    {"kana": "れんしゅうする", "definition": "to practice", "born": "2018-03-26 21:40:48"},
+    {"kana": "れんしゅうする", "definition": "to practice", "like": "する", "born": "2018-03-26 21:40:48"},
     {"kana": "そうじする", "definition": "to clean", "like": "する", "born": "2018-02-13 18:53:18"},
     {"kana": "せんたくする", "definition": "to do laundry", "like": "する", "born": "2018-02-13 18:52:55"},
     {"kana": "いく", "definition": "to go", "te": "いって"},
