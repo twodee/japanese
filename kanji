@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'optparse'
+require 'set'
+
+kanjis = JSON.parse(File.read('kanji.json'))
+kanjis.each do |kanji|
+  kanji['tags'] = Set.new(kanji['tags'])
+end
+
+options = {n: 10, tags: Set.new}
+OptionParser.new do |opts|
+  opts.banner = "Usage: kanji [-n #] [--tags a,b,c]"
+  opts.on('-n', '--n NUMBER', OptionParser::DecimalInteger, 'Number of kanji') do |v|
+    options[:n] = v
+  end
+  opts.on('-t', '--tags TAGS', String, 'Tags') do |v|
+    options[:tags].merge(v.split(/,/))
+  end
+end.parse!
+
+kanjis = kanjis.select { |kanji| kanji['tags'].intersect?(options[:tags]) }.shuffle.take(options[:n])
+
+kanjis.each do |kanji|
+  print "#{kanji['meaning']}をかいてください。"
+  gets
+  puts "#{kanji['kanji']}"
+end
