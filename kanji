@@ -9,7 +9,7 @@ kanjis.each do |kanji|
   kanji['tags'] = Set.new(kanji['tags'])
 end
 
-options = {n: 10, tags: Set.new}
+options = {n: nil, tags: Set.new}
 OptionParser.new do |opts|
   opts.banner = "Usage: kanji [-n #] [--tags a,b,c]"
   opts.on('-n', '--n NUMBER', OptionParser::DecimalInteger, 'Number of kanji') do |v|
@@ -20,10 +20,17 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-kanjis = kanjis.select { |kanji| kanji['tags'].intersect?(options[:tags]) }.shuffle.take(options[:n])
+kanjis = kanjis.select { |kanji| kanji['tags'].intersect?(options[:tags]) }
+
+if options[:n].nil?
+  options[:n] = kanjis.size
+end
+  
+kanjis = kanjis.shuffle.take(options[:n])
 
 kanjis.each do |kanji|
-  print "#{kanji['meaning']}をかいてください。"
+  print "#{kanji['definition']}をかいてください。"
   gets
   puts "#{kanji['kanji']}"
+  puts
 end
