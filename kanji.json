@@ -120,5 +120,13 @@
   {"kanji": "自", "definition": "self", "kana": ["じ"], "tags": ["10"], "born": "2018-04-21 20:58:16"},
   {"kanji": "夜", "definition": "night", "kana": ["よる", "よ", "や"], "tags": ["10"], "born": "2018-04-21 20:58:17"},
   {"kanji": "朝", "definition": "morning", "kana": ["あさ", "ちょう"], "tags": ["10"], "born": "2018-04-21 20:58:18"},
-  {"kanji": "持", "definition": "hold", "kana": ["も", "じ"], "tags": ["10"], "born": "2018-04-21 20:58:18"}
+  {"kanji": "持", "definition": "hold", "kana": ["も", "じ"], "tags": ["10"], "born": "2018-04-21 20:58:18"},
+
+  {"kanji": "手", "definition": "hand", "kana": ["て", "しゅ"], "tags": ["11"], "born": "2018-04-25 07:47:59"},
+  {"kanji": "紙", "definition": "paper", "kana": ["がみ", "かみ", "し"], "tags": ["11"], "born": "2018-04-25 07:48:28"},
+  {"kanji": "好", "definition": "favorite, like", "kana": ["す", "この", "こう"], "tags": ["11"], "born": "2018-04-25 07:49:11"},
+  {"kanji": "近", "definition": "near", "kana": ["ちか", "きん"], "tags": ["11"], "born": "2018-04-25 19:57:45"},
+  {"kanji": "明", "definition": "bright", "kana": ["あか", "めい"], "tags": ["11"], "born": "2018-04-25 19:58:30"},
+  {"kanji": "病", "definition": "ill, sick", "kana": ["びょう"], "tags": ["11"], "born": "2018-04-25 19:59:17"},
+  {"kanji": "院", "definition": "institution", "kana": ["いん"], "tags": ["11"], "born": "2018-04-25 19:57:04"}
 ]

@@ -20,7 +20,9 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-kanjis = kanjis.select { |kanji| kanji['tags'].intersect?(options[:tags]) }
+if !options[:tags].empty?
+  kanjis = kanjis.select { |kanji| kanji['tags'].intersect?(options[:tags]) }
+end
 
 if options[:n].nil?
   options[:n] = kanjis.size

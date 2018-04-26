@@ -1,5 +1,10 @@
 {
   "verbs": [
+    {"kana": "せきがでる", "definition": "to cough", "born": "2018-04-25 19:47:02"},
+    {"kana": "ねつがある", "definition": "to have a fever", "born": "2018-04-25 19:46:31"},
+    {"kana": "かぜをひく", "definition": "to catch a cold", "born": "2018-04-25 19:45:36"},
+    {"kana": "しんぱいする", "definition": "to worry", "like": "する", "born": "2018-04-24 21:46:00"},
+    {"kana": "わかれる", "definition": "to break up, separate", "born": "2018-04-24 21:45:04"},
     {"kana": "おなかがすく", "definition": "to become hungry", "born": "2018-04-15 16:02:12"},
     {"kana": "ちこくする", "definition": "to be late", "like": "する", "born": "2018-04-12 19:37:34"},
     {"kana": "ダイエットする", "definition": "to diet", "like": "する", "born": "2018-04-12 19:35:36"},
@@ -140,7 +145,7 @@
     {"kana": "おどろく", "definition": "to be surprised, amazed"},
     {"kana": "なく", "definition": "to cry"},
     {"kana": "のばす", "definition": "to extend"},
-    {"kana": "なくす", "definition": "to lose"},
+    {"kana": "なくす", "definition": "to lose", "born": "2018-04-24 21:44:30"},
     {"kana": "おぼえる", "definition": "to remember, memorize"},
     {"kana": "なおる", "definition": "to be healed"}
   ],
@@ -154,7 +159,10 @@
     {"kana": "くち", "definition": "mouth"},
     {"kana": "かみ", "definition": "hair"},
     {"kana": "からだ", "definition": "body"},
-    {"kana": "あし", "definition": "legs"},
+    {"kana": "のど", "definition": "throat", "born": "2018-04-25 19:41:43"},
+    {"kana": "は", "definition": "tooth", "born": "2018-04-24 21:41:30"},
+    {"kana": "おなか", "definition": "stomach", "born": "2018-04-24 21:40:19"},
+    {"kana": "あし", "definition": "leg", "born": "2018-04-25 19:39:47"},
     {"kana": "はな", "definition": "nose"}
   ],
   "beasts" : [
@@ -169,6 +177,10 @@
     {"kana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"kana": "プレゼント", "definition": "present", "born": "2018-04-25 19:42:30"},
+    {"kana": "ホームシック", "definition": "homesickness", "born": "2018-04-24 21:43:15"},
+    {"kana": "ふつかよい", "definition": "hangover", "born": "2018-04-24 21:42:26"},
+    {"kana": "せいせき", "definition": "grade", "born": "2018-04-24 21:40:54"},
     {"kana": "ゆめ", "definition": "dream", "born": "2018-04-15 16:01:48"},
     {"kana": "じんじゃ", "definition": "shrine", "born": "2018-04-15 16:01:21"},
     {"kana": "しょうらい", "definition": "future", "born": "2018-04-15 16:01:02"},
@@ -449,6 +461,8 @@
     {"kana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"kana": "たぶん", "definition": "probably", "born": "2018-04-24 21:47:18"},
+    {"kana": "げんきがない", "definition": "don't look well", "born": "2018-04-24 21:46:53"},
     {"kana": "もっと", "definition": "more", "born": "2018-04-15 16:02:54"},
     {"kana": "そして", "definition": "and then", "born": "2018-04-11 18:22:52"},
     {"kana": "しゅっしん", "definition": "coming from", "born": "2018-04-11 18:22:13"},
@@ -525,6 +539,8 @@
     {"kana": "まず", "definition": "first of all"}
   ],
   "people": [
+    {"kana": "かれ", "definition": "boyfriend, he", "born": "2018-04-25 19:41:16"},
+    {"kana": "かのじょ", "definition": "girlfriend, she", "born": "2018-04-25 19:40:51"},
     {"kana": "ルームメート", "definition": "roommate", "born": "2018-04-12 19:32:59"},
     {"kana": "ホストファミリー", "definition": "host family", "born": "2018-04-12 19:32:20"},
     {"kana": "こちら", "definition": "this person", "born": "2018-04-11 18:18:47"},
@@ -563,6 +579,9 @@
     {"kana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"kana": "つごうがわるい", "definition": "inconvenient, conflicting", "born": "2018-04-25 19:44:17"},
+    {"kana": "わるい", "definition": "bad", "born": "2018-04-25 19:44:42"},
+    {"kana": "いたい", "definition": "painful, hurting", "born": "2018-04-24 21:44:04"},
     {"kana": "かんたんな", "definition": "easy", "born": "2018-03-28 20:29:24"},
     {"kana": "おそい", "definition": "slow, late", "born": "2018-03-28 20:28:28"},
     {"kana": "ねむい", "definition": "sleepy", "born": "2018-03-14 20:30:57"},
