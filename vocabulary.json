@@ -1,5 +1,7 @@
 {
   "verbs": [
+    {"kana": "きんちょうする", "definition": "to get nervous", "like": "する", "born": "2018-04-29 06:36:09"},
+    {"kana": "あるく", "definition": "to walk", "born": "2018-04-29 06:35:50"},
     {"kana": "せきがでる", "definition": "to cough", "born": "2018-04-25 19:47:02"},
     {"kana": "ねつがある", "definition": "to have a fever", "born": "2018-04-25 19:46:31"},
     {"kana": "かぜをひく", "definition": "to catch a cold", "born": "2018-04-25 19:45:36"},
@@ -82,6 +84,8 @@
     {"kana": "ならう", "definition": "to learn", "born": "2018-04-10 20:31:19"},
     {"kana": "あう", "definition": "to meet"},
     {"kana": "ある", "definition": "to exist (object)", "shortnegative": "ない"},
+    {"kana": "きょうみがある", "definition": "to be interested in", "born": "2018-04-27 07:20:01", "like": "ある"},
+    {"kana": "のどがかわく", "definition": "to become thirsty", "born": "2018-04-27 07:21:36"},
     {"kana": "かう", "definition": "to buy"},
     {"kana": "かく", "definition": "to write"},
     {"kana": "とる", "definition": "to take", "born": "2018-04-12 19:39:36"},
@@ -177,6 +181,14 @@
     {"kana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"kana": "せき", "definition": "cough", "born": "2018-04-29 06:35:06"},
+    {"kana": "ようじ", "definition": "business to attend to", "born": "2018-04-29 06:35:23"},
+    {"kana": "かぜ", "definition": "cold", "born": "2018-04-29 06:34:58"},
+    {"kana": "ゆき", "definition": "snow", "born": "2018-04-27 07:17:30"},
+    {"kana": "マイナス", "definition": "minus", "born": "2018-04-27 07:17:13"},
+    {"kana": "はれ", "definition": "sunny weather", "born": "2018-04-27 07:15:53"},
+    {"kana": "くもり", "definition": "cloudy weather", "born": "2018-04-27 07:15:29"},
+    {"kana": "きおん", "definition": "temperature (weather)", "born": "2018-04-27 07:14:50"},
     {"kana": "プレゼント", "definition": "present", "born": "2018-04-25 19:42:30"},
     {"kana": "ホームシック", "definition": "homesickness", "born": "2018-04-24 21:43:15"},
     {"kana": "ふつかよい", "definition": "hangover", "born": "2018-04-24 21:42:26"},
@@ -461,6 +473,9 @@
     {"kana": "そば", "definition": "beside"}
   ],
   "helpers" : [
+    {"kana": "もうすぐ", "definition": "very soon", "born": "2018-04-29 06:39:24"},
+    {"kana": "はじめて", "definition": "for the first time", "born": "2018-04-29 06:38:56"},
+    {"kana": "ので", "definition": "because", "born": "2018-04-29 06:38:21"},
     {"kana": "たぶん", "definition": "probably", "born": "2018-04-24 21:47:18"},
     {"kana": "げんきがない", "definition": "don't look well", "born": "2018-04-24 21:46:53"},
     {"kana": "もっと", "definition": "more", "born": "2018-04-15 16:02:54"},
@@ -502,6 +517,7 @@
     {"kana": "むかえに", "definition": "in order to pick up"}
   ],
   "time" : [
+    {"kana": "にさんにち", "definition": "for two-three days", "born": "2018-04-29 06:38:05"},
     {"kana": "あと", "definition": "after", "born": "2018-04-08 10:18:51"},
     {"kana": "このごろ", "definition": "these days", "born": "2018-04-02 19:48:09"},
     {"kana": "そしているいちに", "definition": "in the meantime", "born": "2018-02-21 06:21:45"},
@@ -579,6 +595,8 @@
     {"kana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"kana": "おおい", "definition": "many", "born": "2018-04-27 07:18:08"},
+    {"kana": "あまい", "definition": "sweet", "born": "2018-04-27 07:17:54"},
     {"kana": "つごうがわるい", "definition": "inconvenient, conflicting", "born": "2018-04-25 19:44:17"},
     {"kana": "わるい", "definition": "bad", "born": "2018-04-25 19:44:42"},
     {"kana": "いたい", "definition": "painful, hurting", "born": "2018-04-24 21:44:04"},
@@ -592,7 +610,7 @@
     {"kana": "くらい", "definition": "dark", "born": "2018-03-10 05:20:58"},
     {"kana": "あかるい", "definition": "bright", "born": "2018-03-10 05:13:02"},
     {"kana": "よわい", "definition": "weak", "born": "2018-03-06 04:45:22"},
-    {"kana": "せまい", "definition": "cramped, narrow", "born": "2018-03-02 07:26:01"},
+    {"kana": "せまい", "definition": "cramped, narrow", "born": "2018-04-27 07:18:59"},
     {"kana": "べんりな", "definition": "convenient", "born": "2018-03-02 07:25:43"},
     {"kana": "てごろな", "definition": "reasonable, moderate", "born": "2018-03-02 07:22:45"},
     {"kana": "どくとくな", "definition": "unique, distinctive", "born": "2018-03-01 04:52:25"},
@@ -718,7 +736,7 @@
     {"kana": "どうもすみません", "definition": "You shouldn't have"},
     {"kana": "つまらないものですが", "definition": "It's nothing much, but this is for you"},
     {"kana": "じゅんびがいません", "definition": "It's not ready"},
-    {"kana": "どうぞおだいじに", "definition": "Take care of yourself"},
+    {"kana": "どうぞおだいじに", "definition": "Take care of yourself/Get well soon", "born": "2018-04-29 06:37:01"},
     {"kana": "もういちど", "definition": "One more time"},
     {"kana": "にほんははじめてですか", "definition": "Is this your first time to Japan?"},
     {"kana": "きこえませんでした", "definition": "I couldn't hear."},

@@ -128,5 +128,13 @@
   {"kanji": "近", "definition": "near", "kana": ["ちか", "きん"], "tags": ["11"], "born": "2018-04-25 19:57:45"},
   {"kanji": "明", "definition": "bright", "kana": ["あか", "めい"], "tags": ["11"], "born": "2018-04-25 19:58:30"},
   {"kanji": "病", "definition": "ill, sick", "kana": ["びょう"], "tags": ["11"], "born": "2018-04-25 19:59:17"},
-  {"kanji": "院", "definition": "institution", "kana": ["いん"], "tags": ["11"], "born": "2018-04-25 19:57:04"}
+  {"kanji": "院", "definition": "institution", "kana": ["いん"], "tags": ["11"], "born": "2018-04-25 19:57:04"},
+  {"kanji": "映", "definition": "reflect", "kana": ["えい", "うつ"], "tags": ["11"], "born": "2018-04-27 07:24:56"},
+  {"kanji": "画", "definition": "picture", "kana": ["が", "kaku"], "tags": ["11"], "born": "2018-04-27 07:25:47"},
+  {"kanji": "歌", "definition": "sing", "kana": ["うた", "か"], "tags": ["11"], "born": "2018-04-27 07:26:38"},
+  {"kanji": "市", "definition": "city", "kana": ["し", "いち"], "tags": ["11"], "born": "2018-04-27 20:26:47"},
+  {"kanji": "所", "definition": "place", "kana": ["ところ", "どころ", "じょ", "しょ"], "tags": ["11"], "born": "2018-04-27 20:23:57"},
+  {"kanji": "勉", "definition": "to make efforts", "kana": ["べん", "つよ", "ごう"], "tags": ["11"], "born": "2018-04-27 20:25:15"},
+  {"kanji": "強", "definition": "strong", "kana": ["きょう", "ごう", "つよ"], "tags": ["11"], "born": "2018-04-27 20:28:03"}
+
 ]
