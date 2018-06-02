@@ -200,7 +200,7 @@ module Japanese
   end
 
   class Verb < Word
-    E_HIRAGANA = Set.new %w{え け せ て ね へ め れ げ ぜ べ ぺ}
+    E_HIRAGANA = Set.new %w{え け せ て ね へ め れ げ ぜ べ ぺ で}
     I_HIRAGANA = Set.new %w{い き し ち に ひ み り ぎ じ び ぴ}
 
     def initialize d
@@ -264,7 +264,15 @@ module Japanese
       Verb.new(p)
     end
 
-    def short(is_positive=true, is_present=true)
+    def sugiru
+      p = {
+        'definition' => "#{definition} too much",
+        'kana' => stem + "すぎる"
+      }
+      Verb.new(p)
+    end
+
+    def short(is_present=true, is_positive=true)
       if is_present
         if is_positive
           return kana
@@ -331,7 +339,7 @@ module Japanese
       end
     end
 
-    def long(is_positive=true, is_present=true)
+    def long(is_present=true, is_positive=true)
       if is_present
         suffix = is_positive ? 'ます' : 'ません'
         infinitive + suffix
@@ -354,6 +362,14 @@ module Japanese
 
     def is_na?
       kana.end_with?('な')
+    end
+
+    def sugiru
+      p = {
+        'definition' => "#{definition} too much",
+        'kana' => kana[0..-2] + "すぎる"
+      }
+      Verb.new(p)
     end
 
     def virtual

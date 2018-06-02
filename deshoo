@@ -6,42 +6,46 @@ nouns = Japanese.nouns
 nouns.shuffle!
 adjectives = Japanese.adjectives
 adjectives.shuffle!
-verbs = Japanese.verbs.keep_if { |v| v.kana == 'まつ' }
-puts "verbs: #{verbs}"
+verbs = Japanese.verbs
 verbs.shuffle!
 
-n = 1
+n = 3
 generator = Random.new
 
 n.times do
-  # type = generator.rand(3)
-  type = 3
+  type = generator.rand(3)
   if type == 0
     word = nouns.pop
-    answer = "#{word.kana}なんです"
-    blurb = "#{word.definition} [noun]"
+    is_positive = [true, false].sample
+    if is_positive
+      answer = "#{word.kana}でしょう"
+    else
+      answer = "#{word.kana}じゃないでしょう"
+    end
+    blurb = "is probably #{word.definition} [noun]"
   elsif type == 1
     word = adjectives.pop
-    answer = "#{word.kana}んです"
+    is_positive = [true, false].sample
+    answer = "#{word.long(true, is_positive)}でしょう"
     blurb = "#{word.definition} [adjective]"
   else
     word = verbs.pop
-    is_present = [true, false].sample
+    is_present = true
     is_positive = [true, false].sample
     is_want = [true, false].sample
-    is_present = false
-    is_positive = true
-    is_want = false
 
     if is_want
       mode = 'want'
-      answer = "#{word.want(is_present, is_positive).long(is_present, is_positive)}んです"
+      answer = "#{word.want(is_present, is_positive).short(is_present, is_positive)}んでしょう"
     else
-      mode = 'short'
-      puts "hi!"
-      puts "is_present: #{is_present}"
-      puts "is_positive: #{is_positive}"
-      answer = "#{word.short(is_present, is_positive)}んです"
+      is_short = [true, false].sample
+      if is_short
+        mode = 'short'
+        answer = "#{word.short(is_present, is_positive)}んです"
+      else
+        mode = 'long'
+        answer = "#{word.long(is_present, is_positive)}んです"
+      end
     end
 
     blurb = "%s [verb, %s, %s, %s]" % [word.definition, is_present ? 'present' : 'past', is_positive ? 'positive' : 'negative', mode]

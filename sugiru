@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+require_relative 'japanese'
+
+verbs = Japanese.verbs
+verbs.shuffle!
+adjectives = Japanese.adjectives
+adjectives.shuffle!
+
+n = 10
+generator = Random.new
+
+n.times do
+  is_verb = [true, false].sample
+  if is_verb
+    word = verbs.pop
+  else
+    word = adjectives.pop
+  end
+
+  is_present = [true, false].sample
+  is_positive = [true, false].sample
+  blurb = "[verb, %s, %s]" % [is_present ? 'present' : 'past', is_positive ? 'positive' : 'negative']
+  answer = word.sugiru.long(is_positive, is_present)
+  print "#{word.definition} #{blurb} (#{word.kana}) -> "
+  guess = gets.chomp
+
+  if guess == answer
+    puts "Right!"
+  else
+    puts "Wrong. It's #{answer}."
+  end
+  puts
+end

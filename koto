@@ -14,7 +14,7 @@ verbs.each do |verb|
   end
   guess = gets.chomp
 
-  answer = "#{verb.short(true, false)}ことがありま#{is_positive ? 'す' : 'せん'}"
+  answer = "#{verb.short(false, true)}ことがありま#{is_positive ? 'す' : 'せん'}"
   if guess == answer
     puts "Right!"
   else

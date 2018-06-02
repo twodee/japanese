@@ -135,6 +135,8 @@
   {"kanji": "市", "definition": "city", "kana": ["し", "いち"], "tags": ["11"], "born": "2018-04-27 20:26:47"},
   {"kanji": "所", "definition": "place", "kana": ["ところ", "どころ", "じょ", "しょ"], "tags": ["11"], "born": "2018-04-27 20:23:57"},
   {"kanji": "勉", "definition": "to make efforts", "kana": ["べん", "つよ", "ごう"], "tags": ["11"], "born": "2018-04-27 20:25:15"},
-  {"kanji": "強", "definition": "strong", "kana": ["きょう", "ごう", "つよ"], "tags": ["11"], "born": "2018-04-27 20:28:03"}
+  {"kanji": "強", "definition": "strong", "kana": ["きょう", "ごう", "つよ"], "tags": ["11"], "born": "2018-04-27 20:28:03"},
+  {"kanji": "有", "definition": "to exist", "kana": ["ゆう", "あ"], "tags": ["11"], "born": "2018-05-01 21:30:14"},
+  {"kanji": "旅", "definition": "travel", "kana": ["りょう", "たび"], "tags": ["11"], "born": "2018-05-01 21:31:45"}
 
 ]

@@ -9,7 +9,7 @@ kanjis.each do |kanji|
   kanji['tags'] = Set.new(kanji['tags'])
 end
 
-options = {n: nil, tags: Set.new}
+options = {n: nil, tags: Set.new, reverse: false}
 OptionParser.new do |opts|
   opts.banner = "Usage: kanji [-n #] [--tags a,b,c]"
   opts.on('-n', '--n NUMBER', OptionParser::DecimalInteger, 'Number of kanji') do |v|
@@ -17,6 +17,9 @@ OptionParser.new do |opts|
   end
   opts.on('-t', '--tags TAGS', String, 'Tags') do |v|
     options[:tags].merge(v.split(/,/))
+  end
+  opts.on('-r', '--reverse', 'Show in reverse') do |v|
+    options[:reverse] = true
   end
 end.parse!
 
@@ -27,12 +30,21 @@ end
 if options[:n].nil?
   options[:n] = kanjis.size
 end
-  
+
 kanjis = kanjis.shuffle.take(options[:n])
 
-kanjis.each do |kanji|
-  print "#{kanji['definition']}をかいてください。"
-  gets
-  puts "#{kanji['kanji']}"
-  puts
+if options[:reverse]
+  kanjis.each do |kanji|
+    print "#{kanji['kanji']} -> "
+    gets
+    puts "#{kanji['definition']} #{kanji['kana'].join(', ')}"
+    puts
+  end
+else
+  kanjis.each do |kanji|
+    print "#{kanji['definition']}をかいてください。"
+    gets
+    puts "#{kanji['kanji']}"
+    puts
+  end
 end

@@ -38,7 +38,7 @@ verbs.take(options[:n]).each do |verb|
       end
       guess = gets.chomp
 
-      answer = verb.short(is_positive, is_present)
+      answer = verb.short(is_present, is_positive)
 
       if guess == answer
         puts "Right!"

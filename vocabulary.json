@@ -181,6 +181,12 @@
     {"kana": "ねこ", "definition": "cat"}
   ],
   "nouns" : [
+    {"kana": "もの", "definition": "thing (concrete)", "born": "2018-05-01 21:37:51"},
+    {"kana": "ふく", "definition": "clothes", "born": "2018-05-01 21:37:23"},
+    {"kana": "はな", "definition": "flower", "born": "2018-05-01 21:36:49"},
+    {"kana": "しあい", "definition": "match, game", "born": "2018-05-01 21:36:27"},
+    {"kana": "おてあらい", "definition": "restroom", "born": "2018-05-01 21:35:33"},
+    {"kana": "いみ", "definition": "meaning", "born": "2018-05-01 21:34:50"},
     {"kana": "せき", "definition": "cough", "born": "2018-04-29 06:35:06"},
     {"kana": "ようじ", "definition": "business to attend to", "born": "2018-04-29 06:35:23"},
     {"kana": "かぜ", "definition": "cold", "born": "2018-04-29 06:34:58"},
@@ -451,6 +457,7 @@
     {"kana": "やさい", "definition": "vegetables"}
   ],
   "counters" : [
+    {"kana": "ど", "definition": "degrees", "born": "2018-05-02 07:40:49"},
     {"kana": "てん", "definition": "points", "born": "2018-04-12 19:33:17"},
     {"kana": "さつ", "definition": "books"}
   ],
@@ -595,6 +602,7 @@
     {"kana": "あたし", "definition": "I (used by women, casually)"}
   ],
   "adjectives" : [
+    {"kana": "すてき", "definition": "nice", "born": "2018-05-01 21:42:57"},
     {"kana": "おおい", "definition": "many", "born": "2018-04-27 07:18:08"},
     {"kana": "あまい", "definition": "sweet", "born": "2018-04-27 07:17:54"},
     {"kana": "つごうがわるい", "definition": "inconvenient, conflicting", "born": "2018-04-25 19:44:17"},

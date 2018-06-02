@@ -8,16 +8,18 @@ verbs.shuffle!
 n = 10
 
 verbs.take(n).each do |verb|
-  is_positive = [true, false].sample
-  
-  if is_positive
-    print "to intend #{verb.definition} (#{verb.kana}) -> ".green
+  isAbbreviated = [true, false].sample
+  if isAbbreviated
+    k = "きゃ"
   else
-    print "to intend not #{verb.definition} (#{verb.kana}) -> ".red
+    k = "ければ"
   end
+
+  print "to have #{verb.definition} (#{verb.kana}, #{isAbbreviated ? 'abbreviated' : 'not abbreviated'}) -> ".green
   guess = gets.chomp
 
-  answer = "#{verb.short(true, is_positive)}つもりです"
+  answer = "#{verb.short(true, false).chop}#{k}いけません"
+
   if guess == answer
     puts "Right!"
   else

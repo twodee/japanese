@@ -11,13 +11,13 @@ verbs.take(n).each do |verb|
   is_positive = [true, false].sample
   
   if is_positive
-    print "to intend #{verb.definition} (#{verb.kana}) -> ".green
+    print "it's better #{verb.definition} (#{verb.kana}) -> ".green
   else
-    print "to intend not #{verb.definition} (#{verb.kana}) -> ".red
+    print "it's better not #{verb.definition} (#{verb.kana}) -> ".red
   end
   guess = gets.chomp
 
-  answer = "#{verb.short(true, is_positive)}つもりです"
+  answer = "#{verb.short(!is_positive, is_positive)}ほうがいいですよ"
   if guess == answer
     puts "Right!"
   else
