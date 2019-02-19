@@ -9,10 +9,9 @@ n = 10
 generator = Random.new
 
 verbs.take(n).each do |verb|
-  is_positive = [true, false].sample
-  print "#{verb.kana} (#{verb.definition}) #{is_positive ? 'positive' : 'negative'}? "
+  print "#{verb.kana} (#{verb.definition})? "
   guess = gets.chomp
-  answer = verb.long(true, is_positive)
+  answer = verb.potential.kana
   if guess == answer
     puts "Right!"
   else
